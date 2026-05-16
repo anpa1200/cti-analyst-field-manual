@@ -2,62 +2,70 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Document accepted and rejected infrastructure pivots with link strength and limitations.
 
-## Practitioner-Level Explanation
+## Fields
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+- **pivot_id:** Unique pivot identifier.
+- **seed:** Initial IOC or artifact.
+- **pivot_type:** Passive DNS, certificate, ASN, URL path, favicon, malware config, or telemetry.
+- **related_indicator:** Candidate related indicator.
+- **time_window:** First/last seen or relevant date window.
+- **link_strength:** Weak, moderate, or strong.
+- **decision:** Accepted, rejected, or pending.
+- **reason:** Why the decision was made.
+- **limitations:** False-positive and coverage risks.
 
-## CTI Relevance
+## Example Values
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+```text
+pivot_id: PIV-002
+seed: example[.]com
+pivot_type: Certificate
+related_indicator: update-example[.]com
+time_window: 2026-04-01 to 2026-04-08
+link_strength: Moderate
+decision: Accepted
+reason: Shared rare SAN pattern and URL path.
+limitations: Attribution remains Unknown.
+```
 
-## Common Mistakes
+## Quality Gates
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Every pivot has a time window.
+- Rejected pivots are preserved.
+- Link strength is justified.
+- Attribution is not inferred from weak pivots.
+
+## Common Failure Modes
+
+- Graph sprawl.
+- No rejected-pivot record.
+- No false-positive discussion.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
-
-## Example / Mini Case
-
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+1. Create the artifact only after the intelligence requirement or decision is clear.
+2. Fill required fields before writing narrative prose.
+3. Attach evidence labels, source references, confidence, and limitations.
+4. Review with the intended consumer.
+5. Update the artifact when evidence, telemetry, or decision context changes.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
+- Is the consumer defined?
+- Are required fields complete?
+- Are claims source-backed or marked Gap?
 - Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
-
-## Output Artifact
-
-```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
-```
+- Are limitations explicit?
+- Is there a next action or owner?
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Single IOC to Network](../05-infrastructure-pivoting/single-ioc-to-network.md)
+- [Pivoting Limitations](../05-infrastructure-pivoting/pivoting-limitations.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

@@ -2,62 +2,64 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Define review gates that AI-assisted CTI outputs must pass before use.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+AI output should not be accepted because it reads well. It must pass gates: source existence, source support, evidence labeling, no unsupported attribution, no sensitive data exposure, no unsafe content, and human review. For customer delivery, AI use should be logged according to project policy.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Quality gates prevent hallucinations and weak claims from entering reports, detections, or executive decisions.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Letting the model invent sources or facts.
+- Using AI output without source verification.
+- Putting sensitive or restricted data into public tools.
+- Skipping human analytic judgment.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Check data handling.
+2. Verify every URL.
+3. Confirm source content supports each claim.
+4. Check evidence labels.
+5. Check attribution and ATT&CK rules.
+6. Check safety boundaries.
+7. Record reviewer and decision.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+An AI summary says a source attributes an operation to a sponsor. The reviewer opens the source and finds the source used only cautious language. The claim is downgraded and confidence lowered.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are sources real and checked?
+- Are claims evidence-labeled?
+- Is sensitive data excluded?
+- Has a human reviewed the output?
+- Are hallucination controls applied?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Gate:
+Pass / Fail:
+Evidence:
+Reviewer:
+Corrections Required:
+Residual Risk:
+Approved Use:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
+- [Hallucination Control](hallucination-control.md)
 - [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Customer Quality Gates](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/reference-toolkit/)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

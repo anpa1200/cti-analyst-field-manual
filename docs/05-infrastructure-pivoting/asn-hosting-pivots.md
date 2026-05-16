@@ -2,62 +2,66 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Use hosting and ASN context without overclaiming malicious ownership.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Hosting context tells the analyst where infrastructure lives and how easy it may be to rotate. ASN patterns can support clustering when paired with timing, provider selection, account artifacts, or repeated operational behavior.
+
+An ASN is rarely a strong indicator by itself. Many actors and benign users share providers.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Hosting pivots support enrichment, blocking decisions, provider abuse reporting, and campaign infrastructure analysis.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Blocking whole ASNs without business impact review.
+- Treating provider preference as attribution.
+- Ignoring VPS resale and compromised infrastructure.
+- Not separating ingress, C2, staging, and redirector roles.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Identify ASN and provider.
+2. Classify infrastructure role.
+3. Check historical actor/provider patterns.
+4. Look for account-level or configuration overlap.
+5. Assess collateral risk.
+6. Document whether the pivot is tactical or analytic.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A campaign uses low-cost VPS providers across several countries. That supports an operational pattern but not actor identity. It may still guide firewall enrichment and short-term hunting.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is the infrastructure role clear?
+- Is provider overlap meaningful?
+- Is collateral risk understood?
+- Is the pivot corroborated?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Indicator:
+ASN:
+Provider:
+Infrastructure Role:
+First / Last Seen:
+Provider Pattern:
+Collateral Risk:
+Defensive Use:
 Confidence:
-Limitations:
-Follow-Up:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Passive DNS](passive-dns.md)
+- [Pivoting Limitations](pivoting-limitations.md)
+- [Detection Backlog](../08-cti-to-detection/detection-backlog.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

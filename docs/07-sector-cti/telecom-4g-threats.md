@@ -2,62 +2,66 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Frame 4G telecom CTI around assets, dependencies, attack surfaces, and defensive outputs.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+4G telecom CTI requires understanding both enterprise IT and telecom-specific systems. Public CTI often mentions telecom targeting without proving compromise of core network elements. Analysts must separate corporate IT compromise, subscriber-data exposure, signaling-plane risk, lawful intercept risk, and supplier exposure.
+
+The manual approach is to map assets and dependencies first, then connect public reporting to plausible observables.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Telecom networks are high-value targets for espionage, disruption, fraud, and strategic access. CTI must be precise enough for network, SOC, and executive teams.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Writing sector CTI as generic threat landscape prose.
+- Not connecting threats to assets and dependencies.
+- Ignoring telemetry and control realities.
+- Overstating public evidence about successful compromise.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Define telecom assets and crown jewels.
+2. Separate IT, OSS/BSS, RAN, core, signaling, and supplier access.
+3. Map public reporting to asset exposure.
+4. Identify telemetry owners.
+5. Create sector-specific hunt hypotheses.
+6. Document gaps where public evidence is insufficient.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A report says an actor targets telecoms. The analyst does not assume SS7 compromise. The output asks whether exposed VPNs, admin jump hosts, OSS/BSS portals, or supplier remote access create observable risk.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are assets and dependencies defined?
+- Are threats tied to observable behavior?
+- Are sector-specific false positives considered?
+- Are source limits explicit?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Sector:
+Asset Class:
+Threat Scenario:
+Public Evidence:
+Assessed Relevance:
+Telemetry Owner:
+Hunt Idea:
+Detection Candidate:
+Gaps:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Cellular Provider Case Study](cellular-provider-case-study.md)
+- [Telemetry Requirements](../08-cti-to-detection/telemetry-requirements.md)
+- [Israel CTI Threat Model](https://anpa1200.github.io/israel-government-threat-actors-cti/israel-government-threat-model/)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

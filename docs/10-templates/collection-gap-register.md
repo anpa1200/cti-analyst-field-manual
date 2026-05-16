@@ -2,62 +2,68 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Track missing information that affects CTI judgments or defensive action.
 
-## Practitioner-Level Explanation
+## Fields
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+- **gap_id:** Unique gap identifier.
+- **requirement:** PIR/SIR affected.
+- **gap_statement:** What is missing.
+- **impact:** Blocking, confidence-limiting, or contextual.
+- **collection_path:** How to close or reduce the gap.
+- **owner:** Person or team responsible.
+- **due_date:** Review or collection date.
+- **status:** Open, in progress, closed, accepted risk.
 
-## CTI Relevance
+## Example Values
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+```text
+gap_id: GAP-006
+requirement: PIR-002
+gap_statement: Unknown whether endpoint telemetry records command-line fields for script hosts.
+impact: Blocking
+collection_path: Validate EDR schema and retention.
+owner: Detection Engineering
+due_date: 2026-05-30
+status: Open
+```
 
-## Common Mistakes
+## Quality Gates
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Impact is classified.
+- Owner exists.
+- Collection path is realistic.
+- Accepted gaps are risk-owned.
+
+## Common Failure Modes
+
+- Gap has no owner.
+- Gap is vague.
+- Gap never reviewed.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
-
-## Example / Mini Case
-
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+1. Create the artifact only after the intelligence requirement or decision is clear.
+2. Fill required fields before writing narrative prose.
+3. Attach evidence labels, source references, confidence, and limitations.
+4. Review with the intended consumer.
+5. Update the artifact when evidence, telemetry, or decision context changes.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
+- Is the consumer defined?
+- Are required fields complete?
+- Are claims source-backed or marked Gap?
 - Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
-
-## Output Artifact
-
-```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
-```
+- Are limitations explicit?
+- Is there a next action or owner?
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Assumptions and Gaps](../02-analytic-discipline/assumptions-and-gaps.md)
+- [PIR, SIR, and EEI](../01-cti-foundations/pir-sir-eei.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

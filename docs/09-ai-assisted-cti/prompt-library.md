@@ -2,62 +2,64 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Provide reusable prompt patterns for CTI research, evidence review, and detection handoff.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Prompts should force structure. The best CTI prompts ask for claim tables, source verification, uncertainty, gaps, and downstream artifacts rather than narrative summaries. A prompt library should be treated like code: versioned, reviewed, and improved based on errors.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Good prompts reduce rework and make AI outputs easier to validate.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Letting the model invent sources or facts.
+- Using AI output without source verification.
+- Putting sensitive or restricted data into public tools.
+- Skipping human analytic judgment.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Choose the task type.
+2. Define source limits.
+3. Specify evidence labels and confidence terms.
+4. Request structured output.
+5. Ask for gaps and candidate rows.
+6. Review manually.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Research prompt: Extract only source-supported claims. For each claim provide URL, evidence label, confidence reason, defensive implication, and whether it should become a source-register, evidence-register, TTP, hunt, or detection row.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are sources real and checked?
+- Are claims evidence-labeled?
+- Is sensitive data excluded?
+- Has a human reviewed the output?
+- Are hallucination controls applied?
 
 ## Output Artifact
 
 ```text
-Artifact:
+Prompt ID:
 Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Allowed Sources:
+Output Schema:
+Required Evidence:
+Quality Gates:
+Known Failure Modes:
+Last Reviewed:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Safe LLM Research Workflow](safe-llm-research-workflow.md)
+- [Hallucination Control](hallucination-control.md)
+- [Actor Deep Research Prompts in Israel CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/reports/actor-deep-research-prompts/)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

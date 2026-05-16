@@ -2,62 +2,70 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Create falsifiable hunt plans from CTI claims.
 
-## Practitioner-Level Explanation
+## Fields
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+- **hunt_id:** Unique hunt identifier.
+- **hypothesis:** If/then behavior statement.
+- **source_claim:** Claim and source backing the hunt.
+- **telemetry:** Required tables/logs.
+- **fields:** Required fields.
+- **lookback:** Search period.
+- **malicious_pattern:** Expected suspicious behavior.
+- **benign_pattern:** Expected legitimate pattern.
+- **false_positives:** Likely benign sources.
+- **escalation:** When to open incident or case.
 
-## CTI Relevance
+## Example Values
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+```text
+hunt_id: HUNT-011
+hypothesis: If phishing leads to script execution, then endpoints receiving suspicious mail may spawn script interpreters within 24 hours.
+source_claim: EV-009
+telemetry: Email gateway, EDR process, network logs
+fields: recipient, attachment, process, command line, destination
+lookback: 30 days
+false_positives: IT automation, software installers
+escalation: Script execution plus unknown external download.
+```
 
-## Common Mistakes
+## Quality Gates
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Hypothesis is falsifiable.
+- Telemetry and fields are listed.
+- False positives are named.
+- Stop condition exists.
+
+## Common Failure Modes
+
+- Keyword search disguised as a hunt.
+- No benign baseline.
+- No escalation path.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
-
-## Example / Mini Case
-
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+1. Create the artifact only after the intelligence requirement or decision is clear.
+2. Fill required fields before writing narrative prose.
+3. Attach evidence labels, source references, confidence, and limitations.
+4. Review with the intended consumer.
+5. Update the artifact when evidence, telemetry, or decision context changes.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
+- Is the consumer defined?
+- Are required fields complete?
+- Are claims source-backed or marked Gap?
 - Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
-
-## Output Artifact
-
-```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
-```
+- Are limitations explicit?
+- Is there a next action or owner?
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Hunting Hypothesis Template](../08-cti-to-detection/hunting-hypothesis-template.md)
+- [Telemetry Requirements](../08-cti-to-detection/telemetry-requirements.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

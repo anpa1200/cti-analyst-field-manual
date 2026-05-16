@@ -2,62 +2,64 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Use kill-chain thinking to sequence intrusion activity and identify defensive opportunities.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+The Cyber Kill Chain organizes activity from preparation through delivery, exploitation, installation, command and control, and objectives. For CTI, its value is sequencing. It helps analysts ask where evidence exists and where defenders can intervene.
+
+The model is not complete for every modern intrusion. Identity-plane abuse, cloud-native activity, SaaS compromise, and living-off-the-land behavior may not fit neatly. Use the model as a sequencing tool, not a forced structure.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Kill-chain analysis helps convert a long report into phases, observables, telemetry, and response opportunities.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Forcing every campaign into every phase.
+- Ignoring cloud and identity activity because it does not fit old phases.
+- Using kill-chain phase names without observables.
+- Failing to connect phases to controls.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. List observed or reported behaviors.
+2. Order them by likely sequence.
+3. Map each behavior to evidence and telemetry.
+4. Identify prevention, detection, and response opportunities.
+5. Record missing phases as gaps, not assumptions.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A phishing campaign may have delivery evidence from email logs, execution evidence from endpoint telemetry, and C2 evidence from DNS logs. If no exploitation evidence exists, mark it as Gap rather than inventing a phase.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Does every phase have evidence or a gap label?
+- Are identity and cloud actions represented?
+- Are defensive controls mapped to phases?
+- Is sequence confidence stated?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Phase:
+Behavior:
+Evidence Label:
+Telemetry:
+Control Opportunity:
+Detection Idea:
+Gap:
 Confidence:
-Limitations:
-Follow-Up:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Diamond Model](diamond-model.md)
+- [Telemetry Requirements](../08-cti-to-detection/telemetry-requirements.md)
+- [Hunting Hypothesis Template](../08-cti-to-detection/hunting-hypothesis-template.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

@@ -2,62 +2,65 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Provide a safe example of moving from one seed indicator to a bounded infrastructure cluster.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+This worked case uses generic, non-operational example values. It demonstrates documentation structure, not live tracking.
+
+The method starts with one seed domain, checks passive DNS, certificates, URL paths, hosting, and telemetry, then accepts only corroborated relationships.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Worked cases help analysts learn when to stop pivoting and how to explain cluster boundaries.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Using live malicious infrastructure in a training page.
+- Failing to defang or sanitize examples.
+- Accepting all graph neighbors.
+- Not documenting rejected pivots.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Record seed domain example[.]com.
+2. Check passive DNS within the relevant month.
+3. Find two domains with matching certificate and path pattern.
+4. Reject shared-hosting neighbors with no corroboration.
+5. Write a cluster assessment.
+6. Convert to hunt enrichment with limitations.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Seed: example[.]com. Passive DNS shows one IP with many unrelated domains. Certificate data identifies two domains with a matching SAN pattern and same validity window. Web path data shows both used `/update/check` during the same week. Assessment: bounded three-domain infrastructure cluster, medium confidence. Attribution remains Unknown.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is the example sanitized?
+- Are accepted pivots justified?
+- Are rejected pivots listed?
+- Is attribution avoided unless supported?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Seed:
+Accepted Cluster:
+Rejected Pivots:
+Evidence:
 Confidence:
+Attribution Status:
+Defensive Use:
 Limitations:
-Follow-Up:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Infrastructure Pivot Log](../10-templates/infrastructure-pivot-log.md)
+- [Diamond Model](../03-frameworks/diamond-model.md)
+- [Pivoting Limitations](pivoting-limitations.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

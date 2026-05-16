@@ -2,62 +2,69 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Provide a reusable pre-publication checklist for CTI outputs.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+The checklist is a quality-control tool. It should be used before publishing a report, updating an actor page, creating a hunt hypothesis, or briefing a decision-maker.
+
+The point is not bureaucracy. The point is to catch unsupported claims, missing confidence reasons, unbounded pivots, and broken links before the output becomes operational guidance.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Consistent review improves trust between CTI, SOC, detection engineering, IR, and executive consumers.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Reviewing only grammar and not evidence.
+- Failing to check links and dates.
+- Not testing whether the output answers the PIR.
+- Treating the checklist as optional for urgent work.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Confirm the PIR or decision.
+2. Check every major claim for evidence label and source.
+3. Review confidence reasons.
+4. Check contradictions and gaps.
+5. Verify links and dates.
+6. Confirm downstream action is realistic.
+7. Record reviewer and review date.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Before sending an executive note about a campaign, the analyst verifies that actor attribution is not based only on ATT&CK overlap, that the source is primary or clearly labeled as secondary, and that the recommendation is feasible for the SOC.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Does the output answer the requirement?
+- Are major claims source-backed?
+- Are gaps visible?
+- Are cross-links working?
+- Is the recommendation within scope and defensive?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Output ID:
+Reviewer:
+Review Date:
+PIR Answered:
+Evidence Check:
+Confidence Check:
+Gap Check:
+Cross-Link Check:
+Decision / Action Check:
+Approved / Changes Required:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Finished Intelligence vs Research Notes](../01-cti-foundations/finished-intelligence-vs-research-notes.md)
+- [Evidence Register Template](../10-templates/evidence-register-template.md)
+- [Finished Intelligence Report Template](../10-templates/finished-intel-report-template.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

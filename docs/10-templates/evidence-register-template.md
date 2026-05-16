@@ -2,62 +2,68 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Record claim-level evidence so CTI judgments remain traceable.
 
-## Practitioner-Level Explanation
+## Fields
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+- **evidence_id:** Unique evidence identifier.
+- **claim:** Single claim, not a paragraph of mixed claims.
+- **evidence_label:** Observed, Reported, Assessed, Inferred, Unknown, or Gap.
+- **source_id:** Source register ID.
+- **confidence:** High, Medium, or Low.
+- **confidence_reason:** Why the confidence level was assigned.
+- **contradiction_or_gap:** Known conflict or missing evidence.
+- **downstream_use:** Report, actor page, TTP, hunt, detection, or executive summary.
 
-## CTI Relevance
+## Example Values
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+```text
+evidence_id: EV-014
+claim: Vendor reports archive attachment leading to script execution.
+evidence_label: Reported
+source_id: SRC-004
+confidence: Medium
+confidence_reason: Reliable source, but no raw telemetry included.
+contradiction_or_gap: Unknown whether observed in our environment.
+downstream_use: HUNT-002, DET-CAND-005
+```
 
-## Common Mistakes
+## Quality Gates
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- One claim per row.
+- Evidence label is explicit.
+- Confidence has a reason.
+- Gaps and contradictions are visible.
+
+## Common Failure Modes
+
+- Combining multiple claims in one row.
+- Using confidence without reason.
+- No downstream action or gap.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
-
-## Example / Mini Case
-
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+1. Create the artifact only after the intelligence requirement or decision is clear.
+2. Fill required fields before writing narrative prose.
+3. Attach evidence labels, source references, confidence, and limitations.
+4. Review with the intended consumer.
+5. Update the artifact when evidence, telemetry, or decision context changes.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
+- Is the consumer defined?
+- Are required fields complete?
+- Are claims source-backed or marked Gap?
 - Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
-
-## Output Artifact
-
-```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
-```
+- Are limitations explicit?
+- Is there a next action or owner?
 
 ## Cross-Links
 
-- [Intro](../intro.md)
 - [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Confidence Language](../01-cti-foundations/confidence-language.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

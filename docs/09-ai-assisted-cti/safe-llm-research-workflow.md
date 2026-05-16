@@ -2,62 +2,68 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Define a safe workflow for using LLMs in public, defensive CTI research.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Safe LLM use starts with scope and data handling. Public TLP:CLEAR material may be appropriate for external tools. Internal telemetry, credentials, victim data, proprietary reporting, or sensitive incident data should not be pasted into public models.
+
+The model should be asked to produce structured claims, source links, confidence caveats, and gaps. The analyst verifies everything.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+This workflow lets teams gain speed without losing source integrity or data-handling discipline.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Letting the model invent sources or facts.
+- Using AI output without source verification.
+- Putting sensitive or restricted data into public tools.
+- Skipping human analytic judgment.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Classify the data.
+2. Define task and allowed sources.
+3. Ask for structured output.
+4. Require evidence labels.
+5. Verify links and content.
+6. Downgrade unsupported claims.
+7. Record AI use if project policy requires it.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Prompt the model to extract claims from public reporting into a table: claim, source URL, evidence label, confidence, detection implication, gap. Then manually check each URL and claim before using it.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are sources real and checked?
+- Are claims evidence-labeled?
+- Is sensitive data excluded?
+- Has a human reviewed the output?
+- Are hallucination controls applied?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Task:
+Allowed Data:
+Prompt Version:
+Model Output:
+Source Verification:
+Claim Review:
+Corrections:
+Final Use:
+Reviewer:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Prompt Library](prompt-library.md)
+- [Hallucination Control](hallucination-control.md)
+- [AI Governance in Customer CTI](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

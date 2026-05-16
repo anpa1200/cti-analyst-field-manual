@@ -2,62 +2,70 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Package a hunt or detection for SOC triage and escalation.
 
-## Practitioner-Level Explanation
+## Fields
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+- **handoff_id:** Unique handoff identifier.
+- **alert_or_hunt:** Name of alert or hunt.
+- **why_it_matters:** Threat and impact context.
+- **first_checks:** Initial triage steps.
+- **required_logs:** Logs needed for triage.
+- **false_positives:** Expected benign causes.
+- **escalation:** Escalation threshold.
+- **response:** Authorized response guidance.
+- **feedback:** What SOC should report back.
 
-## CTI Relevance
+## Example Values
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+```text
+handoff_id: SOC-004
+alert_or_hunt: Non-IT RMM Installation
+why_it_matters: Reported adversary behavior uses RMM after phishing.
+first_checks: User, host role, install source, ticket, remote session.
+required_logs: EDR, software inventory, email, identity.
+false_positives: Helpdesk support, approved vendor work.
+escalation: No ticket plus external session plus suspicious email.
+response: Isolate only per IR policy.
+feedback: True/false positive and tuning notes.
+```
 
-## Common Mistakes
+## Quality Gates
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- First checks are concrete.
+- Escalation threshold is clear.
+- False positives are realistic.
+- Response stays within authority.
+
+## Common Failure Modes
+
+- No triage path.
+- Overbroad escalation.
+- No feedback loop.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
-
-## Example / Mini Case
-
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+1. Create the artifact only after the intelligence requirement or decision is clear.
+2. Fill required fields before writing narrative prose.
+3. Attach evidence labels, source references, confidence, and limitations.
+4. Review with the intended consumer.
+5. Update the artifact when evidence, telemetry, or decision context changes.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
+- Is the consumer defined?
+- Are required fields complete?
+- Are claims source-backed or marked Gap?
 - Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
-
-## Output Artifact
-
-```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
-```
+- Are limitations explicit?
+- Is there a next action or owner?
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [SOC Handoff](../08-cti-to-detection/soc-handoff.md)
+- [Detection Backlog Item](detection-backlog-item.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

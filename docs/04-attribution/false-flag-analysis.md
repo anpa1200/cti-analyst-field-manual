@@ -2,62 +2,64 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Provide a practical method for evaluating deception, imitation, and persona manipulation.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+False flags range from deliberate deception to casual copying. CTI analysts should not assume every misleading signal is sophisticated deception. Many overlaps come from shared tools, public reporting, infrastructure reuse, affiliate models, or poor source visibility.
+
+The analyst should ask what the signal is, who benefits if it is believed, and whether stronger evidence supports or contradicts it.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+False-flag analysis is especially important for hack-and-leak personas, politically motivated claims, and public attribution debates.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Assuming every inconsistency is deception.
+- Ignoring mundane explanations like shared tooling.
+- Amplifying persona claims without corroboration.
+- Treating language artifacts as decisive.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Identify the suspicious signal.
+2. List benign explanations.
+3. List deception hypotheses.
+4. Check evidence strength.
+5. Look for independent corroboration.
+6. State whether the signal affects attribution confidence.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A claimed persona posts data allegedly from a victim. The correct response is to preserve the claim, avoid reposting sensitive content, check internal telemetry or trusted reporting, and record the claim separately from verified compromise.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is the signal actually inconsistent?
+- Are non-deceptive explanations considered?
+- Is the claim separated from verified telemetry?
+- Is public amplification avoided?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Signal:
+Possible Benign Explanation:
+Possible Deception Explanation:
+Evidence For:
+Evidence Against:
+Impact on Attribution:
+Recommended Handling:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Attribution Methodology](attribution-methodology.md)
+- [Persona-aware Israel CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/handala/)
+- [Alternative Hypotheses](../02-analytic-discipline/alternative-hypotheses.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

@@ -2,62 +2,65 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Show how to document competing explanations before making CTI judgments.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Alternative hypotheses protect analysts from premature closure. In CTI, the first plausible answer is often the wrong one or only one of several possible explanations.
+
+A good alternative hypothesis is not a random possibility. It must explain the same evidence and be testable by additional collection.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Alternative hypotheses are essential for attribution, infrastructure clustering, persona claims, and interpreting campaign overlap.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Writing only one hypothesis.
+- Inventing alternatives that cannot be tested.
+- Treating the best-known actor as the default answer.
+- Failing to say what evidence would discriminate between hypotheses.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. State the main hypothesis.
+2. Write at least two alternatives.
+3. List evidence supporting and weakening each one.
+4. Identify discriminating evidence.
+5. Assign confidence and collection tasks.
+6. Update when new evidence arrives.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Evidence shows a phishing lure, a cloud storage link, and PowerShell execution. Hypothesis 1: a tracked APT campaign. Hypothesis 2: commodity intrusion using similar tradecraft. Hypothesis 3: internal red-team or admin activity. Discriminating evidence includes infrastructure ownership, payload lineage, user targeting, and approved testing records.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Can each hypothesis explain the evidence?
+- Is each hypothesis testable?
+- Are discriminating indicators defined?
+- Does the final judgment explain why alternatives were rejected or retained?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Primary Hypothesis:
+Alternative Hypothesis 1:
+Alternative Hypothesis 2:
+Evidence For:
+Evidence Against:
+Discriminating Evidence Needed:
 Confidence:
-Limitations:
-Follow-Up:
+Collection Task:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Attribution Methodology](../04-attribution/attribution-methodology.md)
+- [False Flag Analysis](../04-attribution/false-flag-analysis.md)
+- [Contradiction Handling](contradiction-handling.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

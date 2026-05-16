@@ -2,62 +2,67 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Show a safe, defensive attribution workflow using public-style evidence categories.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+This worked example demonstrates method, not a definitive claim about a real incident. The scenario uses common CTI evidence categories: lure, tooling, infrastructure, targeting, timing, and public reporting.
+
+The key lesson is that attribution should be built as a chain of evidence and alternatives, not as a label attached at the start.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Worked examples help analysts practice defensible reasoning before working on real incidents.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Starting with the actor label.
+- Ignoring alternatives.
+- Treating similarity as identity.
+- Skipping confidence explanation.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Define the event.
+2. Record observed facts.
+3. Add source-reported context.
+4. Build candidate hypotheses.
+5. Weigh evidence.
+6. Write confidence-limited judgment.
+7. Define collection needed to improve confidence.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Scenario: A phishing email delivers a script that downloads a payload from cloud storage. Public reporting says several actors use similar delivery. The analyst avoids attribution and instead assesses the activity as consistent with known tradecraft while recommending behavior-based hunting. Attribution remains Gap until infrastructure, malware configuration, or victimology is corroborated.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are observations separated from public reporting?
+- Are candidates compared fairly?
+- Is the final assessment bounded?
+- Are collection tasks specific?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Event:
+Observed Evidence:
+Reported Context:
+Hypotheses:
+Evidence Weighting:
+Assessment:
 Confidence:
-Limitations:
-Follow-Up:
+Gaps:
+Recommended Action:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Evidence Strength Ladder](evidence-strength-ladder.md)
+- [False Flag Analysis](false-flag-analysis.md)
+- [Actor Profile Template](../10-templates/actor-profile-template.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

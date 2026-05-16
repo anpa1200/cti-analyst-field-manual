@@ -1,63 +1,69 @@
-# Executive Summary
+# Executive Summary Template
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Summarize CTI judgments for senior decision-makers without losing uncertainty.
 
-## Practitioner-Level Explanation
+## Fields
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+- **decision:** Decision the summary supports.
+- **bottom_line:** One-paragraph conclusion.
+- **why_now:** Why the issue matters now.
+- **confidence:** Confidence and reason.
+- **business_impact:** Operational or risk impact.
+- **recommended_actions:** Specific executive-level actions.
+- **limits:** What is unknown or not proven.
+- **owner:** Accountable owner for follow-up.
 
-## CTI Relevance
+## Example Values
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+```text
+decision: Approve 30-day hunt for remote admin tooling abuse.
+bottom_line: Public reporting and local exposure justify a scoped hunt, not emergency blocking.
+why_now: Multiple recent reports describe RMM abuse after initial access.
+confidence: Medium; sources are credible but local telemetry is untested.
+business_impact: Potential unauthorized remote control of endpoints.
+recommended_actions: Approve hunt, validate telemetry, review RMM policy.
+limits: No evidence of compromise in this environment.
+owner: SOC Lead.
+```
 
-## Common Mistakes
+## Quality Gates
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Decision is explicit.
+- No unsupported attribution.
+- Confidence is explained.
+- Actions are owned.
+
+## Common Failure Modes
+
+- Too technical for audience.
+- No decision.
+- Uncertainty hidden.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
-
-## Example / Mini Case
-
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+1. Create the artifact only after the intelligence requirement or decision is clear.
+2. Fill required fields before writing narrative prose.
+3. Attach evidence labels, source references, confidence, and limitations.
+4. Review with the intended consumer.
+5. Update the artifact when evidence, telemetry, or decision context changes.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
+- Is the consumer defined?
+- Are required fields complete?
+- Are claims source-backed or marked Gap?
 - Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
-
-## Output Artifact
-
-```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
-```
+- Are limitations explicit?
+- Is there a next action or owner?
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Finished Intelligence Report Template](finished-intel-report-template.md)
+- [Confidence Language](../01-cti-foundations/confidence-language.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

@@ -2,62 +2,70 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Explain how to use confidence language in CTI without confusing confidence with probability.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Confidence communicates the analyst's trust in a judgment based on evidence quality, source access, corroboration, analytic consistency, and known gaps. It does not mean probability. A high-confidence judgment can still be wrong if new evidence appears. A low-confidence judgment can still matter if the potential impact is severe.
+
+This manual uses High, Medium, and Low confidence. Each confidence statement must include the reason. Confidence without a reason is decoration.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Confidence language allows CTI teams to be useful without overclaiming. It gives SOC, IR, detection, and executive consumers enough context to decide how much weight to place on a judgment.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Using confidence words as tone rather than analytic method.
+- Equating high confidence with certainty.
+- Writing probability numbers without calibration.
+- Changing confidence to satisfy a stakeholder preference.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. State the judgment.
+2. Identify evidence supporting the judgment.
+3. Identify evidence weakening or contradicting it.
+4. Assess source reliability and information credibility.
+5. Assign confidence.
+6. Write the confidence reason in plain language.
+7. Define what evidence would change the confidence level.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Weak: "We assess with high confidence that Actor X is responsible."
+
+Better: "We assess with medium confidence that the activity aligns with Actor X reporting because tooling, targeting, and timing match two reliable vendor reports. Confidence is limited because no unique infrastructure overlap or internal forensic artifact is available."
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is confidence attached to a specific judgment?
+- Is the reason explicit?
+- Are gaps and contradictions included?
+- Could another analyst challenge the judgment from the evidence record?
+- Is confidence separated from probability?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Judgment:
+Confidence: High / Medium / Low
+Evidence Supporting:
+Evidence Limiting:
+Source Reliability:
+Information Credibility:
+Alternative Hypotheses:
+What Would Change Confidence:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Source Reliability](source-reliability.md)
+- [Estimative Language](../02-analytic-discipline/estimative-language.md)
+- [Confidence vs Probability](../04-attribution/confidence-vs-probability.md)
+- [Evidence Register Template](../10-templates/evidence-register-template.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

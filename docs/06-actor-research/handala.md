@@ -1,63 +1,73 @@
-# Handala
+# Handala / Void Manticore Research Method
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Use Handala as a model for separating public persona claims from operational cluster assessment.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Handala-style reporting requires strict persona discipline. A public claim, a Telegram post, a defacement message, a leaked-data claim, and a verified intrusion are different evidence classes.
+
+The analyst should treat Handala as a claim-heavy persona unless stronger sources connect a specific operation to a tracked cluster such as Void Manticore. Do not repost leaked material. Do not treat persona messaging as telemetry.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+This case is valuable because modern CTI must handle psychological operations, hack-and-leak claims, and destructive narratives without becoming an amplifier.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Writing actor pages as biographies instead of decision support.
+- Merging vendor aliases without source confirmation.
+- Using tool overlap as attribution proof.
+- Omitting relevance to the defended environment.
+- Failing to separate actor, persona, sponsor, and public claim.
+- Amplifying claims that are intended to create fear.
+- Treating claimed victim lists as verified compromise.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Capture the public claim metadata without sensitive content.
+2. Check internal telemetry and trusted third-party corroboration.
+3. Separate persona, cluster, sponsor, and victim claims.
+4. Record confidence and gaps.
+5. Recommend comms/SOC/legal handling separately.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A persona claims to have breached a public-sector organization. The CTI output records the claim, source channel, date, and claimed sector. Verification remains Gap until telemetry or trusted reporting confirms compromise. The SOC action is scoped triage, not public amplification.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are aliases source-confirmed?
+- Are sponsor and attribution claims evidence-labeled?
+- Are behaviors mapped to TTPs only when supported?
+- Are detection and hunting implications included?
+- Are gaps explicit?
+- Is leaked or sensitive content excluded?
+- Is the public claim separated from verified compromise?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Persona Claim ID:
+Persona:
+Claim Date:
+Claimed Victim / Sector:
+Evidence Captured:
+Telemetry Match:
+Third-Party Corroboration:
 Confidence:
-Limitations:
-Follow-Up:
+Comms / Legal Handling:
+Status:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [False Flag Analysis](../04-attribution/false-flag-analysis.md)
+- [Israel CTI Handala Profile](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/handala/)
+- [Customer Delivery Methodology](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

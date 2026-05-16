@@ -2,62 +2,70 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Show how to transform a public actor case study into a defensible CTI-to-detection workflow.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+APT41 / DragonRx is useful as a worked teaching theme because it can connect public reporting, exploitation chains, enterprise compromise, pharmaceutical-sector relevance, ATT&CK mapping, and detection engineering.
+
+The page should focus on tradecraft method: how to extract behaviors, avoid over-attribution, map telemetry, and produce hunt/detection outputs from a public case.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+This case demonstrates how a sector-specific intrusion narrative becomes practical analyst outputs: timeline, TTP table, telemetry requirements, detections, SOC handoff, and executive risk statement.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Writing actor pages as biographies instead of decision support.
+- Merging vendor aliases without source confirmation.
+- Using tool overlap as attribution proof.
+- Omitting relevance to the defended environment.
+- Failing to separate actor, persona, sponsor, and public claim.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Summarize the public case without copying it.
+2. Extract behavior sequence.
+3. Rate sources and evidence.
+4. Map techniques cautiously.
+5. Identify telemetry needed.
+6. Draft detection and triage outputs.
+7. Write executive relevance.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A public report describes exploitation leading to domain compromise. The field-manual output turns that into a sequence: exposed application, suspicious child processes, credential access indicators, lateral movement, staging, and response requirements. Attribution remains evidence-labeled and not dependent on ATT&CK overlap.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are aliases source-confirmed?
+- Are sponsor and attribution claims evidence-labeled?
+- Are behaviors mapped to TTPs only when supported?
+- Are detection and hunting implications included?
+- Are gaps explicit?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Case Name:
+Sector:
+Source Claims:
+Behavior Timeline:
+ATT&CK Mapping:
+Telemetry Requirements:
+Hunt Hypotheses:
+Detection Candidates:
+SOC Handoff:
+Executive Summary:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Cyber Kill Chain](../03-frameworks/cyber-kill-chain.md)
+- [ATT&CK Mapping Mistakes](../03-frameworks/attck-mapping-mistakes.md)
+- [SOC Handoff](../08-cti-to-detection/soc-handoff.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

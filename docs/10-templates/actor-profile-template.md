@@ -2,62 +2,72 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Create an actor profile that supports decisions, hunts, and detections.
 
-## Practitioner-Level Explanation
+## Fields
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+- **actor_id:** Stable actor identifier.
+- **primary_name:** Preferred name and rationale.
+- **aliases:** Aliases with source for each.
+- **sponsor_assessment:** Sponsor claim with evidence label and confidence.
+- **targeting:** Sectors, regions, and victimology with dates.
+- **ttps:** Behavior mappings with evidence.
+- **tools:** Tools and malware with source-backed behavior.
+- **detections:** Mapped hunts or detections.
+- **gaps:** Unknowns and collection needs.
+- **last_reviewed:** Review date and owner.
 
-## CTI Relevance
+## Example Values
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+```text
+actor_id: ACT-001
+primary_name: Example Cluster
+aliases: VendorA Name, VendorB Name
+sponsor_assessment: Assessed-by-source, medium confidence
+targeting: Telecom and public-sector reporting since 2024
+ttps: T1566 phishing, evidence EV-003
+tools: ExampleLoader, reported by SRC-002
+detections: HUNT-004
+gaps: No public 2026 primary source found
+last_reviewed: 2026-05-16
+```
 
-## Common Mistakes
+## Quality Gates
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Aliases are source-confirmed.
+- Actor, persona, and sponsor are separated.
+- TTPs are behavior-backed.
+- Gaps are explicit.
+
+## Common Failure Modes
+
+- Alias drift.
+- Tool overlap used as attribution proof.
+- No relevance section.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
-
-## Example / Mini Case
-
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+1. Create the artifact only after the intelligence requirement or decision is clear.
+2. Fill required fields before writing narrative prose.
+3. Attach evidence labels, source references, confidence, and limitations.
+4. Review with the intended consumer.
+5. Update the artifact when evidence, telemetry, or decision context changes.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
+- Is the consumer defined?
+- Are required fields complete?
+- Are claims source-backed or marked Gap?
 - Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
-
-## Output Artifact
-
-```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
-```
+- Are limitations explicit?
+- Is there a next action or owner?
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Actor Profile Template](../06-actor-research/actor-profile-template.md)
+- [Attribution Methodology](../04-attribution/attribution-methodology.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

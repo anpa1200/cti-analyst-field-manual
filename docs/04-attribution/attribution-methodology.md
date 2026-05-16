@@ -2,62 +2,70 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Provide a strict, evidence-weighted approach to CTI attribution.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Attribution is a probabilistic analytic judgment. It is not a label copied from a report and not a result of one IOC match. A defensible attribution weighs timing, targeting, language, infrastructure, tooling, TTPs, operational tempo, malware lineage, and alternative hypotheses.
+
+Shared tooling does not prove actor identity. Victimology is supporting evidence, not proof. Infrastructure overlap can be weak or strong depending on exclusivity, timing, and reuse.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Attribution affects response priority, legal/comms posture, executive reporting, and detection focus. Weak attribution can mislead all of those consumers.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Attributing from a single IOC.
+- Using ATT&CK overlap as proof.
+- Ignoring false-flag and copycat possibilities.
+- Failing to separate cluster, persona, sponsor, and public claim.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Define what is being attributed: event, campaign, tool, infrastructure, persona, or sponsor.
+2. Collect evidence by category.
+3. Rate strength and reliability.
+4. Generate alternative hypotheses.
+5. Weigh contradictions.
+6. Assign confidence with reason.
+7. State limitations and what would change the judgment.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A persona claims an attack on social media. Attribution to the persona is not the same as attribution to the operational cluster. The analyst records the public claim as Reported, seeks telemetry or third-party corroboration, and avoids sponsor attribution unless stronger evidence exists.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
+- Is the attribution object clear?
+- Are actor, persona, and sponsor separated?
+- Is evidence multi-factor?
+- Are alternatives documented?
 - Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Attribution Object:
+Candidate Actor / Cluster:
+Persona:
+Sponsor Claim:
+Evidence Categories:
+Alternative Hypotheses:
+Contradictions:
 Confidence:
+Confidence Reason:
 Limitations:
-Follow-Up:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [False Flag Analysis](false-flag-analysis.md)
+- [Evidence Strength Ladder](evidence-strength-ladder.md)
+- [Alternative Hypotheses](../02-analytic-discipline/alternative-hypotheses.md)
+- [Israel CTI Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

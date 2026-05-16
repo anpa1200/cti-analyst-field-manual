@@ -2,62 +2,66 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Use TLS certificate data as one feature in infrastructure clustering.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Certificates can reveal domain relationships through subjects, issuers, SANs, serials, validity windows, and reuse patterns. Certificate pivots are stronger when the certificate is unusual, reused across a small set, and temporally aligned with activity.
+
+They are weaker when using automated certificates, common issuers, or shared hosting platforms.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Certificate pivots support infrastructure clustering, detection enrichment, and timeline reconstruction.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Pivoting on common certificate issuers.
+- Ignoring automated certificate churn.
+- Treating certificate reuse as actor identity.
+- Not checking validity dates.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Collect certificate fields.
+2. Check SANs and validity windows.
+3. Identify unusual reuse patterns.
+4. Compare with passive DNS and URL paths.
+5. Assess link strength.
+6. Document limitations.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Two domains share a rare certificate subject and appeared within the same week. That is a moderate pivot if supported by similar URL paths or payload behavior. It is weak if both use common managed hosting and no other overlap exists.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are certificate fields specific enough?
+- Are validity dates aligned?
+- Is reuse rare or common?
+- Is there corroboration beyond the certificate?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Certificate Fingerprint:
+Subject:
+Issuer:
+SANs:
+Validity:
+Related Domains:
+Rarity:
+Corroboration:
+Assessment:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Passive DNS](passive-dns.md)
+- [Infrastructure Pivot Log](../10-templates/infrastructure-pivot-log.md)
+- [Evidence Strength Ladder](../04-attribution/evidence-strength-ladder.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

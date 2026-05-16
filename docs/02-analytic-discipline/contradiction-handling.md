@@ -2,62 +2,67 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Provide a workflow for handling conflicting source claims without ignoring inconvenient evidence.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Contradictions are normal in CTI. Vendors use different telemetry, naming, visibility, and confidence thresholds. A contradiction does not automatically invalidate both claims, but it does require structured handling.
+
+The analyst should identify whether the contradiction is factual, taxonomic, temporal, or interpretive.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Contradiction handling prevents weak actor merges, stale claims, and detection work based on outdated assumptions.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Choosing the source that matches the preferred narrative.
+- Treating vendor naming differences as proof of different actors.
+- Failing to account for time: both claims may have been true at different dates.
+- Not recording contradiction status.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Extract both claims separately.
+2. Identify contradiction type.
+3. Check dates, scope, telemetry basis, and wording.
+4. Look for primary evidence.
+5. Update confidence or mark Gap.
+6. Preserve both claims until resolved.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Source A says a cluster is linked to one sponsor; Source B uses more cautious language. The correct output is not to average the claims. Record both, prefer the more precise primary evidence, and state whether the sponsor link is source-reported, assessed-by-source, or a local assessment.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is the contradiction explicit?
+- Are source dates compared?
+- Is the stronger source identified with reasoning?
+- Does the contradiction affect a downstream detection or report?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
+Contradiction ID:
+Claim A:
+Source A:
+Claim B:
+Source B:
+Contradiction Type:
+Assessment:
+Confidence Impact:
+Resolution Status:
 Follow-Up:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
 - [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Alternative Hypotheses](alternative-hypotheses.md)
+- [Evidence Register Template](../10-templates/evidence-register-template.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

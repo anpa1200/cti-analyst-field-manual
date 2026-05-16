@@ -2,62 +2,67 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Define how to document assumptions and intelligence gaps so they improve analysis instead of weakening it invisibly.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+An assumption is something the analyst accepts temporarily to reason forward. A gap is information needed to answer the requirement but not currently available. Both must be visible.
+
+A mature CTI product does not hide gaps. It explains whether the gap blocks the judgment, limits confidence, or creates a collection task.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Assumption and gap handling is essential for attribution, threat prioritization, infrastructure clustering, and detection engineering. It tells downstream teams what can be trusted and what still needs validation.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Treating assumptions as facts.
+- Using gaps as excuses to avoid judgment.
+- Failing to distinguish blocking gaps from nice-to-have gaps.
+- Not assigning owners or collection paths to gaps.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. List assumptions before writing the judgment.
+2. Identify gaps during source extraction.
+3. Classify gaps as blocking, confidence-limiting, or contextual.
+4. Assign collection options.
+5. Update the judgment if a key assumption fails.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A report describes an actor targeting telecom providers. The analyst assumes similar exposure may exist in a local telecom environment. That assumption is acceptable only if labeled. The gap is whether the local environment has the same exposed service, telemetry, or supplier relationship.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are assumptions explicitly named?
+- Are gaps classified by impact?
+- Is there a collection path?
+- Does the confidence statement reflect the gaps?
+- Are stale assumptions reviewed?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Assumption ID:
+Statement:
+Why Needed:
+Risk if Wrong:
+Gap ID:
+Gap Type:
+Collection Path:
+Owner:
+Due Date:
+Effect on Confidence:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Collection Gap Register](../10-templates/collection-gap-register.md)
+- [Alternative Hypotheses](alternative-hypotheses.md)
+- [Attribution Methodology](../04-attribution/attribution-methodology.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

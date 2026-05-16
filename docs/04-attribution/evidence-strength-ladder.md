@@ -2,62 +2,65 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Rank attribution evidence by strength and limitations.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Not all attribution evidence has equal weight. A reused IP address is weak by itself. A unique malware build, exclusive infrastructure, operator mistake, and corroborated victimology together are stronger.
+
+The ladder helps analysts explain why a judgment is high, medium, or low confidence.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Evidence weighting prevents overclaiming and makes attribution review possible.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Treating all overlaps as equal.
+- Ignoring time windows.
+- Not checking whether infrastructure is shared.
+- Overweighting victimology.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. List evidence items.
+2. Classify each item by type.
+3. Assess exclusivity and timing.
+4. Identify benign or alternative explanations.
+5. Combine evidence only when relationships are valid.
+6. Document confidence impact.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Weak evidence: same cloud provider, common tool, generic phishing theme. Stronger evidence: unique C2 path pattern, malware configuration overlap, repeated operator schedule, and corroborated targeting pattern.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is the evidence exclusive?
+- Is timing aligned?
+- Could infrastructure be shared or resold?
+- Does the evidence identify actor, tool, or only activity cluster?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Evidence Item:
+Type:
+Strength: Weak / Moderate / Strong
+Timing:
+Exclusivity:
+Alternative Explanation:
+Confidence Impact:
+Source:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Attribution Methodology](attribution-methodology.md)
+- [Confidence vs Probability](confidence-vs-probability.md)
+- [Infrastructure Pivoting Limitations](../05-infrastructure-pivoting/pivoting-limitations.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

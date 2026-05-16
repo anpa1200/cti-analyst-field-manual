@@ -2,62 +2,67 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Use the Pyramid of Pain to prioritize durable defensive intelligence over brittle indicators.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+The Pyramid of Pain ranks indicators by how disruptive they are for an adversary to change. Hashes and IPs are easy to rotate. Tools, network behaviors, and procedures are harder to change.
+
+This does not mean low-level indicators are useless. They can support triage, scoping, and historical search. But durable detection engineering should move toward behavior and procedure whenever telemetry allows.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+This framework helps CTI teams avoid over-investing in stale IOC feeds and under-investing in behavior-based hunts.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Treating hashes as long-term detection strategy.
+- Ignoring IOCs entirely.
+- Failing to attach expiration and context to indicators.
+- Calling behavior-based logic production-ready without testing.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Classify indicators by level.
+2. Attach context, source, and expiration.
+3. Use hashes/IPs for triage and scoping.
+4. Derive behaviors and telemetry requirements.
+5. Convert durable behaviors into hunts or detections.
+6. Validate false positives.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A malicious hash from a report is useful for immediate lookback. The stronger long-term detection may be the behavior: archive extraction followed by shortcut execution, script interpreter launch, and outbound connection to a new domain.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are indicators contextualized?
+- Is there an expiration date?
+- Can a behavior be derived?
+- Is telemetry available?
+- Has the behavior been validated?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Indicator:
+Type:
+Pyramid Level:
+Source:
+Context:
+Expiration:
+Behavior Derived:
+Telemetry:
+Hunt / Detection Candidate:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
+- [Intelligence to Detection](../08-cti-to-detection/intelligence-to-detection.md)
+- [Detection Backlog](../08-cti-to-detection/detection-backlog.md)
 - [Source Reliability](../01-cti-foundations/source-reliability.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

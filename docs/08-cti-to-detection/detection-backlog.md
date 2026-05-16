@@ -2,62 +2,69 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Organize CTI-derived detection candidates by value, evidence, telemetry, readiness, and validation state.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+A detection backlog is not a wish list. Each item should record source behavior, evidence, expected value, telemetry dependency, false-positive risk, owner, readiness level, and promotion criteria. Backlog discipline prevents teams from losing good hypotheses or promoting immature logic too early.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Backlogs connect CTI priorities to engineering capacity and SOC readiness.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Jumping from actor report to production alert.
+- Skipping telemetry requirements.
+- Ignoring false positives and tuning.
+- Claiming coverage without validation.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Create one row per detection idea.
+2. Link source and evidence.
+3. Record telemetry dependency.
+4. Score value and feasibility.
+5. Assign owner and readiness.
+6. Track testing and false positives.
+7. Promote, defer, or retire.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A backup-deletion behavior may be high impact but blocked by missing process telemetry. The backlog item remains Hunt or Design until telemetry exists and tests are completed.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is there a source-backed behavior?
+- Is telemetry available?
+- Is the hypothesis testable?
+- Are false positives named?
+- Is readiness level honest?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Detection ID:
+Title:
+Source Behavior:
+Evidence ID:
+Technique:
+Telemetry Required:
+Priority:
+False Positives:
+Validation Status:
+Readiness Level:
+Owner:
+Next Step:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Detection Backlog Item](../10-templates/detection-backlog-item.md)
+- [Telemetry Requirements](telemetry-requirements.md)
+- [SOC Handoff](soc-handoff.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

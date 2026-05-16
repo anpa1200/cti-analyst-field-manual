@@ -2,62 +2,66 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Use the Diamond Model to relate adversary, capability, infrastructure, and victim without overclaiming attribution.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+The Diamond Model helps structure CTI around four core features: adversary, capability, infrastructure, and victim. The strongest use is not drawing diagrams. The strongest use is testing whether links between features are supported.
+
+An analyst can often know capability and infrastructure while adversary remains unknown. That is still useful CTI if the uncertainty is explicit.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+The model is especially useful for infrastructure pivoting, actor clustering, and alternative hypotheses.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Filling the adversary vertex because the diagram feels incomplete.
+- Treating victimology as proof.
+- Ignoring relationship strength between vertices.
+- Failing to date infrastructure observations.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Define the event or activity cluster.
+2. Populate known vertices only.
+3. Label unknown vertices as Unknown or Gap.
+4. Record evidence for each relationship.
+5. Assess relationship strength.
+6. Use the model to generate collection tasks.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A domain, certificate, lure theme, and payload family may define a campaign cluster. The adversary remains Unknown. The next collection tasks are passive DNS, malware config review, lure recipient analysis, and overlap checks with known clusters.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are all vertices evidence-labeled?
+- Are relationship strengths documented?
+- Are unknowns left unknown?
+- Does the model generate collection tasks?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Event ID:
+Adversary:
+Capability:
+Infrastructure:
+Victim:
+Relationships:
+Evidence:
 Confidence:
-Limitations:
-Follow-Up:
+Collection Tasks:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Infrastructure Pivoting Worked Case](../05-infrastructure-pivoting/infrastructure-pivoting-worked-case.md)
+- [Attribution Methodology](../04-attribution/attribution-methodology.md)
+- [Alternative Hypotheses](../02-analytic-discipline/alternative-hypotheses.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

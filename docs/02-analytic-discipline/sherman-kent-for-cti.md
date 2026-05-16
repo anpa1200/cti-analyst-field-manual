@@ -2,62 +2,66 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Translate Sherman Kent-style analytic discipline into practical CTI writing and review habits.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Sherman Kent's core value for CTI is disciplined judgment: say what is known, how it is known, what is assessed, how confident the analyst is, and what remains uncertain. CTI often fails when it sounds certain but is built on unexamined assumptions.
+
+Kent-style discipline helps analysts avoid vague estimative language, overclaiming, source laundering, and attribution shortcuts. The goal is not academic writing. The goal is a judgment that can survive review.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+CTI teams regularly advise on risk, detection, incident response, and executive decisions under uncertainty. Kent-style tradecraft gives those judgments structure and humility.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Treating a useful framework as proof instead of a way to organize evidence.
+- Hiding assumptions, gaps, and contradictions in narrative prose.
+- Using actor labels where behavior-level claims would be more defensible.
+- Skipping consumer, decision, telemetry, or action context.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Write the key judgment first.
+2. Separate evidence from interpretation.
+3. State assumptions explicitly.
+4. Use calibrated estimative language.
+5. Include alternative hypotheses.
+6. Explain confidence.
+7. Identify collection gaps and decision impact.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A report says multiple actors use a similar webshell. A weak CTI note attributes a new case to the best-known actor. A disciplined note says the webshell is consistent with several actors, attribution is unknown, and the defensible action is to hunt the webshell behavior while collecting stronger infrastructure, timing, and operator-pattern evidence.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is the intelligence question explicit?
+- Are facts, reporting, assessment, inference, assumptions, and gaps separated?
+- Is confidence justified by evidence quality and corroboration?
+- Can a reader turn the output into a decision, hunt, detection, or collection task?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Key Judgment:
+Evidence:
+Assumptions:
+Alternative Hypotheses:
 Confidence:
-Limitations:
-Follow-Up:
+Collection Gaps:
+Decision Impact:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
+- [Estimative Language](estimative-language.md)
+- [Alternative Hypotheses](alternative-hypotheses.md)
+- [Attribution Methodology](../04-attribution/attribution-methodology.md)
 - [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

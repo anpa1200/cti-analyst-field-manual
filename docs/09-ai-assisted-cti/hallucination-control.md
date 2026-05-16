@@ -2,62 +2,64 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Provide controls for preventing fabricated or unsupported AI-generated CTI claims.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Hallucination control is a workflow problem. The model must not be allowed to convert plausible language into accepted intelligence. Require source URLs, direct support checks, evidence labels, and rejection of unsupported claims. Use AI to accelerate analysis, not to replace evidence.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+CTI is especially vulnerable to hallucination because actor names, aliases, tools, and campaigns are easy to blend incorrectly.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Letting the model invent sources or facts.
+- Using AI output without source verification.
+- Putting sensitive or restricted data into public tools.
+- Skipping human analytic judgment.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Require citations for every claim.
+2. Open each URL.
+3. Check content against claim.
+4. Downgrade unsupported claims.
+5. Preserve gaps.
+6. Avoid actor merges unless source-confirmed.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+The model claims two actor aliases are equivalent. The analyst checks primary sources and finds only one vendor uses the alias while another keeps clusters separate. The output records a taxonomy conflict rather than merging them.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are sources real and checked?
+- Are claims evidence-labeled?
+- Is sensitive data excluded?
+- Has a human reviewed the output?
+- Are hallucination controls applied?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Claim:
+Model Source:
+URL Status:
+Content Supports Claim: Yes / No / Partial
+Correction:
+Evidence Label:
 Confidence:
-Limitations:
-Follow-Up:
+Reviewer:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [AI Quality Gates](ai-quality-gates.md)
+- [Contradiction Handling](../02-analytic-discipline/contradiction-handling.md)
+- [Source Register Template](../10-templates/source-register-template.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

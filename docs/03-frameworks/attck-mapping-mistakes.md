@@ -2,62 +2,70 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+List common ATT&CK errors that reduce CTI and detection-engineering quality.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+ATT&CK can improve precision, but bad mappings create false confidence. The most common failure is mapping broad actor reporting to a technique and presenting it as local detection coverage.
+
+Good mapping is narrow, evidence-backed, and operationally testable.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+This page helps reviewers challenge weak mappings before they become dashboards, coverage claims, or detection backlogs.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Mapping actor names instead of behavior.
+- Mapping malware capability instead of observed use.
+- Ignoring data sources and telemetry requirements.
+- Overusing high-level techniques when sub-techniques exist.
+- Treating ATT&CK as an attribution engine.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Start with a source claim.
+2. Extract a behavior.
+3. Choose the narrowest defensible technique.
+4. Record tactic, procedure, evidence, and confidence.
+5. Add telemetry requirements.
+6. Assign mapping maturity.
+7. Reject mappings that cannot be supported.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A report says a tool can capture credentials. Do not map credential dumping unless the source reports observed credential dumping or analysis confirms capability and the page is explicit that the mapping is capability-based, not observed procedure.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
+- Is this observed behavior or tool capability?
+- Is the technique narrow enough?
+- Is the mapping useful to a detection engineer?
 - Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Would the mapping survive review?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Mapping ID:
+Claim:
+Behavior:
+Technique:
+Tactic:
+Evidence Label:
+Observed / Capability / Actor-Level:
+Telemetry:
 Confidence:
-Limitations:
-Follow-Up:
+Reviewer Notes:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
+- [MITRE ATT&CK as a Working Tool](mitre-attack-as-working-tool.md)
 - [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Detection Backlog Item](../10-templates/detection-backlog-item.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

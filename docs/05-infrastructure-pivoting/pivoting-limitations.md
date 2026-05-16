@@ -2,62 +2,65 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Document false-positive risks and analytic limits in infrastructure research.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Infrastructure pivoting can create impressive graphs and weak intelligence. Shared hosting, CDNs, sinkholes, scanners, compromised sites, bulletproof hosting, reused kits, and affiliate ecosystems all complicate interpretation.
+
+Every pivot should answer: what does this relationship prove, what does it not prove, and what additional evidence would strengthen it?
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Limitations protect downstream teams from treating weak pivots as blocklists, attribution, or production detections.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Graph expansion without stopping rules.
+- Failing to document rejected pivots.
+- Assuming infrastructure equals actor.
+- Forgetting indicator expiration.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Define pivot objective.
+2. Set stop conditions.
+3. Document accepted and rejected pivots.
+4. Classify link strength.
+5. Record false-positive risks.
+6. Expire or demote stale indicators.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+If a domain shares an IP with hundreds of unrelated domains, the pivot should usually stop unless another feature links a smaller subset. The output should say shared hosting prevents high-confidence clustering.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are stop conditions defined?
+- Are weak pivots rejected?
+- Are false-positive risks named?
+- Are indicators expired?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Pivot Objective:
+Stop Condition:
+Accepted Pivots:
+Rejected Pivots:
+False-Positive Risk:
+Expiration:
 Confidence:
-Limitations:
-Follow-Up:
+Reviewer Notes:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Single IOC to Network](single-ioc-to-network.md)
+- [Certificates](certificates.md)
+- [Evidence Strength Ladder](../04-attribution/evidence-strength-ladder.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

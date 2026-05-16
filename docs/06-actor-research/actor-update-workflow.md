@@ -2,62 +2,68 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Provide a repeatable process for refreshing actor profiles without source drift or overclaiming.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Actor profiles decay. Aliases change, sponsor language evolves, tools are reclassified, and old IOCs become stale. Updates need a workflow, not ad hoc edits.
+
+Every update should identify what changed, what source supports it, what confidence changed, and which downstream hunts, detections, or reports are affected.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Actor update discipline keeps CTI repositories accurate and prevents stale actor pages from driving bad detection priorities.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Adding new reports without updating old contradictions.
+- Changing sponsor language without source support.
+- Leaving detections linked to deprecated claims.
+- Failing to mark old IOCs as stale.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Check latest primary sources.
+2. Compare against existing profile.
+3. Add new claims to evidence register.
+4. Update aliases and sponsor language only with sources.
+5. Review TTP and tool mappings.
+6. Check affected detections and hunts.
+7. Record changelog and review date.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A new source reports a tool previously associated with one actor under a different cluster. The analyst records the contradiction, updates confidence, and marks affected detections as behavior-based rather than actor-specific.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is the update source-backed?
+- Are contradictions recorded?
+- Are downstream links reviewed?
+- Is the review date updated?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Actor:
+Update Date:
+New Sources:
+Changed Claims:
+Evidence IDs:
+Confidence Changes:
+Affected TTPs:
+Affected Detections:
+Gaps:
+Reviewer:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Evidence Register Template](../10-templates/evidence-register-template.md)
+- [Contradiction Handling](../02-analytic-discipline/contradiction-handling.md)
+- [Detection Backlog](../08-cti-to-detection/detection-backlog.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

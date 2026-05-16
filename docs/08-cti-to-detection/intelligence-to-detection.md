@@ -2,62 +2,74 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Convert CTI claims into telemetry requirements, hunts, detections, SOC actions, and validation plans.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+CTI-to-detection is a chain, not a single translation step. A source reports behavior. The analyst labels evidence, assesses relevance, identifies telemetry, writes a hunt hypothesis, validates false positives, and only then promotes detection logic.
+
+The actor name is usually less important than the behavior and observable.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+This workflow is the bridge between CTI and operational defense. It makes intelligence useful to detection engineering and SOC teams.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Jumping from actor report to production alert.
+- Skipping telemetry requirements.
+- Ignoring false positives and tuning.
+- Claiming coverage without validation.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Extract behavior from source reporting.
+2. Label evidence and confidence.
+3. Assess environment relevance.
+4. Define required telemetry and fields.
+5. Write a testable hunt hypothesis.
+6. Baseline benign behavior.
+7. Draft detection logic.
+8. Validate positive and negative cases.
+9. Create SOC handoff.
+10. Assign detection readiness level.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Reported behavior: archive attachment leads to script execution and external download. Detection chain: email attachment metadata, endpoint archive extraction, script process creation, network connection, false-positive baseline for admin scripts, SOC triage instructions.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is there a source-backed behavior?
+- Is telemetry available?
+- Is the hypothesis testable?
+- Are false positives named?
+- Is readiness level honest?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Source Claim:
+Evidence Label:
+Behavior:
+Telemetry:
+Fields:
+Hunt Hypothesis:
+Detection Logic:
+False Positives:
+Validation:
+SOC Action:
+Readiness Level:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Telemetry Requirements](telemetry-requirements.md)
+- [Detection Backlog](detection-backlog.md)
+- [SOC Handoff](soc-handoff.md)
+- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

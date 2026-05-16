@@ -2,62 +2,68 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Explain how to pivot from one indicator to a bounded infrastructure hypothesis.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+A single IOC is a starting point, not a campaign. Pivoting expands from a seed indicator to related domains, IPs, certificates, URLs, hosting, malware configs, and telemetry observations.
+
+The analyst must define cluster boundaries and false-positive risk. Without boundaries, pivoting becomes uncontrolled graph expansion.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Infrastructure pivoting supports scoping, attribution hypotheses, detection ideas, and collection planning.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Treating every shared IP neighbor as malicious.
+- Ignoring time windows.
+- Failing to separate infrastructure owner, hosting provider, and operator.
+- Not recording why a pivot was accepted or rejected.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Record the seed IOC and source.
+2. Define time window.
+3. Pivot through passive DNS, certificate, WHOIS, ASN, URL path, favicon, and malware config data where available.
+4. Score each link strength.
+5. Reject weak or stale pivots.
+6. Build a bounded cluster.
+7. Write limitations.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A domain resolves to a shared hosting IP. Pivoting to every domain on that IP would create noise. A stronger pivot would require shared certificate attributes, unique URL paths, matching malware configuration, or close temporal overlap.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is the seed source reliable?
+- Is each pivot time-bounded?
+- Are shared-hosting risks documented?
+- Can the cluster be defended to a reviewer?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
+Seed IOC:
+Source:
+Time Window:
+Pivot Type:
+Related Indicator:
+Link Strength:
+Reason Accepted / Rejected:
+Cluster Boundary:
 Limitations:
-Follow-Up:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Passive DNS](passive-dns.md)
+- [Certificates](certificates.md)
+- [Pivoting Limitations](pivoting-limitations.md)
+- [Infrastructure Pivot Log](../10-templates/infrastructure-pivot-log.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

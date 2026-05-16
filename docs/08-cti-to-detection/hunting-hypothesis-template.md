@@ -2,62 +2,71 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Define a falsifiable hunt hypothesis format for CTI-driven threat hunting.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+A hunt hypothesis is a testable statement about adversary behavior in an environment. It should include behavior, telemetry, lookback window, expected malicious pattern, expected benign pattern, false positives, stop condition, and escalation path.
+
+A hunt is not a keyword search. It is an investigation plan.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Hypotheses make CTI actionable without prematurely creating noisy alerts.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Jumping from actor report to production alert.
+- Skipping telemetry requirements.
+- Ignoring false positives and tuning.
+- Claiming coverage without validation.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Start with a source-backed behavior.
+2. Define why the behavior matters locally.
+3. List required logs and fields.
+4. Set lookback window.
+5. Define malicious and benign patterns.
+6. Run and tune.
+7. Record findings and next action.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Hypothesis: If an actor abuses RMM tooling after phishing, then non-IT endpoints may show new RMM installation followed by remote session activity within 24 hours of suspicious email receipt.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is there a source-backed behavior?
+- Is telemetry available?
+- Is the hypothesis testable?
+- Are false positives named?
+- Is readiness level honest?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Hypothesis ID:
+Source Claim:
+Behavior:
+Environment Relevance:
+Telemetry:
+Fields:
+Lookback:
+Expected Malicious Pattern:
+Expected Benign Pattern:
+False Positives:
+Stop Condition:
+Escalation:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Hunting Hypothesis Template](../10-templates/hunting-hypothesis-template.md)
+- [Telemetry Requirements](telemetry-requirements.md)
+- [Detection Backlog](detection-backlog.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

@@ -2,62 +2,65 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Explain how 5G changes CTI questions around cloud-native telecom, slicing, suppliers, and identity.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+5G introduces cloud-native infrastructure, virtualization, APIs, orchestration, slicing, and expanded supplier dependencies. CTI must consider identity, management planes, cloud platforms, container workloads, and telecom-specific control-plane functions.
+
+The analyst should avoid generic "5G is critical" language and instead define concrete assets and telemetry.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+5G CTI is useful when it connects threat reporting to management-plane abuse, supplier access, cloud posture, API exposure, and resilience planning.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Writing sector CTI as generic threat landscape prose.
+- Not connecting threats to assets and dependencies.
+- Ignoring telemetry and control realities.
+- Overstating public evidence about successful compromise.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Inventory 5G management and orchestration layers.
+2. Identify supplier and remote-admin dependencies.
+3. Map threat reporting to identity, API, cloud, and network telemetry.
+4. Separate theoretical risk from observed exploitation.
+5. Build collection gaps.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A supplier compromise scenario may be more practical than a radio-interface scenario. The hunt may focus on privileged access to orchestration consoles, unusual API calls, and changes to network function configurations.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are assets and dependencies defined?
+- Are threats tied to observable behavior?
+- Are sector-specific false positives considered?
+- Are source limits explicit?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+5G Asset:
+Dependency:
+Threat Scenario:
+Evidence Label:
+Telemetry:
+Detection Idea:
+False Positives:
+Gap:
+Owner:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Telecom 4G Threats](telecom-4g-threats.md)
+- [Telemetry Requirements](../08-cti-to-detection/telemetry-requirements.md)
+- [Customer Delivery Methodology](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/phase-by-phase-execution-guide/)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

@@ -2,62 +2,76 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Track source provenance, reliability, credibility, review status, and downstream use.
 
-## Practitioner-Level Explanation
+## Fields
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+- **source_id:** Unique source identifier.
+- **publisher:** Organization or author.
+- **title:** Exact source title.
+- **url:** Stable source URL.
+- **publication_date:** Date the source was published.
+- **accessed_date:** Date the analyst accessed it.
+- **source_type:** Government, vendor CTI, academic, media, persona claim, internal, or other.
+- **reliability:** A-F source reliability rating.
+- **credibility:** 1-6 information credibility rating.
+- **summary:** Short source summary.
+- **limitations:** Known limits, missing evidence, or caveats.
+- **downstream_links:** Evidence, actor, TTP, hunt, detection, or report links.
 
-## CTI Relevance
+## Example Values
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+```text
+source_id: SRC-001
+publisher: Example Vendor CTI
+title: Example Campaign Report
+url: https://example.com/report
+publication_date: 2026-05-01
+accessed_date: 2026-05-16
+source_type: Vendor CTI
+reliability: B
+credibility: 2
+summary: Reports phishing leading to script execution.
+limitations: No raw telemetry shown.
+downstream_links: EV-001, HUNT-003
+```
 
-## Common Mistakes
+## Quality Gates
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- URL resolves or archive is recorded.
+- Publication and access dates are present.
+- Reliability and credibility are justified.
+- Limitations are not empty.
+
+## Common Failure Modes
+
+- Using a source without access date.
+- Rating the publisher but not the claim.
+- No link to downstream evidence.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
-
-## Example / Mini Case
-
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+1. Create the artifact only after the intelligence requirement or decision is clear.
+2. Fill required fields before writing narrative prose.
+3. Attach evidence labels, source references, confidence, and limitations.
+4. Review with the intended consumer.
+5. Update the artifact when evidence, telemetry, or decision context changes.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
+- Is the consumer defined?
+- Are required fields complete?
+- Are claims source-backed or marked Gap?
 - Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
-
-## Output Artifact
-
-```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
-```
+- Are limitations explicit?
+- Is there a next action or owner?
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
 - [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Evidence Register Template](evidence-register-template.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

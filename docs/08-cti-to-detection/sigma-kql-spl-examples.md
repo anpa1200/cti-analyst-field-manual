@@ -2,62 +2,64 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Explain how to express detection logic across platforms without pretending skeleton logic is production-ready.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Sigma, KQL, and SPL are implementation formats. The analytic logic should come first: behavior, telemetry, fields, false positives, and validation. Platform syntax follows. A rule skeleton is a communication artifact until tested against real or realistic telemetry.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Cross-platform examples help CTI and detection teams collaborate while preserving platform-specific validation needs.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Jumping from actor report to production alert.
+- Skipping telemetry requirements.
+- Ignoring false positives and tuning.
+- Claiming coverage without validation.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Write platform-neutral logic.
+2. Map fields for each platform.
+3. Create Sigma, KQL, and SPL variants.
+4. Run syntax validation.
+5. Run positive and negative tests.
+6. Document tuning and false positives.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+Platform-neutral behavior: non-browser process connects to IMAPS. KQL may use DeviceNetworkEvents. Splunk may use endpoint network data. Sigma may express process and destination port. Each needs local field validation.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is there a source-backed behavior?
+- Is telemetry available?
+- Is the hypothesis testable?
+- Are false positives named?
+- Is readiness level honest?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Detection Logic:
+Sigma Fields:
+KQL Table / Fields:
+SPL Index / Sourcetype / Fields:
+Positive Test:
+Negative Test:
+False Positives:
+Promotion Status:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Telemetry Requirements](telemetry-requirements.md)
+- [Detection Backlog](detection-backlog.md)
+- [Israel CTI Platform Query Variants](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-engineering/platform-query-variants/)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

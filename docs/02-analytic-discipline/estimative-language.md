@@ -2,62 +2,63 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Provide practical wording for CTI judgments where evidence is incomplete.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Estimative language gives readers a controlled way to understand analytic judgment under uncertainty. Terms such as likely, possibly, consistent with, and insufficient evidence must be used consistently.
+
+Avoid dramatic or vague words. "The actor is dangerous" is not a useful estimate. "The actor is likely to prioritize credential access and edge-device exploitation against exposed remote access services" is more useful because it has observable implications.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Precise estimative language prevents readers from treating analytic judgment as fact or ignoring a weak signal that needs collection.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Using likely, probably, and possibly interchangeably.
+- Writing passive phrases that hide who made the assessment.
+- Mixing source assessment and local analyst assessment.
+- Using estimative language to avoid evidence.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Define the judgment.
+2. Choose the weakest accurate term.
+3. Attach the evidence label.
+4. State whether the assessment is source-reported or analyst-assessed.
+5. Record what evidence would strengthen or weaken it.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+"Reported: Vendor X states the campaign used phishing attachments. Assessed-here: The behavior is relevant to this environment because inbound attachments are retained in email logs and endpoint process telemetry can observe script execution. Confidence: medium."
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Is the estimative term necessary?
+- Can the reader distinguish source assessment from local assessment?
+- Does the term match evidence strength?
+- Is the judgment actionable?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Judgment:
+Evidence Label:
+Estimative Term:
+Actor / Behavior / Target:
 Confidence:
-Limitations:
-Follow-Up:
+Reason:
+What Would Change It:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Confidence Language](../01-cti-foundations/confidence-language.md)
+- [Assumptions and Gaps](assumptions-and-gaps.md)
+- [Confidence vs Probability](../04-attribution/confidence-vs-probability.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

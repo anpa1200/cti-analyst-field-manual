@@ -2,62 +2,74 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Define the required sections for a professional actor profile.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+An actor profile is a decision-support artifact. It should not be a static encyclopedia page. It must explain what is known, who reported it, what is assessed, why it matters, what is detectable, and what remains unknown.
+
+A good profile includes aliases, sponsor assessments, targeting, TTPs, tooling, infrastructure notes, evidence quality, relevance, hunting ideas, detection candidates, and freshness status.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+Consistent actor profiles help CTI teams compare actors, prioritize research, and hand off useful content to detection and SOC teams.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Writing actor pages as biographies instead of decision support.
+- Merging vendor aliases without source confirmation.
+- Using tool overlap as attribution proof.
+- Omitting relevance to the defended environment.
+- Failing to separate actor, persona, sponsor, and public claim.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Create alias and source table.
+2. Add sponsor/attribution section with confidence.
+3. Write targeting and relevance.
+4. Add TTPs with evidence labels.
+5. Add tools with source and behavior.
+6. Add detections and hunts.
+7. Add gaps and review date.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A profile for a destructive persona should include a persona-claims section rather than mixing all public claims into confirmed incidents.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are aliases source-confirmed?
+- Are sponsor and attribution claims evidence-labeled?
+- Are behaviors mapped to TTPs only when supported?
+- Are detection and hunting implications included?
+- Are gaps explicit?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
+Primary Name:
+Aliases and Sources:
+Sponsor / Attribution:
 Confidence:
-Limitations:
-Follow-Up:
+Targeting:
+Relevance:
+TTPs:
+Tools:
+Infrastructure Notes:
+Detection Ideas:
+Hunt Hypotheses:
+Evidence IDs:
+Gaps:
+Last Reviewed:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Actor Profile Template in Templates](../10-templates/actor-profile-template.md)
+- [Attribution Methodology](../04-attribution/attribution-methodology.md)
+- [Israel CTI Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

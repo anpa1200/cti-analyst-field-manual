@@ -2,62 +2,62 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Explain why confidence and probability are different analytic concepts.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+Probability estimates likelihood. Confidence describes the strength and reliability of the analytic basis. A judgment may be assessed likely but low confidence if the evidence is thin. Another judgment may be unlikely but high confidence if strong evidence rules it out.
+
+Most CTI products should use confidence language rather than precise percentages unless the organization has a calibrated probability model.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+This distinction prevents decision-makers from misunderstanding how much trust to place in a CTI assessment.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Using high confidence to mean high likelihood.
+- Adding percentages without calibration.
+- Failing to explain confidence reasons.
+- Using low confidence as a reason to avoid action when impact is high.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Write the judgment.
+2. Decide whether the output needs likelihood, confidence, or both.
+3. Explain evidence quality.
+4. Explain uncertainty.
+5. State decision impact.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+"We assess it is possible that this activity is related to Actor X, but confidence is low because the only overlap is commodity tooling and broad victimology."
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Does the product confuse confidence and likelihood?
+- Is a probability number necessary?
+- Is confidence explained?
+- Does the recommendation match risk and evidence?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Judgment:
+Likelihood Term:
+Confidence Level:
+Evidence Quality:
+Uncertainty:
+Decision Impact:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Confidence Language](../01-cti-foundations/confidence-language.md)
+- [Estimative Language](../02-analytic-discipline/estimative-language.md)
+- [Attribution Methodology](attribution-methodology.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)

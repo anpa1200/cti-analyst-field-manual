@@ -2,62 +2,71 @@
 
 ## Purpose
 
-This page is part of the CTI Analyst Field Manual and is reserved for the next expansion pass from the author's public Medium CTI material.
+Show how to structure an actor research page for a mature Iran-nexus intrusion cluster without overclaiming every reported activity.
 
 ## Practitioner-Level Explanation
 
-This section will convert the related Medium article themes into a structured analyst workflow. It will avoid unsupported attribution, separate reported facts from assessment, and document limitations.
+A MuddyWater / Seedworm profile should be built around behavior, source chronology, targeting, tooling, and operational relevance. The analyst should separate long-term public reporting from current campaign evidence and avoid treating every PowerShell or remote-management-tool event as MuddyWater.
+
+The practical value of the profile is not the name. It is a set of behaviors that can become collection requirements, hunts, detection candidates, and customer-facing risk judgments.
 
 ## CTI Relevance
 
-The page will explain how the topic supports analyst judgment, threat hunting, detection engineering, SOC handoff, or executive communication.
+MuddyWater is a useful training case because public reporting frequently connects it to phishing, living-off-the-land tradecraft, remote management tooling, credential access, and Middle East targeting. It demonstrates how actor knowledge becomes defensive action.
 
 ## Common Mistakes
 
-- Treating source claims as observed facts.
-- Omitting assumptions and gaps.
-- Mapping behavior to frameworks without evidence.
-- Publishing an output without a consumer or decision.
+- Writing actor pages as biographies instead of decision support.
+- Merging vendor aliases without source confirmation.
+- Using tool overlap as attribution proof.
+- Omitting relevance to the defended environment.
+- Failing to separate actor, persona, sponsor, and public claim.
 
 ## Practical Workflow
 
-1. Define the intelligence question.
-2. Identify required evidence.
-3. Rate sources and extract claims.
-4. Label evidence and confidence.
-5. Produce a practical artifact.
-6. Document limitations and follow-up collection.
+1. Create an alias table with source for each alias.
+2. Build a source chronology.
+3. Extract behaviors into evidence rows.
+4. Separate tooling capability from observed use.
+5. Map only supported ATT&CK techniques.
+6. Write hunt hypotheses tied to telemetry.
+7. Document gaps and freshness date.
 
 ## Example / Mini Case
 
-To be expanded with transformed, non-copying material from the relevant Medium article theme.
+A source reports phishing that leads to remote management tool installation. The actor page should not say "detect MuddyWater." It should say: hunt for newly installed RMM tooling on non-IT endpoints after suspicious email activity, with local baselining and false-positive review.
 
 ## Analyst Checklist
 
-- Are facts, assessments, inferences, assumptions, and gaps separated?
-- Is confidence justified?
-- Is the output practical for a CTI or detection workflow?
-- Are cross-links and references present?
+- Are aliases source-confirmed?
+- Are sponsor and attribution claims evidence-labeled?
+- Are behaviors mapped to TTPs only when supported?
+- Are detection and hunting implications included?
+- Are gaps explicit?
 
 ## Output Artifact
 
 ```text
-Artifact:
-Purpose:
-Consumer:
-Evidence Required:
-Confidence:
-Limitations:
-Follow-Up:
+Actor:
+Aliases:
+Sponsor / Attribution Claims:
+Key Sources:
+Targeting:
+TTPs:
+Tools:
+Detection Ideas:
+Hunt Hypotheses:
+Gaps:
+Last Reviewed:
 ```
 
 ## Cross-Links
 
-- [Intro](../intro.md)
-- [Evidence Labels](../01-cti-foundations/evidence-labels.md)
-- [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Actor Profile Template](actor-profile-template.md)
+- [Israel CTI MuddyWater Profile](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/muddywater/)
+- [Intelligence to Detection](../08-cti-to-detection/intelligence-to-detection.md)
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
-- Article-specific references will be added during the detailed source-ingestion pass.
+- [Medium Source Index](../references/medium-source-index.md)
+- [CTI Project Ecosystem](../ecosystem.md)
