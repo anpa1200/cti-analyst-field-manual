@@ -10,6 +10,8 @@ The case study models a realistic CTI engagement without exposing a real victim.
 
 The purpose is to show how CTI becomes operational decisions.
 
+![CTI-Led Defensive Strategy for a Cellular Provider — end-to-end practitioner guide covering telecom core, cloud-native operations, SOC/NOC, identity, third-party access, and executive decision support](/img/telecom-cti-defensive-strategy.png)
+
 ## CTI Relevance
 
 Case studies let analysts practice customer-specific relevance instead of generic actor summaries.

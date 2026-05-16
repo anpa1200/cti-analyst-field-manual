@@ -8,6 +8,8 @@ Define review gates that AI-assisted CTI outputs must pass before use.
 
 AI output should not be accepted because it reads well. It must pass gates: source existence, source support, evidence labeling, no unsupported attribution, no sensitive data exposure, no unsafe content, and human review. For customer delivery, AI use should be logged according to project policy.
 
+![AI Tool Approval Checklist — eight requirements that must be documented before an AI tool is used in CTI work](/img/ai-tool-approval-checklist.png)
+
 ## CTI Relevance
 
 Quality gates prevent hallucinations and weak claims from entering reports, detections, or executive decisions.

@@ -10,6 +10,8 @@ The Cyber Kill Chain organizes activity from preparation through delivery, explo
 
 The model is not complete for every modern intrusion. Identity-plane abuse, cloud-native activity, SaaS compromise, and living-off-the-land behavior may not fit neatly. Use the model as a sequencing tool, not a forced structure.
 
+![Attack Kill Chain — from intent to impact, with detection opportunities at each phase](/img/kill-chain-overview.png)
+
 ## CTI Relevance
 
 Kill-chain analysis helps convert a long report into phases, observables, telemetry, and response opportunities.
@@ -32,6 +34,8 @@ Kill-chain analysis helps convert a long report into phases, observables, teleme
 ## Example / Mini Case
 
 A phishing campaign may have delivery evidence from email logs, execution evidence from endpoint telemetry, and C2 evidence from DNS logs. If no exploitation evidence exists, mark it as Gap rather than inventing a phase.
+
+![CTI Kill Chain — analyst guide mapping evidence labels to each phase without overstating confidence](/img/kill-chain-analyst-guide.png)
 
 ## Analyst Checklist
 

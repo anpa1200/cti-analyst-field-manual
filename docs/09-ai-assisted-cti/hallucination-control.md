@@ -8,6 +8,8 @@ Provide controls for preventing fabricated or unsupported AI-generated CTI claim
 
 Hallucination control is a workflow problem. The model must not be allowed to convert plausible language into accepted intelligence. Require source URLs, direct support checks, evidence labels, and rejection of unsupported claims. Use AI to accelerate analysis, not to replace evidence.
 
+![AI Usage in Hunting and Hypothesis Development — allowed uses, example prompts, expected outputs, and human analyst responsibility](/img/ai-hunting-phase.png)
+
 ## CTI Relevance
 
 CTI is especially vulnerable to hallucination because actor names, aliases, tools, and campaigns are easy to blend incorrectly.
