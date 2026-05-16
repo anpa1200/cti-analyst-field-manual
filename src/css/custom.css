@@ -1,0 +1,29 @@
+:root {
+  --ifm-color-primary: #184e77;
+  --ifm-color-primary-dark: #144568;
+  --ifm-color-primary-darker: #113d5d;
+  --ifm-color-primary-darkest: #0b2d45;
+  --ifm-color-primary-light: #1f6699;
+  --ifm-color-primary-lighter: #2678b3;
+  --ifm-color-primary-lightest: #2d8fce;
+  --ifm-code-font-size: 95%;
+}
+.hero--manual {
+  background: linear-gradient(135deg, #102a43 0%, #184e77 52%, #2a6f62 100%);
+  color: #fff;
+}
+.manual-section {
+  padding: 3rem 0;
+}
+.manual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+.manual-card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--ifm-background-surface-color);
+}
+.manual-card h3 { margin-top: 0; }
