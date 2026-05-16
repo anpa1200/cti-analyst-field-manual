@@ -10,8 +10,6 @@ A single IOC is a starting point, not a campaign; document it in an [Infrastruct
 
 The analyst must define cluster boundaries and false-positive risk. Without boundaries, pivoting becomes uncontrolled graph expansion.
 
-![IOC and Sandbox Output Analysis — five-step workflow: preserve context, enrich, validate, score, and act with confidence tier and analyst judgment](/img/ioc-sandbox-analysis.png)
-
 ## CTI Relevance
 
 Infrastructure pivoting supports scoping, attribution hypotheses, detection ideas, and collection planning.
@@ -36,10 +34,6 @@ Infrastructure pivoting supports scoping, attribution hypotheses, detection idea
 ## Example / Mini Case
 
 A domain resolves to a shared hosting IP. Pivoting to every domain on that IP would create noise. A stronger pivot would require shared certificate attributes, unique URL paths, matching malware configuration, or close temporal overlap.
-
-![Operation DragonRx — Reconnaissance Mapping: ATT&CK techniques, tools, and operational notes for pre-compromise discovery actions](/img/operation-dragonrx-recon-mapping.png)
-
-![Operation DragonRx — Full Pivot Chain: privilege escalation path from WEB01 foothold to full domain compromise via lateral movement](/img/operation-dragonrx-pivot-chain.png)
 
 ## Analyst Checklist
 

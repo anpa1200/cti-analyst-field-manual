@@ -10,8 +10,6 @@ The Diamond Model helps structure CTI around four core features: adversary, capa
 
 An analyst can often know capability and infrastructure while adversary remains unknown. That is still useful CTI if the uncertainty is explicit.
 
-![Diamond Model applied to telecom sector events — adversary, capability, infrastructure, and victim with confidence and collection gap fields](/img/diamond-model-telecom.png)
-
 ## CTI Relevance
 
 The model is especially useful for infrastructure pivoting, actor clustering, and alternative hypotheses.
@@ -35,8 +33,6 @@ The model is especially useful for infrastructure pivoting, actor clustering, an
 ## Example / Mini Case
 
 A domain, certificate, lure theme, and payload family may define a campaign cluster. The adversary remains Unknown. The next collection tasks are passive DNS, malware config review, lure recipient analysis, and overlap checks with known clusters.
-
-![Operation DragonRx — Diamond Model showing APT41-emulated adversary cluster with sourced capability, infrastructure, and victim vertices](/img/diamond-model-operation-dragonrx.png)
 
 ## Analyst Checklist
 

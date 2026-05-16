@@ -8,8 +8,6 @@ Define where AI assistance is allowed, restricted, or prohibited in CTI work.
 
 AI output cannot independently create attribution, confidence, or production-readiness decisions. The analyst owns the judgment. This is not a preference — it is a requirement. An AI-generated confidence level is not a confidence level; it is an unchecked assertion.
 
-![AI Governance Model — what AI is allowed and not allowed to do, with governance safeguards](/img/ai-governance-model.png)
-
 ## Data Classification Matrix
 
 Before any AI use, classify the data:
@@ -22,8 +20,6 @@ Before any AI use, classify the data:
 | Restricted / Prohibited | Credentials, leaked data, malware source code, exploit instructions, victim-sensitive information | Never | Never |
 
 If data classification is unclear, treat it as internal sensitive and do not process it in public AI tools.
-
-![Phase 0: Project Charter and Guardrails — metric floors, AI governance checklist, and guardrails required before project execution](/img/ai-project-charter-guardrails.png)
 
 ## Task Control Matrix
 

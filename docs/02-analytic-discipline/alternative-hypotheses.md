@@ -21,8 +21,6 @@ Alternative hypotheses are essential for attribution, infrastructure clustering,
 - Treating the best-known actor as the default answer.
 - Failing to say what evidence would discriminate between hypotheses.
 
-![Common CTI Bias Patterns — five analytical traps that distort threat intelligence judgments](/img/cti-bias-patterns.png)
-
 ## Practical Workflow
 
 1. State the main hypothesis.

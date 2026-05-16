@@ -23,8 +23,6 @@ Only **DRL-9** can be called production detection coverage. Anything below DRL-9
 | 8 | SOC pilot complete | SOC triage playbook, owner, escalation path, rollback plan, and pilot feedback complete. |
 | 9 | Production coverage | Approved, monitored, reviewed, owned, tested, tuned, and rollback-ready. |
 
-![Phase 3: Telemetry and Data Readiness — DRL scale with collection gap, retention window, and normalization state per telemetry source](/img/telemetry-data-readiness.png)
-
 ## Required Validation Artifacts
 
 | Artifact | Required By | Notes |
