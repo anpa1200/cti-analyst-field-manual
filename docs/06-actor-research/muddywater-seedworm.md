@@ -64,9 +64,13 @@ Last Reviewed:
 
 - [Actor Profile Template](actor-profile-template.md)
 - [Israel CTI MuddyWater Profile](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/muddywater/)
+- [Israel CTI RMM Tools](https://anpa1200.github.io/israel-government-threat-actors-cti/tools/remote-monitoring-and-management-tools/)
+- [Worked Example — MuddyWater Full Public-Source Case](../worked-examples/actor-research.md)
 - [Intelligence to Detection](../08-cti-to-detection/intelligence-to-detection.md)
 
 ## References
 
+- [MITRE ATT&CK G0069 — MuddyWater](https://attack.mitre.org/groups/G0069/)
+- [CISA/NSA/FBI/CNMF Advisory AA22-055A — Iranian Government-Sponsored Actors](https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-055a)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
-- [CTI Project Ecosystem](../ecosystem.md)

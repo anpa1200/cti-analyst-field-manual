@@ -60,9 +60,15 @@ Hunt / Detection Candidate:
 
 - [Intelligence to Detection](../08-cti-to-detection/intelligence-to-detection.md)
 - [Detection Backlog](../08-cti-to-detection/detection-backlog.md)
+- [Telemetry Requirements](../08-cti-to-detection/telemetry-requirements.md)
 - [Source Reliability](../01-cti-foundations/source-reliability.md)
+- [Israel CTI — Detection Lifecycle](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-engineering/detection-lifecycle/)
+- [Israel CTI — TTP-Detection Matrix](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/ttp-detection-matrix/)
 
 ## References
 
+- [Pyramid of Pain — David Bianco (original 2013)](https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html)
+- [The Diamond Model of Intrusion Analysis — Caltagirone, Pendergast, Betz](https://act.globalcyberalliance.org/index.php/The_Diamond_Model_of_Intrusion_Analysis)
+- [MITRE ATT&CK Resources — Threat-Informed Defense](https://attack.mitre.org/resources/)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
-- [CTI Project Ecosystem](../ecosystem.md)

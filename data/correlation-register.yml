@@ -1,51 +1,233 @@
+---
+# CTI Analyst Field Manual — Cross-Project Correlation Register
+# Schema version: 1.1
+# Validates with: python3 -c "import yaml, sys; yaml.safe_load(sys.stdin)" < data/correlation-register.yml
+# Canonical owner: CTI Analyst Field Manual
+# Consuming projects must use required_terms and must not use forbidden_claim_patterns.
+
 last_checked: "2026-05-16"
+last_commit: "7dbf4ed"
+schema_version: "1.1"
+
 projects:
   field_manual:
     name: "CTI Analyst Field Manual"
     role: "Canonical CTI tradecraft and methodology."
     url: "https://anpa1200.github.io/cti-analyst-field-manual/"
+    last_reviewed: "2026-05-16"
   customer_driven_ai_cti:
     name: "Customer-Driven AI CTI Project"
     role: "Customer delivery methodology and gated execution."
     url: "https://anpa1200.github.io/customer-driven-ai-cti-project/"
+    last_reviewed: "2026-05-16"
   israel_government_threat_actors_cti:
     name: "Israel Government Threat Actors CTI"
     role: "Actor, tool, TTP, source, hunt, and detection knowledge base."
     url: "https://anpa1200.github.io/israel-government-threat-actors-cti/"
+    last_reviewed: "2026-05-16"
+
 shared_concepts:
   evidence_labels:
-    owner: field_manual
-    required_values: ["Observed", "Reported", "Assessed", "Inferred", "Unknown", "Gap"]
-    rule: "Every material claim must carry an evidence label or be excluded from finished intelligence."
+    canonical_owner: field_manual
+    consuming_projects:
+      - customer_driven_ai_cti
+      - israel_government_threat_actors_cti
+    required_terms:
+      - "Observed"
+      - "Reported"
+      - "Assessed"
+      - "Inferred"
+      - "Unknown"
+      - "Gap"
+    forbidden_claim_patterns:
+      - "confirmed by" # requires Observed or primary-source Reported with citation
+      - "definitively attributed" # requires multi-factor evidence and explicit confidence
+      - "proven" # not applicable to intelligence judgments
+    consistency_rule: >
+      Every material claim must carry one of the six evidence labels or be excluded from
+      finished intelligence. Labels must appear on the claim, not only on the source row.
+    authoritative_reference: "../docs/01-cti-foundations/evidence-labels.md"
+
   source_reliability:
-    owner: field_manual
-    model: "A-F source reliability and 1-6 information credibility."
-    rule: "Reliability rates the source; credibility rates the claim."
+    canonical_owner: field_manual
+    consuming_projects:
+      - customer_driven_ai_cti
+      - israel_government_threat_actors_cti
+    required_terms:
+      - "A" # Reliable
+      - "B" # Usually reliable
+      - "C" # Fairly reliable
+      - "D" # Not usually reliable
+      - "E" # Unreliable
+      - "F" # Reliability cannot be judged
+      - "1" # Confirmed
+      - "2" # Probably true
+      - "3" # Possibly true
+      - "4" # Doubtful
+      - "5" # Improbable
+      - "6" # Cannot be judged
+    forbidden_claim_patterns:
+      - "reliable source confirmed" # source reliability A does not make the claim Confirmed (1)
+    consistency_rule: >
+      Source reliability (A-F) rates the source's track record and access.
+      Information credibility (1-6) rates the individual claim.
+      A source can be rated A and still produce a claim rated 4 or 5.
+      Ratings are review prompts, not mathematical truth.
+    authoritative_reference: "../docs/01-cti-foundations/source-reliability.md"
+
   confidence_language:
-    owner: field_manual
-    values: ["High confidence", "Medium confidence", "Low confidence"]
-    rule: "Confidence is not probability; justify evidence quality, access, corroboration, and analytic consistency."
+    canonical_owner: field_manual
+    consuming_projects:
+      - customer_driven_ai_cti
+      - israel_government_threat_actors_cti
+    required_terms:
+      - "High confidence"
+      - "Medium confidence"
+      - "Low confidence"
+    forbidden_claim_patterns:
+      - "high confidence" # must be followed by a reason; bare assertion is forbidden
+      - "we assess with confidence" # non-standard; use High/Medium/Low plus reason
+    consistency_rule: >
+      Confidence is not probability. Confidence reflects evidence quality, source access,
+      corroboration, and analytic consistency. Every confidence statement must include
+      a reason. Confidence can coexist with acknowledged gaps.
+    authoritative_reference: "../docs/01-cti-foundations/confidence-language.md"
+
   attack_mapping_rules:
-    owner: field_manual
-    rule: "Map behavior only when evidence supports a technique; unsupported mapping is Gap / Not mapped."
+    canonical_owner: field_manual
+    consuming_projects:
+      - customer_driven_ai_cti
+      - israel_government_threat_actors_cti
+    required_terms:
+      - "Gap / Not mapped" # for unsupported technique assignments
+    forbidden_claim_patterns:
+      - "covers T1" # technique coverage claim requires DRL-9 detection, not mapping
+      - "attributed via ATT&CK" # ATT&CK is not attribution evidence
+    consistency_rule: >
+      Map behavior only when source-backed evidence supports the technique.
+      Unsupported assignments must be marked "Gap / Not mapped."
+      Mapping does not constitute detection coverage. Coverage requires DRL-9.
+    authoritative_reference: "../docs/03-frameworks/mitre-attack-as-working-tool.md"
+
   drl_model:
-    owner: field_manual
-    rule: "Only DRL-9 may be called production coverage."
+    canonical_owner: field_manual
+    consuming_projects:
+      - customer_driven_ai_cti
+      - israel_government_threat_actors_cti
+    required_terms:
+      - "DRL-0"
+      - "DRL-1"
+      - "DRL-2"
+      - "DRL-3"
+      - "DRL-4"
+      - "DRL-5"
+      - "DRL-6"
+      - "DRL-7"
+      - "DRL-8"
+      - "DRL-9"
+    forbidden_claim_patterns:
+      - "production detection" # only valid at DRL-9 with approval artifacts
+      - "production coverage" # only valid at DRL-9 with approval artifacts
+      - "production alert"    # only valid at DRL-9 with approval artifacts
+    consistency_rule: >
+      Only DRL-9 may be called production detection coverage.
+      DRL-0 through DRL-8 are research, hunt, candidate, synthetic, baseline,
+      pilot, or validation states. Every detection or hunt must declare its DRL.
+    authoritative_reference: "../docs/08-cti-to-detection/detection-readiness-levels.md"
+
   soc_handoff:
-    owner: field_manual
-    rule: "Include first checks, logs, false positives, escalation threshold, response authority, and feedback."
+    canonical_owner: field_manual
+    consuming_projects:
+      - customer_driven_ai_cti
+    required_terms:
+      - "first checks"
+      - "required logs"
+      - "false positives"
+      - "escalation threshold"
+      - "response authority"
+      - "feedback"
+    forbidden_claim_patterns:
+      - "investigate suspicious activity" # too vague; first checks must be concrete
+    consistency_rule: >
+      Every SOC handoff must include first checks, required logs, false positives,
+      escalation threshold, response authority, and a feedback loop.
+      SOC cannot be expected to read the source CTI report to triage an alert.
+    authoritative_reference: "../docs/08-cti-to-detection/soc-handoff.md"
+
   ai_assisted_cti_controls:
-    owner: field_manual
-    rule: "AI cannot independently decide attribution, confidence, or production readiness."
+    canonical_owner: field_manual
+    consuming_projects:
+      - customer_driven_ai_cti
+    required_terms:
+      - "human review"
+      - "analyst review"
+    forbidden_claim_patterns:
+      - "AI confirmed" # AI cannot confirm; analyst confirms
+      - "AI attributed" # AI cannot attribute; analyst attributes
+      - "AI assessed" # AI output is draft; analyst assesses
+    consistency_rule: >
+      AI output cannot independently create attribution, confidence, or
+      production-readiness decisions. Every AI-assisted CTI output must record
+      model used, source inputs, human reviewer, and corrections made.
+    authoritative_reference: "../docs/09-ai-assisted-cti/ai-cti-control-matrix.md"
+
   customer_delivery_gates:
-    owner: customer_driven_ai_cti
-    rule: "Customer work must move through scoped, gated artifacts."
+    canonical_owner: customer_driven_ai_cti
+    consuming_projects:
+      - field_manual
+      - israel_government_threat_actors_cti
+    required_terms:
+      - "gate"
+      - "approval"
+    consistency_rule: >
+      Customer work must move through scoped, gated artifacts.
+      Gates must not be bypassed even if work appears complete.
+    authoritative_reference: "https://anpa1200.github.io/customer-driven-ai-cti-project/"
+
   actor_tool_ttp_detection_knowledge:
-    owner: israel_government_threat_actors_cti
-    rule: "Actor-specific claims require source, evidence label, freshness date, and caveat."
+    canonical_owner: israel_government_threat_actors_cti
+    consuming_projects:
+      - field_manual
+      - customer_driven_ai_cti
+    required_terms:
+      - "source"
+      - "evidence label"
+      - "freshness date"
+      - "caveat"
+    forbidden_claim_patterns:
+      - "actor X uses" # requires source, evidence label, and date
+      - "confirmed actor" # requires multi-source, primary reporting, and confidence statement
+    consistency_rule: >
+      Actor-specific claims require source, evidence label, freshness date, and caveat.
+      Unsourced actor claims are not allowed in finished intelligence.
+    authoritative_reference: "https://anpa1200.github.io/israel-government-threat-actors-cti/"
+
+  production_readiness_boundary:
+    canonical_owner: field_manual
+    consuming_projects:
+      - customer_driven_ai_cti
+      - israel_government_threat_actors_cti
+    forbidden_claim_patterns:
+      - "production detection" # requires DRL-9 artifacts
+      - "production coverage" # requires DRL-9 artifacts
+      - "production-ready"    # requires DRL-9 artifacts
+    consistency_rule: >
+      Research, synthetic testing, pilot content, and hunting hypotheses must not
+      be represented as production SOC coverage without DRL-9 approval artifacts.
+    authoritative_reference: "../docs/08-cti-to-detection/detection-readiness-levels.md"
+
 review_workflow:
-  - "Update canonical owner first."
-  - "Update consuming project links and language."
-  - "Run build and link validation."
-  - "Record last checked date."
-  - "Do not promote detection maturity without validation artifacts."
+  - step: 1
+    action: "Update canonical owner page first."
+  - step: 2
+    action: "Update consuming project links and language to match canonical terms."
+  - step: 3
+    action: "Verify no forbidden_claim_patterns appear in the consuming project."
+  - step: 4
+    action: "Run build and link validation in each changed repository."
+  - step: 5
+    action: "Record last_checked date and last_commit hash."
+  - step: 6
+    action: "Do not promote detection maturity without validation artifacts."
+  - step: 7
+    action: "Run YAML lint on this file: python3 -c \"import yaml, sys; yaml.safe_load(sys.stdin)\" < data/correlation-register.yml"

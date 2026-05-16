@@ -17,6 +17,8 @@ jobs:
         with:
           node-version: 20
           cache: npm
+      - name: Validate YAML governance register
+        run: python3 -c "import yaml, sys; yaml.safe_load(open('data/correlation-register.yml')); print('YAML valid')"
       - name: Install dependencies
         run: npm ci
       - name: Check local links

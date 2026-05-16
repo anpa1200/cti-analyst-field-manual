@@ -56,10 +56,15 @@ Recommended Handling:
 ## Cross-Links
 
 - [Attribution Methodology](attribution-methodology.md)
-- [Persona-aware Israel CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/handala/)
 - [Alternative Hypotheses](../02-analytic-discipline/alternative-hypotheses.md)
+- [Evidence Strength Ladder](evidence-strength-ladder.md)
+- [Persona-aware Israel CTI — Handala](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/handala/)
+- [Israel CTI Operating Standard — Claim Rules](https://anpa1200.github.io/israel-government-threat-actors-cti/methodology/operating-standard/)
+- [Customer project — Evidence Label Contracts](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/standard/artifact-contracts/)
 
 ## References
 
+- [The Diamond Model of Intrusion Analysis — Caltagirone, Pendergast, Betz](https://act.globalcyberalliance.org/index.php/The_Diamond_Model_of_Intrusion_Analysis)
+- [Words of Estimative Probability — Sherman Kent, CIA](https://www.cia.gov/resources/csi/static/Words-of-Estimative-Probability.pdf)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
-- [CTI Project Ecosystem](../ecosystem.md)

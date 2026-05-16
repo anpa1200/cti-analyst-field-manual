@@ -59,8 +59,14 @@ Collection Task:
 - [Attribution Methodology](../04-attribution/attribution-methodology.md)
 - [False Flag Analysis](../04-attribution/false-flag-analysis.md)
 - [Contradiction Handling](contradiction-handling.md)
+- [Sherman Kent for CTI](sherman-kent-for-cti.md)
+- [Evidence Strength Ladder](../04-attribution/evidence-strength-ladder.md)
+- [Israel CTI — Operating Standard](https://anpa1200.github.io/israel-government-threat-actors-cti/methodology/operating-standard/)
 
 ## References
 
+- [Psychology of Intelligence Analysis — Richards Heuer, CIA](https://www.cia.gov/resources/csi/static/psychology-of-intelligence-analysis.pdf)
+- [Words of Estimative Probability — Sherman Kent, CIA](https://www.cia.gov/resources/csi/static/Words-of-Estimative-Probability.pdf)
+- [Structured Analytic Techniques for Intelligence Analysis — Heuer and Pherson](https://us.sagepub.com/en-us/nam/structured-analytic-techniques-for-intelligence-analysis/book258204)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
-- [CTI Project Ecosystem](../ecosystem.md)

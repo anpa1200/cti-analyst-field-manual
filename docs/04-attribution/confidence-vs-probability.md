@@ -55,9 +55,14 @@ Decision Impact:
 
 - [Confidence Language](../01-cti-foundations/confidence-language.md)
 - [Estimative Language](../02-analytic-discipline/estimative-language.md)
+- [Sherman Kent for CTI](../02-analytic-discipline/sherman-kent-for-cti.md)
 - [Attribution Methodology](attribution-methodology.md)
+- [Evidence Strength Ladder](evidence-strength-ladder.md)
+- [Israel CTI — Scoring Models](https://anpa1200.github.io/israel-government-threat-actors-cti/methodology/scoring-models/)
 
 ## References
 
+- [Words of Estimative Probability — Sherman Kent, CIA](https://www.cia.gov/resources/csi/static/Words-of-Estimative-Probability.pdf)
+- [Psychology of Intelligence Analysis — Richards Heuer, CIA](https://www.cia.gov/resources/csi/static/psychology-of-intelligence-analysis.pdf)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
-- [CTI Project Ecosystem](../ecosystem.md)

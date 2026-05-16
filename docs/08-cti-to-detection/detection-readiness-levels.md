@@ -97,6 +97,8 @@ Review date: 2026-06-16
 - [SOC Handoff](soc-handoff.md)
 - [Detection Backlog Item Template](../10-templates/detection-backlog-item.md)
 - [Customer-Driven AI CTI Workflow](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/workflow/full-workflow-quick-reference/)
+- [Israel CTI — Detection Lifecycle](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-engineering/detection-lifecycle/)
+- [Israel CTI — Detection Status Dashboard](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-engineering/detection-status-dashboard/)
 
 ## References
 

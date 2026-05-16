@@ -76,6 +76,8 @@ Next Cycle Trigger:
 
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
+- [MITRE ATT&CK Resources — Threat-Informed Defense](https://attack.mitre.org/resources/)
+- [OASIS CTI Documentation — STIX and TAXII](https://oasis-open.github.io/cti-documentation/)
+- [MISP Documentation](https://www.misp-project.org/documentation/)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
-- [CTI Project Ecosystem](../ecosystem.md)

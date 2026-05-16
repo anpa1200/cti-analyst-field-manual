@@ -98,8 +98,20 @@ Gap Criteria:
 - [Collection Gap Register](../10-templates/collection-gap-register.md)
 - [Hunting Hypothesis Template](../08-cti-to-detection/hunting-hypothesis-template.md)
 
+## Cross-Links
+
+- [Intelligence Cycle](intelligence-cycle.md)
+- [Source Register Template](../10-templates/source-register-template.md)
+- [Collection Gap Register](../10-templates/collection-gap-register.md)
+- [Hunting Hypothesis Template](../08-cti-to-detection/hunting-hypothesis-template.md)
+- [Customer project PIR gate artifacts](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/standard/artifact-contracts/)
+- [Customer delivery phases and quality gates](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/)
+- [Israel CTI Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/)
+
 ## References
 
-- Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
+- [MITRE ATT&CK Resources — Threat-Informed Defense](https://attack.mitre.org/resources/)
+- [OASIS CTI Documentation — STIX and TAXII](https://oasis-open.github.io/cti-documentation/)
+- [MISP Documentation](https://www.misp-project.org/documentation/)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
-- [CTI Project Ecosystem](../ecosystem.md)

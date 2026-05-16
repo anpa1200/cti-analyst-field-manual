@@ -63,5 +63,7 @@ Owner:
 
 ## References
 
+- [MITRE ATT&CK Resources](https://attack.mitre.org/resources/)
+- [Sigma Documentation](https://sigmahq.io/docs/)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
-- [CTI Project Ecosystem](../ecosystem.md)

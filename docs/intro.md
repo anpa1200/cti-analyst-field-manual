@@ -1,5 +1,7 @@
 # CTI Analyst Field Manual
 
+![CTI Analyst Field Manual — Authoritative Edition](/img/field-manual-cover.png)
+
 ## Purpose
 
 This manual provides a structured operating model for cyber threat intelligence work: from [collection requirements](01-cti-foundations/pir-sir-eei.md) to [evidence handling](01-cti-foundations/evidence-labels.md), [analytic judgment](02-analytic-discipline/sherman-kent-for-cti.md), [infrastructure pivoting](05-infrastructure-pivoting/single-ioc-to-network.md), [actor profiling](06-actor-research/actor-profile-template.md), [hunting hypotheses](08-cti-to-detection/hunting-hypothesis-template.md), [detection engineering](08-cti-to-detection/intelligence-to-detection.md), [SOC handoff](08-cti-to-detection/soc-handoff.md), and executive communication.

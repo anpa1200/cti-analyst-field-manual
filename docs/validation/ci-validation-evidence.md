@@ -2,42 +2,81 @@
 
 ## Purpose
 
-Document build and link-validation evidence so reviewers can distinguish configured quality controls from proven quality controls.
+Document build and link-validation evidence so reviewers can distinguish **configured** quality controls from **proven** quality controls. This page is updated on each release. Do not treat "configured" as "passed."
 
-## Current Validation Scope
+## Critical Distinction
 
-| Check | Command | Status |
-|---|---|---|
-| Docusaurus build | `npm run build` | Passed locally on 2026-05-16 |
-| Internal markdown/link validation | `npm run check:links` | Passed locally on 2026-05-16 |
-| GitHub Pages build | `.github/workflows/deploy-pages.yml` | Configured |
-| Pull request build | `.github/workflows/build.yml` | Configured |
+| Status | Meaning |
+|---|---|
+| Configured | The check is defined in CI workflow but no run result is recorded here. |
+| Passed locally | The check was run on the developer machine; not a CI artifact. |
+| CI passed — run recorded | A GitHub Actions run ID is recorded and the artifact is traceable. |
 
-## Broken-Link Report
+No check is treated as audit-grade evidence unless a run ID or commit hash is recorded.
 
-Local internal-link validation on 2026-05-16 found zero internal Markdown link failures after this hardening pass.
+## Latest Validated State
 
-External link availability is not treated as deterministic CI because public sites, Medium, GitHub Pages, and PDF hosting can rate-limit or temporarily fail. External references should use access dates and archive/fallback links when they become report-critical.
+| Field | Value |
+|---|---|
+| Release label | 0.2.0 |
+| Commit hash | 7dbf4ed |
+| Validation date | 2026-05-16 |
+| Validator | Local environment (Ubuntu 6.17.0, Node 20, Python 3) |
+| GitHub Actions run ID | Pending first push to remote main branch |
+| GitHub Pages deploy ID | Pending first push to remote main branch |
 
-## CI Quality Boundary
+## Checks Executed Locally — 2026-05-16
 
-Passing CI means the site builds and internal links resolve. It does not mean:
+| Check | Command | Result | Evidence |
+|---|---|---|---|
+| YAML lint — governance register | `python3 -c "import yaml; yaml.safe_load(open('data/correlation-register.yml'))"` | **Passed** — YAML valid. Keys confirmed: last_checked, last_commit, schema_version, projects, shared_concepts, review_workflow | Local stdout, 2026-05-16 |
+| Internal Markdown link validation | `npm run check:links` (runs `scripts/check_links.py`) | **Passed** — `Local Markdown link check passed: 0 broken links.` | Local stdout, 2026-05-16 |
+| Docusaurus build | `npm run build` | **Passed** — `Generated static files in "build".` | Local stdout, 2026-05-16, build/ directory confirmed present |
+
+## CI Workflow Configuration
+
+| Workflow | File | Trigger | Steps Configured |
+|---|---|---|---|
+| Build | `.github/workflows/build.yml` | push and PR to main | YAML lint → npm ci → check:links → build |
+| Deploy | `.github/workflows/deploy-pages.yml` | push to main | YAML lint → npm ci → check:links → build → upload artifact → deploy pages |
+
+Steps added in commit 7dbf4ed: YAML lint step added to both workflows before `npm ci`.
+
+## What CI Does Not Prove
+
+Passing CI means the YAML is valid, the site builds, and internal Markdown links resolve. It does not mean:
 
 - every external source still returns HTTP 200;
 - every campaign claim is true;
 - every detection is production-ready;
-- every Medium or GitHub link is immune to future change;
-- every template has been reviewed by a second analyst.
+- every template has been reviewed by a second analyst;
+- any content has been externally peer-reviewed;
+- the site score is externally validated.
 
-## Required Future Evidence
+## External Link Policy
 
-- Copy latest successful GitHub Actions run ID into this page for each release.
-- Add external link-check summary with transient failures separated from hard 404s.
-- Add release evidence for any new DRL promotion.
-- Add reviewer sign-off for doctrine pages before claiming publication-grade status.
+External link availability is not treated as deterministic CI because public sites, Medium, GitHub Pages, and PDF hosting can rate-limit or temporarily fail. External references should use access dates. Report-critical references should record archive or fallback links when they become unavailable.
+
+External link check has not been run as a CI step. It remains a manual release-review action.
+
+## Required Evidence for Each Future Release
+
+Before any release can claim CI-proven status, record:
+
+- [ ] GitHub Actions run ID for the build workflow
+- [ ] GitHub Actions run ID for the deploy-pages workflow
+- [ ] Commit hash at time of run
+- [ ] YAML lint result from CI (not only local)
+- [ ] Internal link check result from CI
+- [ ] Build result from CI
+- [ ] External link check summary (manual, with hard 404s listed separately from transient failures)
+- [ ] Any DRL promotion artifacts if a detection was promoted
+- [ ] Reviewer sign-off if claiming publication-grade status
 
 ## Cross-Links
 
 - [Publication-Grade Review Backlog](../review/publication-grade-review.md)
+- [Link-Check Report](link-check-report.md)
 - [Limitations](../limitations.md)
 - [Authoritative Bibliography](../references/authoritative-bibliography.md)
+- [Cross-Project Correlation Register](../governance/cross-project-correlation-register.md)
