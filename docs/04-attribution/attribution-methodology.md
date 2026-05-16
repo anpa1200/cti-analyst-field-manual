@@ -6,9 +6,9 @@ Provide a strict, evidence-weighted approach to CTI attribution.
 
 ## Practitioner-Level Explanation
 
-Attribution is a probabilistic analytic judgment. It is not a label copied from a report and not a result of one IOC match. A defensible attribution weighs timing, targeting, language, infrastructure, tooling, TTPs, operational tempo, malware lineage, and alternative hypotheses.
+[Attribution](attribution-methodology.md) is a probabilistic analytic judgment. It is not a label copied from a report and not a result of one IOC match. A defensible attribution weighs timing, targeting, language, infrastructure, tooling, TTPs, operational tempo, malware lineage, and alternative hypotheses.
 
-Shared tooling does not prove actor identity. Victimology is supporting evidence, not proof. Infrastructure overlap can be weak or strong depending on exclusivity, timing, and reuse.
+[Shared tooling](https://anpa1200.github.io/israel-government-threat-actors-cti/tools/) does not prove actor identity. Victimology is supporting evidence, not proof. Infrastructure overlap can be weak or strong depending on exclusivity, timing, and reuse.
 
 ## CTI Relevance
 

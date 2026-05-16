@@ -2,6 +2,7 @@ module.exports = {
   "manualSidebar": [
     "intro",
     "ecosystem",
+    "fact-correlation",
     "limitations",
     {
       "type": "category",

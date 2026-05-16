@@ -2,12 +2,12 @@
 
 ## Purpose
 
-This manual provides a structured operating model for cyber threat intelligence work: from collection requirements to evidence handling, analytic judgment, infrastructure pivoting, actor profiling, hunting hypotheses, detection engineering, SOC handoff, and executive communication.
+This manual provides a structured operating model for cyber threat intelligence work: from [collection requirements](01-cti-foundations/pir-sir-eei.md) to [evidence handling](01-cti-foundations/evidence-labels.md), [analytic judgment](02-analytic-discipline/sherman-kent-for-cti.md), [infrastructure pivoting](05-infrastructure-pivoting/single-ioc-to-network.md), [actor profiling](06-actor-research/actor-profile-template.md), [hunting hypotheses](08-cti-to-detection/hunting-hypothesis-template.md), [detection engineering](08-cti-to-detection/intelligence-to-detection.md), [SOC handoff](08-cti-to-detection/soc-handoff.md), and executive communication.
 
 
 ## CTI Ecosystem
 
-This manual is one part of a three-book CTI ecosystem. Use [CTI Project Ecosystem](ecosystem.md) to move between general analyst tradecraft, customer delivery methodology, and the Israel-focused actor knowledge base.
+This manual is one part of a three-book CTI ecosystem. Use [CTI Project Ecosystem](ecosystem.md) and [Cross-Project Fact Correlation](fact-correlation.md) to move between general analyst tradecraft, customer delivery methodology, and the Israel-focused actor knowledge base.
 
 - [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) turns tradecraft into gated delivery.
 - [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) provides sector-specific actor, tool, TTP, hunt, and detection examples.
@@ -28,7 +28,7 @@ This is not a beginner glossary, an exploit guide, a malware analysis lab, an IO
 - Separate facts from assessments, inferences, assumptions, and gaps.
 - Rate source reliability and information credibility.
 - Explain confidence instead of decorating prose with confidence words.
-- Do not use ATT&CK as attribution evidence.
+- Do not use [ATT&CK](03-frameworks/mitre-attack-as-working-tool.md) as [attribution](04-attribution/attribution-methodology.md) evidence.
 - Treat infrastructure pivots as hypotheses until bounded by corroboration.
 - Convert CTI into decisions, hunts, detections, SOC actions, or documented gaps.
 

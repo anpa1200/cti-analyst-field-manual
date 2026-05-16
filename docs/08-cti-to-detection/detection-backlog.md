@@ -6,7 +6,7 @@ Organize CTI-derived detection candidates by value, evidence, telemetry, readine
 
 ## Practitioner-Level Explanation
 
-A detection backlog is not a wish list. Each item should record source behavior, evidence, expected value, telemetry dependency, false-positive risk, owner, readiness level, and promotion criteria. Backlog discipline prevents teams from losing good hypotheses or promoting immature logic too early.
+A [detection backlog](detection-backlog.md) is not a wish list; compare maturity against the Israel CTI [Detection Status Dashboard](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-engineering/detection-status-dashboard/). Each item should record source behavior, evidence, expected value, telemetry dependency, false-positive risk, owner, readiness level, and promotion criteria. Backlog discipline prevents teams from losing good hypotheses or promoting immature logic too early.
 
 ## CTI Relevance
 

@@ -6,9 +6,9 @@ Use Handala as a model for separating public persona claims from operational clu
 
 ## Practitioner-Level Explanation
 
-Handala-style reporting requires strict persona discipline. A public claim, a Telegram post, a defacement message, a leaked-data claim, and a verified intrusion are different evidence classes.
+[Handala / Void Manticore](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/handala/) reporting requires strict persona discipline. A public claim, a Telegram post, a defacement message, a leaked-data claim, and a verified intrusion are different evidence classes.
 
-The analyst should treat Handala as a claim-heavy persona unless stronger sources connect a specific operation to a tracked cluster such as Void Manticore. Do not repost leaked material. Do not treat persona messaging as telemetry.
+The analyst should treat Handala as a claim-heavy persona unless stronger sources connect a specific operation to a tracked cluster such as Void Manticore. Do not repost leaked material; use [false-flag and persona-claim handling](../04-attribution/false-flag-analysis.md) instead. Do not treat persona messaging as telemetry.
 
 ## CTI Relevance
 

@@ -6,9 +6,9 @@ Use ATT&CK to organize observed behavior and detection ideas without turning it 
 
 ## Practitioner-Level Explanation
 
-ATT&CK is a behavior taxonomy. It helps analysts describe what happened, compare procedures, identify telemetry requirements, and communicate with detection engineers. It does not prove who performed the activity.
+[ATT&CK](https://attack.mitre.org/) is a behavior taxonomy. It helps analysts describe what happened, compare procedures, identify telemetry requirements, and communicate with detection engineers. It does not prove who performed the activity.
 
-A useful mapping includes technique ID, technique name, tactic, procedure, evidence, source, confidence, mapping quality, detection idea, and limitations. Actor-level mappings are weaker than procedure-level mappings tied to telemetry.
+A useful mapping includes technique ID, technique name, tactic, procedure, [evidence](../01-cti-foundations/evidence-labels.md), source, [confidence](../01-cti-foundations/confidence-language.md), mapping quality, [detection idea](../08-cti-to-detection/detection-backlog.md), and limitations. Use the Israel CTI [TTP To Detection Matrix](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/ttp-detection-matrix/) for concrete examples. Actor-level mappings are weaker than procedure-level mappings tied to telemetry.
 
 ## CTI Relevance
 

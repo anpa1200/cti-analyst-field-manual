@@ -34,7 +34,7 @@ Good CTI helps teams prioritize limited defensive resources. It answers question
 ## Practical Workflow
 
 1. Define the decision or question.
-2. Convert the decision into PIRs and SIRs.
+2. Convert the decision into [PIRs and SIRs](pir-sir-eei.md).
 3. Collect sources and rate reliability.
 4. Extract claims and label evidence.
 5. Separate facts, assessments, inferences, assumptions, and gaps.

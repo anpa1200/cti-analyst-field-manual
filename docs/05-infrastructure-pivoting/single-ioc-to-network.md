@@ -6,7 +6,7 @@ Explain how to pivot from one indicator to a bounded infrastructure hypothesis.
 
 ## Practitioner-Level Explanation
 
-A single IOC is a starting point, not a campaign. Pivoting expands from a seed indicator to related domains, IPs, certificates, URLs, hosting, malware configs, and telemetry observations.
+A single IOC is a starting point, not a campaign; document it in an [Infrastructure Pivot Log](../10-templates/infrastructure-pivot-log.md) before expanding. [Pivoting](single-ioc-to-network.md) expands from a seed indicator to related domains, IPs, certificates, URLs, hosting, malware configs, and telemetry observations.
 
 The analyst must define cluster boundaries and false-positive risk. Without boundaries, pivoting becomes uncontrolled graph expansion.
 

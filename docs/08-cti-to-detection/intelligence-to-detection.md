@@ -6,9 +6,9 @@ Convert CTI claims into telemetry requirements, hunts, detections, SOC actions, 
 
 ## Practitioner-Level Explanation
 
-CTI-to-detection is a chain, not a single translation step. A source reports behavior. The analyst labels evidence, assesses relevance, identifies telemetry, writes a hunt hypothesis, validates false positives, and only then promotes detection logic.
+[CTI-to-detection](intelligence-to-detection.md) is a chain, not a single translation step; the Customer project turns that chain into [delivery gates](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/). A source reports behavior. The analyst labels evidence, assesses relevance, identifies telemetry, writes a hunt hypothesis, validates false positives, and only then promotes detection logic.
 
-The actor name is usually less important than the behavior and observable.
+The actor name is usually less important than the behavior and observable; use the Israel CTI [Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/) only after evidence is labeled.
 
 ## CTI Relevance
 

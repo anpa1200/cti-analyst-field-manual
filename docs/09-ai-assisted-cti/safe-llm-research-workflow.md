@@ -6,7 +6,7 @@ Define a safe workflow for using LLMs in public, defensive CTI research.
 
 ## Practitioner-Level Explanation
 
-Safe LLM use starts with scope and data handling. Public TLP:CLEAR material may be appropriate for external tools. Internal telemetry, credentials, victim data, proprietary reporting, or sensitive incident data should not be pasted into public models.
+[Safe LLM use](safe-llm-research-workflow.md) starts with scope and data handling; use Customer project [AI governance](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/) for delivery work. Public TLP:CLEAR material may be appropriate for external tools. Internal telemetry, credentials, victim data, proprietary reporting, or sensitive incident data should not be pasted into public models.
 
 The model should be asked to produce structured claims, source links, confidence caveats, and gaps. The analyst verifies everything.
 

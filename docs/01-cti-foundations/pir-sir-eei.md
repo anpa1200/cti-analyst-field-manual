@@ -10,7 +10,7 @@ PIRs, SIRs, and EEIs convert broad curiosity into answerable intelligence work.
 
 A **PIR** is the high-level intelligence question tied to a decision. A **SIR** breaks that question into specific sub-questions. An **EEI** defines the concrete information needed to answer a SIR.
 
-The distinction matters because analysts often mistake a topic for a requirement. "MuddyWater" is a topic. "Which MuddyWater behaviors reported since 2024 are observable with our endpoint and identity telemetry?" is closer to a PIR.
+The distinction matters because analysts often mistake a topic for a requirement. "[MuddyWater](../06-actor-research/muddywater-seedworm.md)" is a topic. "Which [MuddyWater behaviors reported since 2024](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/muddywater/) are observable with our endpoint and identity telemetry?" is closer to a PIR.
 
 ## CTI Relevance
 
