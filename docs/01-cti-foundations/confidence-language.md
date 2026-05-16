@@ -67,5 +67,7 @@ What Would Change Confidence:
 
 ## References
 
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
+- [Words of Estimative Probability](https://www.cia.gov/resources/csi/static/Words-of-Estimative-Probability.pdf)
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)

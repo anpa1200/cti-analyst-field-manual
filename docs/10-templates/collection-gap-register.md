@@ -67,3 +67,28 @@ status: Open
 
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)
+
+## Required vs Optional Fields
+
+Required: gap ID, affected requirement, gap statement, impact, collection path, owner, due date, status.
+
+Optional: risk acceptance owner, escalation date, related evidence IDs.
+
+## Pass / Fail Example
+
+Pass: The gap states exactly which telemetry field is missing and who must validate it.
+
+Fail: The gap says "need more intel" with no owner or collection path.
+
+## Complete Filled Example
+
+```text
+gap_id: GAP-DRL-001
+requirement: DET-CAND-001 promotion to DRL-6
+gap_statement: Unknown whether EDR records parent process for archive utilities.
+impact: Blocking validation.
+collection_path: Query 30-day EDR schema sample and confirm field retention.
+owner: Detection Engineering
+due_date: 2026-06-01
+status: Open
+```

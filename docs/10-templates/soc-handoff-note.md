@@ -69,3 +69,30 @@ feedback: True/false positive and tuning notes.
 
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)
+
+## Required vs Optional Fields
+
+Required: alert/hunt name, why it matters, first checks, required logs, false positives, escalation threshold, response authority, feedback loop, owner.
+
+Optional: screenshots, sample queries, known-good admin lists, rollback contact.
+
+## Pass / Fail Example
+
+Pass: SOC can triage without reading the original CTI report.
+
+Fail: Handoff says "investigate suspicious activity" with no first checks or escalation threshold.
+
+## Complete Filled Example
+
+```text
+handoff_id: SOC-RMM-001
+alert_or_hunt: Non-IT RMM Install Followed by External Session
+why_it_matters: Unauthorized RMM can provide persistent remote control.
+first_checks: host owner, install source, parent process, ticket, user, remote destination.
+required_logs: EDR, software inventory, identity, network, ticketing.
+false_positives: Helpdesk, vendor support, IT migration.
+escalation: No ticket plus external session plus suspicious pre-install activity.
+response: Follow IR policy; isolate only under incident commander authority.
+feedback: True positive, false positive class, missing fields, tuning request.
+owner: SOC Lead
+```

@@ -9,7 +9,7 @@ const modules = [
   ['Frameworks', 'ATT&CK, Kill Chain, Diamond Model, and Pyramid of Pain as working tools, not decoration.', '/docs/frameworks/mitre-attack-as-working-tool'],
   ['Attribution', 'How to weigh tooling, infrastructure, victimology, timing, language, and competing hypotheses.', '/docs/attribution/attribution-methodology'],
   ['Infrastructure Pivoting', 'How to move from one IOC to a defensible cluster while preserving limitations and uncertainty.', '/docs/infrastructure-pivoting/single-ioc-to-network'],
-  ['CTI to Detection', 'Convert intelligence into telemetry requirements, hunting hypotheses, detection logic, SOC handoff, and readiness levels.', '/docs/cti-to-detection/intelligence-to-detection']
+  ['CTI to Detection', 'Convert intelligence into telemetry requirements, hunting hypotheses, detection logic, SOC handoff, and readiness levels.', '/docs/cti-to-detection/detection-readiness-levels']
 ];
 
 export default function Home() {
@@ -50,6 +50,11 @@ export default function Home() {
           <div className="container">
             <h2>Analyst Workflow</h2>
             <p>Define PIRs and SIRs. Rate sources. Extract claims. Label evidence. Document assumptions and gaps. Build competing hypotheses. Map behavior only when supported. Convert findings into telemetry requirements, hunts, detection candidates, SOC handoff notes, and executive-ready judgments.</p>
+            <p>
+              Use the <Link to="/docs/role-based-reading-paths">role-based reading paths</Link>, the{' '}
+              <Link to="/docs/references/authoritative-bibliography">authoritative bibliography</Link>, and the{' '}
+              <Link to="/docs/review/publication-grade-review">publication-grade review backlog</Link> when reviewing the manual as a professional artifact.
+            </p>
           </div>
         </section>
         <section className="manual-section">

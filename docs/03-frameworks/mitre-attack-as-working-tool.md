@@ -68,5 +68,8 @@ Limitations:
 
 ## References
 
+- [MITRE ATT&CK](https://attack.mitre.org/)
+- [MITRE ATT&CK Resources](https://attack.mitre.org/resources/)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)

@@ -71,3 +71,30 @@ last_reviewed: 2026-05-16
 
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)
+
+## Required vs Optional Fields
+
+Required: primary name, alias table with source per alias, sponsor statement or Gap, targeting, TTPs, tools, evidence IDs, detection implications, gaps, freshness date.
+
+Optional: infrastructure notes, persona claims, timeline, confidence history, retired aliases.
+
+## Pass / Fail Example
+
+Pass: The profile separates actor, persona, sponsor, and tool claims, with source and confidence for each.
+
+Fail: The profile merges vendor aliases without source mapping and treats shared tooling as attribution proof.
+
+## Complete Filled Example
+
+```text
+actor_id: ACT-EXAMPLE-001
+primary_name: Example Cluster
+aliases: VendorA ExampleName (SRC-001); VendorB ExampleKitten (SRC-002)
+sponsor_assessment: Gap; no primary source confirms sponsor.
+targeting: Reported telecom and public-sector targeting, 2024-2026.
+ttps: T1505.003 web shell, EV-010, medium mapping confidence.
+tools: ExampleShell, Reported, SRC-002.
+detections: HUNT-EDGE-001, DET-CAND-003.
+gaps: No 2026 primary reporting on current infrastructure.
+last_reviewed: 2026-05-16
+```

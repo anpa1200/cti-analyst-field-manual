@@ -61,5 +61,7 @@ Confidence:
 
 ## References
 
+- [Lockheed Martin Cyber Kill Chain Paper](https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)

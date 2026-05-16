@@ -72,3 +72,33 @@ owner: Detection Engineering
 
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)
+
+## Required vs Optional Fields
+
+Required: detection ID, behavior title, evidence ID, telemetry, field mapping, logic summary, false positives, validation status, DRL, owner, review date, rollback plan.
+
+Optional: Sigma/KQL/SPL paths, ATT&CK mapping, SOC pilot notes, retirement reason.
+
+## Pass / Fail Example
+
+Pass: Detection is marked DRL-4 with draft logic and no production claim.
+
+Fail: Detection is marked production because it has a Sigma rule but no replay, owner, or SOC handoff.
+
+## Complete Filled Example
+
+```text
+detection_id: DET-CAND-001
+title: Non-IT RMM Install Followed by External Session
+source_behavior: Reported RMM abuse after initial access.
+evidence_id: EV-RMM-001
+telemetry: EDR software inventory, process, network, identity, ticketing
+field_mapping: host, user, product_name, process_name, destination_ip, ticket_id
+logic_summary: New RMM install on non-IT host followed by external session within 60 minutes.
+false_positives: Helpdesk deployment, approved vendor support.
+validation: Positive/negative synthetic tests pending.
+readiness: DRL-4 / Hunt
+owner: Detection Engineering
+review_date: 2026-06-16
+rollback_plan: Disable scheduled query and revert tuning list.
+```

@@ -32,11 +32,13 @@ Many CTI outputs fail because they stop at research notes. This field manual foc
 ## How To Use The Field Manual
 
 1. Start with [Intro](docs/intro.md) and [What Is CTI](docs/01-cti-foundations/what-is-cti.md).
-2. Define PIRs, SIRs, and EEIs before collecting sources.
-3. Use source reliability and evidence labels before making assessments.
-4. Apply analytic discipline before attribution or ATT&CK mapping.
-5. Convert intelligence into hunting hypotheses, detection backlog items, SOC handoff notes, and executive summaries.
-6. Use templates to keep outputs consistent and reviewable.
+2. Use [Role-Based Reading Paths](docs/role-based-reading-paths.md) if you are reviewing as a CTI analyst, detection engineer, SOC lead, executive, or hiring manager.
+3. Define PIRs, SIRs, and EEIs before collecting sources.
+4. Use source reliability and evidence labels before making assessments.
+5. Apply analytic discipline before attribution or ATT&CK mapping.
+6. Convert intelligence into hunting hypotheses, detection backlog items, SOC handoff notes, and executive summaries.
+7. Use templates to keep outputs consistent and reviewable.
+8. Use the [Authoritative Bibliography](docs/references/authoritative-bibliography.md) for doctrine sources; Medium is author/source inspiration, not the main authority for doctrine.
 
 ## Repository Structure
 
@@ -54,7 +56,12 @@ docs/
   08-cti-to-detection/
   09-ai-assisted-cti/
   10-templates/
+  governance/
+  review/
+  validation/
+  worked-examples/
   references/
+data/
 src/pages/index.js
 sidebars.js
 ```
@@ -66,6 +73,15 @@ sidebars.js
 - **Attribution review:** behavior cluster -> alternative hypotheses -> evidence strength ladder -> confidence statement.
 - **Infrastructure research:** seed IOC -> passive DNS/cert/ASN pivots -> cluster boundary -> limitations.
 - **CTI to detection:** source claim -> ATT&CK mapping -> telemetry requirement -> hunt hypothesis -> detection backlog -> SOC handoff.
+- **Detection maturity:** source-backed behavior -> telemetry mapping -> synthetic tests -> benign baseline -> historical replay -> SOC pilot -> DRL-9 production approval.
+
+## Validation
+
+- `npm run check:links` validates local Markdown links.
+- `npm run build` validates the Docusaurus site.
+- `npm run validate` runs both checks.
+- CI runs link validation before build. See [CI Validation Evidence](docs/validation/ci-validation-evidence.md).
+- Publication-grade gaps are tracked in [Publication-Grade Review Backlog](docs/review/publication-grade-review.md).
 
 ## Limitations
 

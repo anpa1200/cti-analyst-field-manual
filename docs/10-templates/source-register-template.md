@@ -75,3 +75,32 @@ downstream_links: EV-001, HUNT-003
 
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)
+
+## Required vs Optional Fields
+
+Required: source ID, publisher, title, URL or access location, publication date when available, accessed date, source type, reliability, credibility, limitations, downstream use.
+
+Optional: archive URL, archive hash, language, collection method, reviewer, next review date.
+
+## Pass / Fail Example
+
+Pass: A vendor report row includes title, URL, publication date, accessed date, A-F reliability, 1-6 credibility, a limitation, and linked evidence IDs.
+
+Fail: A row says "vendor blog" with no URL, no date, no access metadata, and no explanation of why the source is trusted.
+
+## Complete Filled Example
+
+```text
+source_id: SRC-ATTACK-001
+publisher: MITRE ATT&CK
+title: Enterprise ATT&CK documentation
+url: https://attack.mitre.org/
+publication_date: Ongoing
+accessed_date: 2026-05-16
+source_type: Framework documentation
+reliability: A
+credibility: 2
+summary: Official behavior taxonomy used for technique mapping.
+limitations: Not attribution evidence and not proof of detection coverage.
+downstream_links: ATT&CK mapping rules, DRL model, detection backlog.
+```

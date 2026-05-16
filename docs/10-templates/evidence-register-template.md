@@ -67,3 +67,30 @@ downstream_use: HUNT-002, DET-CAND-005
 
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)
+
+## Required vs Optional Fields
+
+Required: evidence ID, single claim, evidence label, source ID, reliability, credibility, confidence, confidence reason, contradiction or gap, downstream use.
+
+Optional: quote summary, analyst owner, review date, superseded-by field.
+
+## Pass / Fail Example
+
+Pass: One row records one claim and explains why confidence is medium.
+
+Fail: One row mixes targeting, tooling, attribution, and detection implications into a paragraph.
+
+## Complete Filled Example
+
+```text
+evidence_id: EV-ATTACK-001
+claim: ATT&CK mapping describes behavior and should not be used as actor attribution proof.
+evidence_label: Reported
+source_id: SRC-ATTACK-001
+source_reliability: A
+information_credibility: 2
+confidence: High confidence
+confidence_reason: Official framework documentation and consistent defensive practice.
+contradiction_or_gap: Campaign-specific mapping still requires separate evidence.
+downstream_use: ATT&CK mapping rules and detection backlog.
+```

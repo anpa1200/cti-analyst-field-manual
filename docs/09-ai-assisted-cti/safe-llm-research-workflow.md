@@ -65,5 +65,8 @@ Reviewer:
 
 ## References
 
+- [FIRST TLP 2.0](https://www.first.org/tlp/)
+- [OASIS CTI Documentation](https://oasis-open.github.io/cti-documentation/)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)

@@ -4,6 +4,8 @@
 
 This page keeps the three CTI books aligned so readers do not receive conflicting methodology, taxonomy, or production-readiness guidance.
 
+Last checked: **2026-05-16**. Machine-readable owner mapping is maintained in [Cross-Project Correlation Register](governance/cross-project-correlation-register.md) and `data/correlation-register.yml`.
+
 ## Canonical Project Roles
 
 | Project | Canonical Role | Do Not Treat As |
@@ -37,3 +39,9 @@ This page keeps the three CTI books aligned so readers do not receive conflictin
 3. When actor, tool, TTP, source, or detection facts change, update the Israel CTI project.
 4. Run Docusaurus builds for all affected projects.
 5. Re-check ecosystem and inline links after deployment.
+
+## Cross-Links
+
+- [Cross-Project Correlation Register](governance/cross-project-correlation-register.md)
+- [Detection Readiness Levels](08-cti-to-detection/detection-readiness-levels.md)
+- [AI CTI Control Matrix](09-ai-assisted-cti/ai-cti-control-matrix.md)

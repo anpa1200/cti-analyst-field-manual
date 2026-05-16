@@ -69,3 +69,29 @@ limitations: Attribution remains Unknown.
 
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)
+
+## Required vs Optional Fields
+
+Required: seed, pivot type, related indicator, time window, link strength, decision, reason, limitations.
+
+Optional: tool used, screenshot/hash of result, analyst owner, expiry date.
+
+## Pass / Fail Example
+
+Pass: A certificate pivot is accepted because of rare SAN pattern plus matching URL path in the same week.
+
+Fail: Every domain on the same ASN is treated as actor infrastructure.
+
+## Complete Filled Example
+
+```text
+pivot_id: PIV-014
+seed: login-example[.]com
+pivot_type: Certificate + URL path
+related_indicator: auth-example[.]com
+time_window: 2026-05-10 to 2026-05-14
+link_strength: Moderate
+decision: Accepted as candidate cluster, not attribution.
+reason: Same cert issuance window and same uncommon path structure.
+limitations: Could be shared phishing kit; actor remains Unknown.
+```

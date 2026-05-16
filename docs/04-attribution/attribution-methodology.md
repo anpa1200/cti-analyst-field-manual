@@ -67,5 +67,8 @@ Limitations:
 
 ## References
 
+- [Words of Estimative Probability](https://www.cia.gov/resources/csi/static/Words-of-Estimative-Probability.pdf)
+- [The Diamond Model of Intrusion Analysis](https://act.globalcyberalliance.org/index.php/The_Diamond_Model_of_Intrusion_Analysis)
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)

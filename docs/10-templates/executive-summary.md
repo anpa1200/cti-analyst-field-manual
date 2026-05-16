@@ -67,3 +67,28 @@ owner: SOC Lead.
 
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)
+
+## Required vs Optional Fields
+
+Required: decision, bottom line, why now, confidence, business impact, recommended actions, limitations, owner.
+
+Optional: risk rating, timeline, budget ask, appendix link.
+
+## Pass / Fail Example
+
+Pass: Executive can approve, defer, or reject a concrete action.
+
+Fail: Summary uses dramatic threat language but gives no decision or owner.
+
+## Complete Filled Example
+
+```text
+decision: Approve a 30-day hunt for unauthorized RMM use.
+bottom_line: Public reporting and local exposure justify a scoped hunt, not emergency blocking.
+why_now: Recent reporting describes RMM abuse after initial access; local RMM baseline is incomplete.
+confidence: Medium; reporting is credible but local telemetry is not fully validated.
+business_impact: Unauthorized remote access could affect endpoint integrity and incident response.
+recommended_actions: Approve hunt, validate telemetry, define approved RMM inventory.
+limits: No local compromise evidence.
+owner: SOC Lead and Detection Engineering.
+```

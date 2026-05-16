@@ -7,7 +7,9 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
-    "clear": "docusaurus clear"
+    "clear": "docusaurus clear",
+    "check:links": "python3 scripts/check_links.py",
+    "validate": "npm run check:links && npm run build"
   },
   "dependencies": {
     "@docusaurus/core": "latest",

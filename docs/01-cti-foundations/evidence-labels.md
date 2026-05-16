@@ -102,6 +102,9 @@ Downstream Use:
 
 ## References
 
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
+- [FIRST TLP 2.0](https://www.first.org/tlp/)
+- [MISP Documentation](https://www.misp-project.org/documentation/)
 - Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)

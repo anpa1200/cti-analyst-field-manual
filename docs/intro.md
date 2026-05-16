@@ -4,6 +4,8 @@
 
 This manual provides a structured operating model for cyber threat intelligence work: from [collection requirements](01-cti-foundations/pir-sir-eei.md) to [evidence handling](01-cti-foundations/evidence-labels.md), [analytic judgment](02-analytic-discipline/sherman-kent-for-cti.md), [infrastructure pivoting](05-infrastructure-pivoting/single-ioc-to-network.md), [actor profiling](06-actor-research/actor-profile-template.md), [hunting hypotheses](08-cti-to-detection/hunting-hypothesis-template.md), [detection engineering](08-cti-to-detection/intelligence-to-detection.md), [SOC handoff](08-cti-to-detection/soc-handoff.md), and executive communication.
 
+If you are reviewing the manual professionally, start with [Role-Based Reading Paths](role-based-reading-paths.md), [Publication-Grade Review Backlog](review/publication-grade-review.md), and [Authoritative Bibliography](references/authoritative-bibliography.md).
+
 
 ## CTI Ecosystem
 
@@ -58,8 +60,11 @@ Start with CTI Foundations, then move into analytic discipline, frameworks, attr
 - [Evidence Labels](01-cti-foundations/evidence-labels.md)
 - [Attribution Methodology](04-attribution/attribution-methodology.md)
 - [Intelligence to Detection](08-cti-to-detection/intelligence-to-detection.md)
+- [Detection Readiness Levels](08-cti-to-detection/detection-readiness-levels.md)
+- [AI CTI Control Matrix](09-ai-assisted-cti/ai-cti-control-matrix.md)
 
 ## References
 
+- [Authoritative Bibliography](references/authoritative-bibliography.md)
 - Medium source profile: [medium.com/@1200km](https://medium.com/@1200km)
 - Public RSS source index: [Medium Source Index](references/medium-source-index.md)

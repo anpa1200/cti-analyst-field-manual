@@ -3,7 +3,18 @@ module.exports = {
     "intro",
     "ecosystem",
     "fact-correlation",
+    "role-based-reading-paths",
     "limitations",
+    {
+      "type": "category",
+      "label": "Review and Governance",
+      "items": [
+        "review/publication-grade-review",
+        "governance/cross-project-correlation-register",
+        "validation/ci-validation-evidence",
+        "validation/link-check-report"
+      ]
+    },
     {
       "type": "category",
       "label": "01. CTI Foundations",
@@ -91,6 +102,7 @@ module.exports = {
         "cti-to-detection/intelligence-to-detection",
         "cti-to-detection/hunting-hypothesis-template",
         "cti-to-detection/detection-backlog",
+        "cti-to-detection/detection-readiness-levels",
         "cti-to-detection/telemetry-requirements",
         "cti-to-detection/sigma-kql-spl-examples",
         "cti-to-detection/soc-handoff"
@@ -102,9 +114,25 @@ module.exports = {
       "items": [
         "ai-assisted-cti/manual-vs-ai-assisted-cti",
         "ai-assisted-cti/safe-llm-research-workflow",
+        "ai-assisted-cti/ai-cti-control-matrix",
         "ai-assisted-cti/prompt-library",
         "ai-assisted-cti/ai-quality-gates",
         "ai-assisted-cti/hallucination-control"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Worked Examples",
+      "items": [
+        "worked-examples/cti-foundations",
+        "worked-examples/analytic-discipline",
+        "worked-examples/frameworks",
+        "worked-examples/attribution",
+        "worked-examples/infrastructure-pivoting",
+        "worked-examples/actor-research",
+        "worked-examples/sector-cti",
+        "worked-examples/cti-to-detection",
+        "worked-examples/ai-assisted-cti"
       ]
     },
     {
@@ -127,6 +155,7 @@ module.exports = {
       "type": "category",
       "label": "Reference",
       "items": [
+        "references/authoritative-bibliography",
         "references/medium-source-index"
       ]
     }

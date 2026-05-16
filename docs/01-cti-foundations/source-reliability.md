@@ -69,5 +69,8 @@ Downstream Use:
 
 ## References
 
+- [Authoritative Bibliography](../references/authoritative-bibliography.md)
+- [MISP Taxonomies](https://www.misp-project.org/taxonomies.html)
+- [MISP Documentation](https://www.misp-project.org/documentation/)
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)

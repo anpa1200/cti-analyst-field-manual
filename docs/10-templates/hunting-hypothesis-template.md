@@ -69,3 +69,31 @@ escalation: Script execution plus unknown external download.
 
 - [Medium Source Index](../references/medium-source-index.md)
 - [CTI Project Ecosystem](../ecosystem.md)
+
+## Required vs Optional Fields
+
+Required: hypothesis, source claim, telemetry, fields, lookback, malicious pattern, benign pattern, false positives, escalation threshold, stop condition.
+
+Optional: ATT&CK mapping, query draft, reviewer, pilot notes.
+
+## Pass / Fail Example
+
+Pass: Hypothesis is falsifiable and names both malicious and benign patterns.
+
+Fail: Hypothesis is a keyword search with no stop condition.
+
+## Complete Filled Example
+
+```text
+hunt_id: HUNT-RMM-001
+hypothesis: If unauthorized RMM is used after initial access, then a non-IT host will show new RMM install plus external remote session without a change ticket.
+source_claim: EV-RMM-001
+telemetry: EDR process, software inventory, network, identity, ticketing
+fields: host, user, process, command_line, destination, ticket_id
+lookback: 30 days
+malicious_pattern: New RMM install on non-IT host plus external session.
+benign_pattern: Approved helpdesk deployment with ticket and known admin user.
+false_positives: Vendor support, helpdesk, migrations.
+escalation: No ticket plus suspicious pre-install email or external source.
+stop_condition: All hits explained by approved deployment records.
+```

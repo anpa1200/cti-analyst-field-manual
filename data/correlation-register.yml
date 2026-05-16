@@ -1,0 +1,51 @@
+last_checked: "2026-05-16"
+projects:
+  field_manual:
+    name: "CTI Analyst Field Manual"
+    role: "Canonical CTI tradecraft and methodology."
+    url: "https://anpa1200.github.io/cti-analyst-field-manual/"
+  customer_driven_ai_cti:
+    name: "Customer-Driven AI CTI Project"
+    role: "Customer delivery methodology and gated execution."
+    url: "https://anpa1200.github.io/customer-driven-ai-cti-project/"
+  israel_government_threat_actors_cti:
+    name: "Israel Government Threat Actors CTI"
+    role: "Actor, tool, TTP, source, hunt, and detection knowledge base."
+    url: "https://anpa1200.github.io/israel-government-threat-actors-cti/"
+shared_concepts:
+  evidence_labels:
+    owner: field_manual
+    required_values: ["Observed", "Reported", "Assessed", "Inferred", "Unknown", "Gap"]
+    rule: "Every material claim must carry an evidence label or be excluded from finished intelligence."
+  source_reliability:
+    owner: field_manual
+    model: "A-F source reliability and 1-6 information credibility."
+    rule: "Reliability rates the source; credibility rates the claim."
+  confidence_language:
+    owner: field_manual
+    values: ["High confidence", "Medium confidence", "Low confidence"]
+    rule: "Confidence is not probability; justify evidence quality, access, corroboration, and analytic consistency."
+  attack_mapping_rules:
+    owner: field_manual
+    rule: "Map behavior only when evidence supports a technique; unsupported mapping is Gap / Not mapped."
+  drl_model:
+    owner: field_manual
+    rule: "Only DRL-9 may be called production coverage."
+  soc_handoff:
+    owner: field_manual
+    rule: "Include first checks, logs, false positives, escalation threshold, response authority, and feedback."
+  ai_assisted_cti_controls:
+    owner: field_manual
+    rule: "AI cannot independently decide attribution, confidence, or production readiness."
+  customer_delivery_gates:
+    owner: customer_driven_ai_cti
+    rule: "Customer work must move through scoped, gated artifacts."
+  actor_tool_ttp_detection_knowledge:
+    owner: israel_government_threat_actors_cti
+    rule: "Actor-specific claims require source, evidence label, freshness date, and caveat."
+review_workflow:
+  - "Update canonical owner first."
+  - "Update consuming project links and language."
+  - "Run build and link validation."
+  - "Record last checked date."
+  - "Do not promote detection maturity without validation artifacts."
