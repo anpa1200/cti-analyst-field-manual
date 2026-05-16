@@ -1,6 +1,7 @@
 module.exports = {
   "manualSidebar": [
     "intro",
+    "ecosystem",
     "limitations",
     {
       "type": "category",

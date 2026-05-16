@@ -4,6 +4,14 @@
 
 This manual provides a structured operating model for cyber threat intelligence work: from collection requirements to evidence handling, analytic judgment, infrastructure pivoting, actor profiling, hunting hypotheses, detection engineering, SOC handoff, and executive communication.
 
+
+## CTI Ecosystem
+
+This manual is one part of a three-book CTI ecosystem. Use [CTI Project Ecosystem](ecosystem.md) to move between general analyst tradecraft, customer delivery methodology, and the Israel-focused actor knowledge base.
+
+- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) turns tradecraft into gated delivery.
+- [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) provides sector-specific actor, tool, TTP, hunt, and detection examples.
+
 ## What This Manual Is
 
 This is a practitioner field manual. It is designed to help an analyst produce repeatable, reviewable CTI outputs rather than disconnected research notes.

@@ -92,3 +92,14 @@ Professional CTI analyst field manual: evidence discipline, attribution, infrast
 ## License Recommendation
 
 Recommended licensing: **CC BY 4.0** for documentation content and **MIT** for any future code or scripts. Until code is added, the repository treats the manual as documentation-first content.
+
+
+## CTI Documentation Ecosystem
+
+This repository is part of a connected three-book CTI documentation ecosystem:
+
+- [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/) - general CTI tradecraft and analyst operating manual.
+- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) - customer delivery methodology, quality gates, and CTI-to-detection project control.
+- [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) - Israel-focused actor, tool, TTP, hunt, detection, and source knowledge base.
+
+Use the ecosystem page in the documentation site to move between tradecraft, delivery methodology, and sector-specific intelligence.

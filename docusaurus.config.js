@@ -29,7 +29,13 @@ const config = {
       title: 'CTI Analyst Field Manual',
       items: [
         {type: 'docSidebar', sidebarId: 'manualSidebar', position: 'left', label: 'Manual'},
+        {to: '/docs/ecosystem', label: 'Ecosystem', position: 'left'},
         {to: '/docs/limitations', label: 'Limitations', position: 'left'},
+        {label: 'CTI Books', position: 'right', items: [
+          {label: 'Field Manual', href: 'https://anpa1200.github.io/cti-analyst-field-manual/'},
+          {label: 'Customer-Driven AI CTI', href: 'https://anpa1200.github.io/customer-driven-ai-cti-project/'},
+          {label: 'Israel Threat Actors CTI', href: 'https://anpa1200.github.io/israel-government-threat-actors-cti/'}
+        ]},
         {href: 'https://medium.com/@1200km', label: 'Medium', position: 'right'},
         {href: 'https://github.com/anpa1200/cti-analyst-field-manual', label: 'GitHub', position: 'right'}
       ]
@@ -41,6 +47,11 @@ const config = {
           {label: 'Start Here', to: '/docs/intro'},
           {label: 'CTI Foundations', to: '/docs/cti-foundations/what-is-cti'},
           {label: 'CTI to Detection', to: '/docs/cti-to-detection/intelligence-to-detection'}
+        ]},
+        {title: 'CTI Ecosystem', items: [
+          {label: 'Field Manual', href: 'https://anpa1200.github.io/cti-analyst-field-manual/'},
+          {label: 'Customer-Driven AI CTI', href: 'https://anpa1200.github.io/customer-driven-ai-cti-project/'},
+          {label: 'Israel Threat Actors CTI', href: 'https://anpa1200.github.io/israel-government-threat-actors-cti/'}
         ]},
         {title: 'Author', items: [
           {label: 'Medium', href: 'https://medium.com/@1200km'},
