@@ -29,7 +29,7 @@ const config = {
       title: 'CTI Analyst Field Manual',
       logo: {
         alt: '1200km',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {type: 'docSidebar', sidebarId: 'manualSidebar', position: 'left', label: 'Manual'},
