@@ -2,7 +2,7 @@
 const config = {
   title: 'CTI Analyst Field Manual',
   tagline: 'From threat intelligence research to defensible analytic judgment, hunting hypotheses, and detection-ready outputs.',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/logo.png',
   url: 'https://anpa1200.github.io',
   baseUrl: '/cti-analyst-field-manual/',
   organizationName: 'anpa1200',
