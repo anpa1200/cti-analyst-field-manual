@@ -1,9 +1,5 @@
 # Telemetry Requirements
 
-![Practical Workflow: Identify External Indicator from Unknown Location](/img/infographic-telemetry-identify-external-indicator.png)
-
-![Example: Telemetry Map for RMM Abuse Behavior](/img/infographic-telemetry-map-rmm-abuse.png)
-
 ## Purpose
 
 Define the logs, fields, retention, and quality needed before a hunt or detection can be trusted.
@@ -159,6 +155,8 @@ This prevents detection engineering from building fragile rules against unavaila
 7. Document gaps where fields are absent, unpopulated, or unreliable.
 8. Decide whether to hunt, detect, or defer to gap-collection.
 
+![Practical Workflow: Identify External Indicator from Unknown Location](/img/infographic-telemetry-identify-external-indicator.png)
+
 ## Example: Telemetry Map for RMM Abuse Behavior
 
 Behavior: New RMM tool installed on non-IT endpoint followed by external remote session.
@@ -170,6 +168,8 @@ Behavior: New RMM tool installed on non-IT endpoint followed by external remote 
 | Network | destination_ip, destination_port, bytes_out, protocol, host | Egress logging coverage may be incomplete |
 | Identity | user_principal_name, logon_time, source_ip, mfa_result | Legacy auth may not record MFA result |
 | Ticketing | ticket_id, assigned_host, change_window | Integration with EDR required for automated correlation |
+
+![Example: Telemetry Map for RMM Abuse Behavior](/img/infographic-telemetry-map-rmm-abuse.png)
 
 ## Analyst Checklist
 

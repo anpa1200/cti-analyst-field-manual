@@ -1,7 +1,5 @@
 # Actor Update Workflow
 
-![Threat Intelligence Profile Maintenance Workflow](/img/infographic-actor-update-workflow.png)
-
 ## Purpose
 
 Provide a repeatable process for refreshing actor profiles without source drift or overclaiming.
@@ -32,6 +30,8 @@ Actor update discipline keeps CTI repositories accurate and prevents stale actor
 5. Review TTP and tool mappings.
 6. Check affected detections and hunts.
 7. Record changelog and review date.
+
+![Threat Intelligence Profile Maintenance Workflow](/img/infographic-actor-update-workflow.png)
 
 ## Example / Mini Case
 

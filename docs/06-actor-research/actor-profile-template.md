@@ -1,9 +1,5 @@
 # Actor Profile Template
 
-![Threat Intelligence Summary — Actor Profile Format](/img/infographic-actor-profile-summary.png)
-
-![Alias Table — Naming and Source Caveats](/img/infographic-alias-table.png)
-
 ## Purpose
 
 Define the required sections for a professional actor profile.
@@ -36,9 +32,13 @@ Consistent actor profiles help CTI teams compare actors, prioritize research, an
 6. Add detections and hunts.
 7. Add gaps and review date.
 
+![Alias Table — Naming and Source Caveats](/img/infographic-alias-table.png)
+
 ## Example / Mini Case
 
 A profile for a destructive persona should include a persona-claims section rather than mixing all public claims into confirmed incidents.
+
+![Threat Intelligence Summary — Actor Profile Format](/img/infographic-actor-profile-summary.png)
 
 ## Analyst Checklist
 

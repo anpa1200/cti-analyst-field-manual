@@ -1,11 +1,5 @@
 # Hallucination Control
 
-![Documented Failure Modes in CTI-Context AI Use](/img/infographic-ai-failure-modes.png)
-
-![Prompt-Injection Test Cases](/img/infographic-ai-prompt-injection-cases.png)
-
-![Hallucination Control: 6-Step Practical Workflow](/img/infographic-ai-hallucination-control.png)
-
 ## Purpose
 
 Provide controls for preventing fabricated or unsupported AI-generated CTI claims.
@@ -33,6 +27,8 @@ CTI is especially vulnerable to hallucination because actor names, aliases, tool
 4. Downgrade unsupported claims.
 5. Preserve gaps.
 6. Avoid actor merges unless source-confirmed.
+
+![Hallucination Control: 6-Step Practical Workflow](/img/infographic-ai-hallucination-control.png)
 
 ## Example / Mini Case
 

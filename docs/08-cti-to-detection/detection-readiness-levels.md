@@ -1,13 +1,5 @@
 # Detection Readiness Levels
 
-![DRL Scale: Detection Readiness Levels 0–9](/img/infographic-drl-scale-reference.png)
-
-![Required Validation Artifacts for DRL Promotion](/img/infographic-drl-validation-artifacts.png)
-
-![DRL Scale Example: RMM Abuse Detection Journey](/img/infographic-drl-rmm-example.png)
-
-![DRL Promotion Checklist](/img/infographic-drl-promotion-checklist.png)
-
 ## Purpose
 
 Define a practical DRL model so CTI-derived detections are not marketed as production coverage before validation.
@@ -31,6 +23,8 @@ Only **DRL-9** can be called production detection coverage. Anything below DRL-9
 | 8 | SOC pilot complete | SOC triage playbook, owner, escalation path, rollback plan, and pilot feedback complete. |
 | 9 | Production coverage | Approved, monitored, reviewed, owned, tested, tuned, and rollback-ready. |
 
+![DRL Scale: Detection Readiness Levels 0–9](/img/infographic-drl-scale-reference.png)
+
 ## Required Validation Artifacts
 
 | Artifact | Required By | Notes |
@@ -47,6 +41,8 @@ Only **DRL-9** can be called production detection coverage. Anything below DRL-9
 | Owner and review date | DRL-8 | Named team/person and next review date. |
 | Production approval | DRL-9 | Change record and acceptance of residual risk. |
 
+![Required Validation Artifacts for DRL Promotion](/img/infographic-drl-validation-artifacts.png)
+
 ## Examples
 
 | DRL | Example |
@@ -62,6 +58,8 @@ Only **DRL-9** can be called production detection coverage. Anything below DRL-9
 | 8 | SOC pilot runbook tested by analysts; rollback owner assigned. |
 | 9 | Production alert approved, monitored, reviewed, and tied to response process. |
 
+![DRL Scale Example: RMM Abuse Detection Journey](/img/infographic-drl-rmm-example.png)
+
 ## Bad Example / Corrected Example
 
 Bad:
@@ -75,6 +73,8 @@ Corrected:
 ```text
 The rule is DRL-4. It has behavior-backed ATT&CK mapping and draft logic, but no positive test, negative test, benign baseline, historical replay, SOC pilot, or production approval.
 ```
+
+![DRL Promotion Checklist](/img/infographic-drl-promotion-checklist.png)
 
 ## Full SOC Handoff Example
 

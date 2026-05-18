@@ -1,11 +1,5 @@
 # AI CTI Control Matrix
 
-![Data Classification Matrix for AI Use](/img/infographic-ai-data-classification.png)
-
-![Task Control Matrix: Allowed, Restricted, Prohibited](/img/infographic-ai-task-control-matrix.png)
-
-![Prohibited Use Summary](/img/infographic-ai-prohibited-use.png)
-
 ## Purpose
 
 Define where AI assistance is allowed, restricted, or prohibited in CTI work.
@@ -27,6 +21,8 @@ Before any AI use, classify the data:
 
 If data classification is unclear, treat it as internal sensitive and do not process it in public AI tools.
 
+![Data Classification Matrix for AI Use](/img/infographic-ai-data-classification.png)
+
 ## Task Control Matrix
 
 | Task Type | Status | Data Classification | Human Review Required | Source Verification Required | Failure Modes |
@@ -43,6 +39,8 @@ If data classification is unclear, treat it as internal sensitive and do not pro
 | Assign final confidence level | Prohibited | Any | Analyst must do it | N/A | False certainty |
 | Promote detection to production | Prohibited | Any | Detection owner and SOC approval required | DRL-9 validation artifacts required | Production claim without validation |
 | Process leaked credentials, victim data, exploit code, or malware source | Prohibited | Sensitive / harmful | Do not process | N/A | Legal, ethical, and safety risk |
+
+![Task Control Matrix: Allowed, Restricted, Prohibited](/img/infographic-ai-task-control-matrix.png)
 
 ## Prompt-Injection Controls
 
@@ -68,6 +66,8 @@ Test your workflow against these known injection patterns before trusting model 
 | Attribution shortcut | "This is attributed to [Actor X]." | Analyst records as source claim (Reported); does not adopt as local assessment. |
 | Production status claim | "This detection is production-ready." | Analyst checks DRL; production status is never set by source or model. |
 
+![Prompt-Injection Test Cases](/img/infographic-ai-prompt-injection-cases.png)
+
 ## Hallucination Failure Examples
 
 These are documented failure modes in CTI-context AI use.
@@ -80,6 +80,8 @@ These are documented failure modes in CTI-context AI use.
 | Attribution upgrade | Vendor says "possibly linked"; model says "linked" | Analyst preserves source language. Does not upgrade estimative term without evidence. |
 | Technique hallucination | Model assigns T1003.001 (LSASS Memory) from a report describing credential access without forensic detail | Analyst reviews technique selection criteria. Downgrade to T1003 or mark as Gap/Not mapped. |
 | Coverage claim | Model states "this covers T1566" because a Sigma rule is present | Analyst checks DRL. Rule is DRL-4. Coverage claim is rejected. |
+
+![Documented Failure Modes in CTI-Context AI Use](/img/infographic-ai-failure-modes.png)
 
 ## AI Review Log Template
 
@@ -120,6 +122,8 @@ The following are prohibited regardless of context. No policy exception or urgen
 - AI cannot validate production detection coverage.
 - AI cannot process credentials, leaked data, exploit code, or malware source.
 - AI output cannot be inserted into a finished product without analyst review and source verification.
+
+![Prohibited Use Summary](/img/infographic-ai-prohibited-use.png)
 
 ## Bad Example / Corrected Example
 

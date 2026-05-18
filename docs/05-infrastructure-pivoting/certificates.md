@@ -1,7 +1,5 @@
 # Certificates
 
-![Certificate Analysis Workflow](/img/infographic-certificate-analysis.png)
-
 ## Purpose
 
 Use TLS certificate data as one feature in infrastructure clustering.
@@ -31,6 +29,8 @@ Certificate pivots support infrastructure clustering, detection enrichment, and 
 4. Compare with passive DNS and URL paths.
 5. Assess link strength.
 6. Document limitations.
+
+![Certificate Analysis Workflow](/img/infographic-certificate-analysis.png)
 
 ## Example / Mini Case
 

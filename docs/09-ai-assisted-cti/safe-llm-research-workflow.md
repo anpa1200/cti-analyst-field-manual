@@ -1,9 +1,5 @@
 # Safe LLM Research Workflow
 
-![Practical Workflow: Research & Analysis with Rigor (6-step)](/img/infographic-ai-research-rigor-workflow.png)
-
-![Practical Workflow: Pre-Prompt Setup (6-step)](/img/infographic-ai-pre-prompt-workflow.png)
-
 ## Purpose
 
 Define a safe workflow for using LLMs in public, defensive CTI research.
@@ -13,6 +9,8 @@ Define a safe workflow for using LLMs in public, defensive CTI research.
 [Safe LLM use](safe-llm-research-workflow.md) starts with scope and data handling; use Customer project [AI governance](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/) for delivery work. Public TLP:CLEAR material may be appropriate for external tools. Internal telemetry, credentials, victim data, proprietary reporting, or sensitive incident data should not be pasted into public models.
 
 The model should be asked to produce structured claims, source links, confidence caveats, and gaps. The analyst verifies everything.
+
+![Practical Workflow: Pre-Prompt Setup (6-step)](/img/infographic-ai-pre-prompt-workflow.png)
 
 ## CTI Relevance
 
@@ -34,6 +32,8 @@ This workflow lets teams gain speed without losing source integrity or data-hand
 5. Verify links and content.
 6. Downgrade unsupported claims.
 7. Record AI use if project policy requires it.
+
+![Practical Workflow: Research & Analysis with Rigor (6-step)](/img/infographic-ai-research-rigor-workflow.png)
 
 ## Example / Mini Case
 

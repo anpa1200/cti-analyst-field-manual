@@ -1,7 +1,5 @@
 # ASN and Hosting Pivots
 
-![ASN & Provider Pivot Workflow: Contextual Infrastructure Analysis](/img/infographic-asn-provider-pivot.png)
-
 ## Purpose
 
 Use hosting and ASN context without overclaiming malicious ownership.
@@ -31,6 +29,8 @@ Hosting pivots support enrichment, blocking decisions, provider abuse reporting,
 4. Look for account-level or configuration overlap.
 5. Assess collateral risk.
 6. Document whether the pivot is tactical or analytic.
+
+![ASN & Provider Pivot Workflow: Contextual Infrastructure Analysis](/img/infographic-asn-provider-pivot.png)
 
 ## Example / Mini Case
 

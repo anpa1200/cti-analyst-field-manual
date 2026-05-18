@@ -1,7 +1,5 @@
 # SOC Handoff
 
-![Practical Workflow: Triage & Response Playbook](/img/infographic-soc-triage-response-playbook.png)
-
 ## Purpose
 
 Package CTI-derived detections and hunts so SOC analysts can triage them consistently.
@@ -30,6 +28,8 @@ SOC handoff reduces alert fatigue, improves triage quality, and captures feedbac
 5. Define escalation thresholds.
 6. Add containment guidance within authority.
 7. Set feedback loop.
+
+![Practical Workflow: Triage & Response Playbook](/img/infographic-soc-triage-response-playbook.png)
 
 ## Example / Mini Case
 

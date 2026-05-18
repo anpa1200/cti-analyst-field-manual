@@ -1,7 +1,5 @@
 # Infrastructure Pivoting Worked Case
 
-![Threat Intelligence Pivot Workflow: Controlled, Documented, and Defensible](/img/infographic-pivot-workflow-defensible.png)
-
 ## Purpose
 
 Provide a safe example of moving from one seed indicator to a bounded infrastructure cluster.
@@ -31,6 +29,8 @@ Worked cases help analysts learn when to stop pivoting and how to explain cluste
 4. Reject shared-hosting neighbors with no corroboration.
 5. Write a cluster assessment.
 6. Convert to hunt enrichment with limitations.
+
+![Threat Intelligence Pivot Workflow: Controlled, Documented, and Defensible](/img/infographic-pivot-workflow-defensible.png)
 
 ## Example / Mini Case
 

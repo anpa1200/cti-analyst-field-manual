@@ -1,9 +1,5 @@
 # Passive DNS
 
-![Passive DNS & Infrastructure Association Workflow](/img/infographic-passive-dns-workflow.png)
-
-![Domain Clustering Example](/img/infographic-domain-clustering-example.png)
-
 ## Purpose
 
 Use passive DNS safely to understand domain and IP relationships over time.
@@ -34,9 +30,13 @@ Passive DNS helps identify campaign infrastructure, historical exposure, and pos
 5. Corroborate with certificates, paths, configs, or telemetry.
 6. Expire stale indicators.
 
+![Passive DNS & Infrastructure Association Workflow](/img/infographic-passive-dns-workflow.png)
+
 ## Example / Mini Case
 
 A domain resolved to an IP used by many unrelated sites. Passive DNS alone is weak. If the same domain also shares a certificate subject pattern and malware config value with another domain, the cluster becomes stronger.
+
+![Practical Workflow: Domain Clustering Example](/img/infographic-domain-clustering-example.png)
 
 ## Analyst Checklist
 

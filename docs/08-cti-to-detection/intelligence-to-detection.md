@@ -1,9 +1,5 @@
 # Intelligence to Detection
 
-![Intelligence to Detection: Practical Workflow (10-step)](/img/infographic-intel-to-detection-workflow.png)
-
-![Detection Idea Pipeline](/img/infographic-detection-idea-pipeline.png)
-
 ## Purpose
 
 Convert CTI claims into telemetry requirements, hunts, detections, SOC actions, and validation plans.
@@ -38,9 +34,13 @@ This workflow is the bridge between CTI and operational defense. It makes intell
 9. Create SOC handoff.
 10. Assign detection readiness level.
 
+![Intelligence to Detection: Practical Workflow (10-step)](/img/infographic-intel-to-detection-workflow.png)
+
 ## Example / Mini Case
 
 Reported behavior: archive attachment leads to script execution and external download. Detection chain: email attachment metadata, endpoint archive extraction, script process creation, network connection, false-positive baseline for admin scripts, SOC triage instructions.
+
+![Detection Idea Pipeline](/img/infographic-detection-idea-pipeline.png)
 
 ## Analyst Checklist
 

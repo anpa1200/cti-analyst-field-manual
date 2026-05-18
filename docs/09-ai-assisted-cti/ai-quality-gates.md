@@ -1,7 +1,5 @@
 # AI Quality Gates
 
-![Review Workflow Control: 7-Step Gate Checklist](/img/infographic-ai-review-workflow.png)
-
 ## Purpose
 
 Define review gates that AI-assisted CTI outputs must pass before use.
@@ -30,6 +28,8 @@ Quality gates prevent hallucinations and weak claims from entering reports, dete
 5. Check attribution and ATT&CK rules.
 6. Check safety boundaries.
 7. Record reviewer and decision.
+
+![Review Workflow Control: 7-Step Gate Checklist](/img/infographic-ai-review-workflow.png)
 
 ## Example / Mini Case
 
