@@ -4,13 +4,14 @@
 
 This page connects the three CTI documentation projects into one practitioner ecosystem. Each project has a different role, but they are intended to be used together.
 
-## The Three Books
+## The Ecosystem
 
 | Project | Role | Use When You Need |
 | --- | --- | --- |
 | [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/) | General CTI tradecraft and analyst operating manual | Evidence discipline, analytic judgment, attribution, infrastructure pivoting, actor research workflow, CTI-to-detection foundations, templates |
 | [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) | Delivery methodology and customer engagement operating model | Project phases, quality gates, customer outcomes, AI-assisted workflow controls, acceptance criteria, replay and delivery packages |
 | [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) | Sector and actor knowledge base | Israeli public-sector threat model, actors, tools, TTPs, detections, hunts, evidence registers, source tracking |
+| [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) | AI-powered offensive security automation platform | MCP agent-based tool orchestration, 150+ security tools, AI-driven penetration testing, adversarial validation of detection coverage |
 
 ## Recommended Navigation
 
@@ -37,7 +38,8 @@ Use [Evidence Labels](/cti-analyst-field-manual/docs/cti-foundations/evidence-la
 - [CTI Analyst Field Manual repository](https://github.com/anpa1200/cti-analyst-field-manual)
 - [Customer-Driven AI CTI Project repository](https://github.com/anpa1200/customer-driven-ai-cti-project)
 - [Israel Government Threat Actors CTI repository](https://github.com/anpa1200/israel-government-threat-actors-cti)
+- [HexStrike AI repository](https://github.com/0x4m4/hexstrike-ai)
 
 ## Boundary
 
-The ecosystem is defensive and public-source oriented. It does not provide exploit instructions, malware source code, leaked data, credentials, or unauthorized-access guidance.
+The CTI documentation projects (Field Manual, Customer project, Israel CTI) are defensive and public-source oriented. They do not provide exploit instructions, malware source code, leaked data, credentials, or unauthorized-access guidance. HexStrike AI is an authorized offensive security and penetration testing platform; use it only in authorized engagements.
