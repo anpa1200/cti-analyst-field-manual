@@ -1,5 +1,7 @@
 # Hunting Hypothesis Template
 
+![Practical Workflow: Hunt for RMM Abuse](/img/infographic-hunt-rmm-abuse-workflow.png)
+
 ## Purpose
 
 Define a falsifiable hunt hypothesis format for CTI-driven threat hunting.

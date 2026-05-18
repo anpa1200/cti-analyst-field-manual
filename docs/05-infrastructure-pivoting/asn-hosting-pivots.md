@@ -1,5 +1,7 @@
 # ASN and Hosting Pivots
 
+![ASN & Provider Pivot Workflow: Contextual Infrastructure Analysis](/img/infographic-asn-provider-pivot.png)
+
 ## Purpose
 
 Use hosting and ASN context without overclaiming malicious ownership.

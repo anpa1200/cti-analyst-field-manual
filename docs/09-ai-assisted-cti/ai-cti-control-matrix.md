@@ -1,5 +1,11 @@
 # AI CTI Control Matrix
 
+![Data Classification Matrix for AI Use](/img/infographic-ai-data-classification.png)
+
+![Task Control Matrix: Allowed, Restricted, Prohibited](/img/infographic-ai-task-control-matrix.png)
+
+![Prohibited Use Summary](/img/infographic-ai-prohibited-use.png)
+
 ## Purpose
 
 Define where AI assistance is allowed, restricted, or prohibited in CTI work.

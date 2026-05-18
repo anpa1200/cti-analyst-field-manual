@@ -1,5 +1,9 @@
 # Passive DNS
 
+![Passive DNS & Infrastructure Association Workflow](/img/infographic-passive-dns-workflow.png)
+
+![Domain Clustering Example](/img/infographic-domain-clustering-example.png)
+
 ## Purpose
 
 Use passive DNS safely to understand domain and IP relationships over time.

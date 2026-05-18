@@ -1,5 +1,13 @@
 # Detection Readiness Levels
 
+![DRL Scale: Detection Readiness Levels 0–9](/img/infographic-drl-scale-reference.png)
+
+![Required Validation Artifacts for DRL Promotion](/img/infographic-drl-validation-artifacts.png)
+
+![DRL Scale Example: RMM Abuse Detection Journey](/img/infographic-drl-rmm-example.png)
+
+![DRL Promotion Checklist](/img/infographic-drl-promotion-checklist.png)
+
 ## Purpose
 
 Define a practical DRL model so CTI-derived detections are not marketed as production coverage before validation.

@@ -1,5 +1,11 @@
 # Hallucination Control
 
+![Documented Failure Modes in CTI-Context AI Use](/img/infographic-ai-failure-modes.png)
+
+![Prompt-Injection Test Cases](/img/infographic-ai-prompt-injection-cases.png)
+
+![Hallucination Control: 6-Step Practical Workflow](/img/infographic-ai-hallucination-control.png)
+
 ## Purpose
 
 Provide controls for preventing fabricated or unsupported AI-generated CTI claims.

@@ -1,5 +1,9 @@
 # Intelligence to Detection
 
+![Intelligence to Detection: Practical Workflow (10-step)](/img/infographic-intel-to-detection-workflow.png)
+
+![Detection Idea Pipeline](/img/infographic-detection-idea-pipeline.png)
+
 ## Purpose
 
 Convert CTI claims into telemetry requirements, hunts, detections, SOC actions, and validation plans.

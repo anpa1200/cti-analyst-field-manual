@@ -1,5 +1,7 @@
 # Certificates
 
+![Certificate Analysis Workflow](/img/infographic-certificate-analysis.png)
+
 ## Purpose
 
 Use TLS certificate data as one feature in infrastructure clustering.

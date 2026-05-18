@@ -1,5 +1,7 @@
 # Infrastructure Pivoting Worked Case
 
+![Threat Intelligence Pivot Workflow: Controlled, Documented, and Defensible](/img/infographic-pivot-workflow-defensible.png)
+
 ## Purpose
 
 Provide a safe example of moving from one seed indicator to a bounded infrastructure cluster.

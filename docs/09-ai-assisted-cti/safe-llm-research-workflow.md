@@ -1,5 +1,9 @@
 # Safe LLM Research Workflow
 
+![Practical Workflow: Research & Analysis with Rigor (6-step)](/img/infographic-ai-research-rigor-workflow.png)
+
+![Practical Workflow: Pre-Prompt Setup (6-step)](/img/infographic-ai-pre-prompt-workflow.png)
+
 ## Purpose
 
 Define a safe workflow for using LLMs in public, defensive CTI research.

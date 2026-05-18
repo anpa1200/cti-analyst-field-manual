@@ -1,5 +1,7 @@
 # AI Quality Gates
 
+![Review Workflow Control: 7-Step Gate Checklist](/img/infographic-ai-review-workflow.png)
+
 ## Purpose
 
 Define review gates that AI-assisted CTI outputs must pass before use.

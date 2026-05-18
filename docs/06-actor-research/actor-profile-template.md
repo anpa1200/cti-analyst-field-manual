@@ -1,5 +1,9 @@
 # Actor Profile Template
 
+![Threat Intelligence Summary — Actor Profile Format](/img/infographic-actor-profile-summary.png)
+
+![Alias Table — Naming and Source Caveats](/img/infographic-alias-table.png)
+
 ## Purpose
 
 Define the required sections for a professional actor profile.

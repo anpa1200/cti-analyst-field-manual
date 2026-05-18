@@ -1,5 +1,7 @@
 # Actor Update Workflow
 
+![Threat Intelligence Profile Maintenance Workflow](/img/infographic-actor-update-workflow.png)
+
 ## Purpose
 
 Provide a repeatable process for refreshing actor profiles without source drift or overclaiming.

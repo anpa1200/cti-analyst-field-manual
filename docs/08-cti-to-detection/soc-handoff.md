@@ -1,5 +1,7 @@
 # SOC Handoff
 
+![Practical Workflow: Triage & Response Playbook](/img/infographic-soc-triage-response-playbook.png)
+
 ## Purpose
 
 Package CTI-derived detections and hunts so SOC analysts can triage them consistently.

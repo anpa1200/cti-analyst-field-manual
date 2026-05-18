@@ -1,5 +1,7 @@
 # Single IOC to Network
 
+![Threat Intelligence Pivoting Workflow: Building a Bounded Infrastructure Cluster](/img/infographic-pivot-bounded-cluster.png)
+
 ## Purpose
 
 Explain how to pivot from one indicator to a bounded infrastructure hypothesis.

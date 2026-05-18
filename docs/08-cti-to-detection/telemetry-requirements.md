@@ -1,5 +1,9 @@
 # Telemetry Requirements
 
+![Practical Workflow: Identify External Indicator from Unknown Location](/img/infographic-telemetry-identify-external-indicator.png)
+
+![Example: Telemetry Map for RMM Abuse Behavior](/img/infographic-telemetry-map-rmm-abuse.png)
+
 ## Purpose
 
 Define the logs, fields, retention, and quality needed before a hunt or detection can be trusted.
@@ -13,6 +17,8 @@ Detection quality depends on telemetry quality. A good CTI-derived detection sta
 The tables below list the data sources most commonly required for endpoint, network, identity, and cloud hunts. Every field must be validated in your environment before it appears in production detection logic.
 
 ### Windows Security Event Log
+
+![Windows Security Event Log: Key Fields Reference](/img/infographic-telemetry-windows-event-log.png)
 
 | Field | Example Value | Required For |
 |---|---|---|
@@ -28,6 +34,8 @@ The tables below list the data sources most commonly required for endpoint, netw
 
 ### Sysmon (System Monitor)
 
+![Sysmon Event Reference](/img/infographic-telemetry-sysmon.png)
+
 | EventID | Meaning | Key Fields |
 |---|---|---|
 | 1 | Process Create | CommandLine, ParentImage, ParentCommandLine, Hashes, User |
@@ -41,6 +49,10 @@ The tables below list the data sources most commonly required for endpoint, netw
 **Common gap:** Sysmon is not deployed by default. Configuration must enable the required event types and filters. Noisy rules without filters will generate excessive volume and cause tuning paralysis.
 
 ### EDR Process Telemetry (platform-generic)
+
+![EDR Process Telemetry Reference (1)](/img/infographic-telemetry-edr-process-1.png)
+
+![EDR Process Telemetry Reference (2)](/img/infographic-telemetry-edr-process-2.png)
 
 | Field | Notes |
 |---|---|
@@ -58,6 +70,8 @@ The tables below list the data sources most commonly required for endpoint, netw
 
 ### DNS Telemetry
 
+![DNS Telemetry Reference](/img/infographic-telemetry-dns.png)
+
 | Field | Notes |
 |---|---|
 | query_name | Queried domain name |
@@ -70,6 +84,8 @@ The tables below list the data sources most commonly required for endpoint, netw
 **Common gap:** DNS logging is frequently incomplete. Recursive resolvers may not log internal resolution. Encrypted DNS (DoH, DoT) bypasses traditional DNS logging entirely.
 
 ### Proxy / Web Gateway
+
+![Proxy / Web Gateway Telemetry Reference](/img/infographic-telemetry-proxy-web-gateway.png)
 
 | Field | Notes |
 |---|---|
@@ -87,6 +103,8 @@ The tables below list the data sources most commonly required for endpoint, netw
 
 ### Identity Provider (Entra ID / Okta / similar)
 
+![Identity Provider Telemetry Reference](/img/infographic-telemetry-identity-provider.png)
+
 | Field | Notes |
 |---|---|
 | user_principal_name | Authenticating identity |
@@ -101,6 +119,8 @@ The tables below list the data sources most commonly required for endpoint, netw
 **Common gap:** Legacy authentication protocols may not log MFA result or conditional access enforcement.
 
 ### Cloud Audit Logs (AWS CloudTrail / Azure Monitor / GCP Audit Logs)
+
+![Cloud Audit Logs Reference](/img/infographic-telemetry-cloud-audit-logs.png)
 
 | Field | Notes |
 |---|---|
