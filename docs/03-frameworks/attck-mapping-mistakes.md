@@ -12,7 +12,7 @@ Good mapping is narrow, evidence-backed, and operationally testable.
 
 ## CTI Relevance
 
-This page helps reviewers challenge weak mappings before they become dashboards, coverage claims, or detection backlogs.
+This page helps reviewers challenge weak mappings before they become dashboards, [coverage claims](../08-cti-to-detection/detection-readiness-levels.md), or [detection backlogs](../08-cti-to-detection/detection-backlog.md).
 
 ## Common Mistakes
 

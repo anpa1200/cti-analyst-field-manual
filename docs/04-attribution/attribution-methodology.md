@@ -18,7 +18,7 @@ Attribution affects response priority, legal/comms posture, executive reporting,
 
 - Attributing from a single IOC.
 - Using ATT&CK overlap as proof.
-- Ignoring false-flag and copycat possibilities.
+- Ignoring [false-flag](false-flag-analysis.md) and copycat possibilities.
 - Failing to separate cluster, persona, sponsor, and public claim.
 
 ## Practical Workflow
@@ -26,7 +26,7 @@ Attribution affects response priority, legal/comms posture, executive reporting,
 1. Define what is being attributed: event, campaign, tool, infrastructure, persona, or sponsor.
 2. Collect evidence by category.
 3. Rate strength and reliability.
-4. Generate alternative hypotheses.
+4. Generate [alternative hypotheses](../02-analytic-discipline/alternative-hypotheses.md).
 5. Weigh contradictions.
 6. Assign confidence with reason.
 7. State limitations and what would change the judgment.

@@ -10,7 +10,7 @@ Source reliability describes the historic trustworthiness, access, and disciplin
 
 The model in use is the Admiralty Code (NATO-style source evaluation), sometimes called the Admiralty System or the STANAG 2511 model. It is also codified in the MISP admiral taxonomy and widely used in law enforcement, military intelligence, and commercial CTI.
 
-The notation is not mathematical. It is a **review prompt** that forces the analyst to explain why a claim deserves the weight assigned to it.
+The notation is not mathematical. It is a **review prompt** that forces the analyst to explain why a claim deserves the weight assigned to it. Pair this with [evidence labels](evidence-labels.md) for each claim and [confidence language](confidence-language.md) in the finished product.
 
 ## Source Reliability: A through F
 

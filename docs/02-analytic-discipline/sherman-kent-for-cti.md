@@ -8,7 +8,7 @@ Translate Sherman Kent-style analytic discipline into practical CTI writing and 
 
 Sherman Kent's core value for CTI is disciplined judgment: say what is known, how it is known, what is assessed, how confident the analyst is, and what remains uncertain. CTI often fails when it sounds certain but is built on unexamined assumptions.
 
-Kent-style discipline helps analysts avoid vague estimative language, overclaiming, source laundering, and attribution shortcuts. The goal is not academic writing. The goal is a judgment that can survive review by a skeptical peer.
+Kent-style discipline helps analysts avoid vague [estimative language](estimative-language.md), overclaiming, source laundering, and [attribution shortcuts](../04-attribution/attribution-methodology.md). The goal is not academic writing. The goal is a judgment that can survive review by a skeptical peer.
 
 The two pillars are:
 

@@ -14,7 +14,7 @@ Finished intelligence requires judgment. It must include evidence, uncertainty, 
 
 ## CTI Relevance
 
-This distinction is critical in CTI-to-detection work. A detection engineer does not need ten pages of article excerpts. They need a behavior, a confidence statement, telemetry requirements, expected false positives, and validation guidance.
+This distinction is critical in CTI-to-detection work. A detection engineer does not need ten pages of article excerpts. They need a behavior, a [confidence statement](confidence-language.md), [telemetry requirements](../08-cti-to-detection/telemetry-requirements.md), expected false positives, and [validation guidance](../08-cti-to-detection/detection-readiness-levels.md).
 
 ## Common Mistakes
 
@@ -27,8 +27,8 @@ This distinction is critical in CTI-to-detection work. A detection engineer does
 ## Practical Workflow
 
 1. Keep research notes separate from finished outputs.
-2. Extract claims into an evidence register.
-3. Label each claim: Observed, Reported, Assessed, Inferred, Unknown, or Gap.
+2. Extract claims into an [evidence register](../10-templates/evidence-register-template.md).
+3. Label each claim: [Observed, Reported, Assessed, Inferred, Unknown, or Gap](evidence-labels.md).
 4. Identify contradictions and missing context.
 5. Write key judgments with confidence reasons.
 6. Tailor the final product to the consumer.

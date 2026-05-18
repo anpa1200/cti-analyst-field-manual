@@ -12,7 +12,7 @@ The analyst should ask what the signal is, who benefits if it is believed, and w
 
 ## CTI Relevance
 
-False-flag analysis is especially important for hack-and-leak personas, politically motivated claims, and public attribution debates.
+False-flag analysis is especially important for hack-and-leak personas, politically motivated claims, and public attribution debates. See [Handala](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/handala/) in the Israel CTI project for a worked example of persona-based hacktivist analysis.
 
 ## Common Mistakes
 

@@ -6,7 +6,7 @@ Provide a reusable pre-publication checklist for CTI outputs.
 
 ## Practitioner-Level Explanation
 
-The checklist is a quality-control tool. It should be used before publishing a report, updating an actor page, creating a hunt hypothesis, or briefing a decision-maker.
+The checklist is a quality-control tool. It should be used before publishing a report, updating an [actor profile](../06-actor-research/actor-profile-template.md), creating a [hunt hypothesis](../08-cti-to-detection/hunting-hypothesis-template.md), or briefing a decision-maker.
 
 The point is not bureaucracy. The point is to catch unsupported claims, missing confidence reasons, unbounded pivots, and broken links before the output becomes operational guidance.
 
@@ -33,7 +33,7 @@ Consistent review improves trust between CTI, SOC, detection engineering, IR, an
 
 ## Example / Mini Case
 
-Before sending an executive note about a campaign, the analyst verifies that actor attribution is not based only on ATT&CK overlap, that the source is primary or clearly labeled as secondary, and that the recommendation is feasible for the SOC.
+Before sending an executive note about a campaign, the analyst verifies that [actor attribution](../04-attribution/attribution-methodology.md) is not based only on [ATT&CK overlap](../03-frameworks/attck-mapping-mistakes.md), that the [source](../01-cti-foundations/source-reliability.md) is primary or clearly labeled as secondary, and that the recommendation is feasible for the SOC.
 
 ## Analyst Checklist
 

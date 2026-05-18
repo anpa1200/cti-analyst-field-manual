@@ -12,7 +12,7 @@ The analyst should identify whether the contradiction is factual, taxonomic, tem
 
 ## CTI Relevance
 
-Contradiction handling prevents weak actor merges, stale claims, and detection work based on outdated assumptions.
+Contradiction handling prevents weak [actor merges](../06-actor-research/actor-profile-template.md), stale claims, and [detection work](../08-cti-to-detection/detection-backlog.md) based on outdated assumptions.
 
 ## Common Mistakes
 

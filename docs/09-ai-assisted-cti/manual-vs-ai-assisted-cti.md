@@ -6,13 +6,13 @@ Explain where AI can accelerate CTI work and where human judgment remains mandat
 
 ## Practitioner-Level Explanation
 
-AI can accelerate source triage, summarization, schema drafting, prompt-based extraction, first-pass hypothesis generation, and editorial tightening. It cannot own attribution, source validation, confidence assignment, or customer-risk acceptance.
+AI can accelerate source triage, summarization, schema drafting, prompt-based extraction, first-pass hypothesis generation, and editorial tightening. It cannot own [attribution](../04-attribution/attribution-methodology.md), [source validation](../01-cti-foundations/source-reliability.md), [confidence assignment](../01-cti-foundations/confidence-language.md), or customer-risk acceptance.
 
 The useful model is analyst-led, AI-assisted CTI.
 
 ## CTI Relevance
 
-AI-assisted CTI can reduce mechanical effort while preserving evidence discipline if quality gates are enforced.
+AI-assisted CTI can reduce mechanical effort while preserving evidence discipline if [quality gates](ai-quality-gates.md) are enforced.
 
 ## Common Mistakes
 
@@ -40,7 +40,7 @@ Manual workflow may take hours to extract claims from reports. AI can create a d
 - Are claims evidence-labeled?
 - Is sensitive data excluded?
 - Has a human reviewed the output?
-- Are hallucination controls applied?
+- Are [hallucination controls](hallucination-control.md) applied?
 
 ## Output Artifact
 

@@ -24,12 +24,12 @@ A CTI team should be able to trace a finished product backward to the requiremen
 
 ## Practical Workflow
 
-1. **Direction:** Define PIRs, SIRs, and decision owners.
+1. **Direction:** Define [PIRs, SIRs](pir-sir-eei.md), and decision owners.
 2. **Collection:** Gather public reporting, telemetry summaries, vendor intelligence, government advisories, and internal context allowed by scope.
-3. **Processing:** Normalize sources, extract claims, identify dates, rate source reliability, and preserve links.
-4. **Analysis:** Compare claims, weigh evidence, document assumptions, and produce judgments.
+3. **Processing:** Normalize sources, extract claims, identify dates, rate [source reliability](source-reliability.md), and preserve links.
+4. **Analysis:** Compare claims, weigh [evidence](../02-analytic-discipline/analyst-checklist.md), document [assumptions](../02-analytic-discipline/assumptions-and-gaps.md), and produce judgments.
 5. **Dissemination:** Deliver the right format to the right audience.
-6. **Feedback:** Ask whether the product changed a decision, hunt, detection, control, or risk posture.
+6. **Feedback:** Ask whether the product changed a decision, hunt, [detection](../08-cti-to-detection/intelligence-to-detection.md), control, or risk posture.
 7. **Refinement:** Update requirements, gaps, and collection priorities.
 
 ## Example / Mini Case
@@ -40,7 +40,7 @@ A SOC lead asks whether recent reporting on an actor should change monitoring. T
 - **Collection:** Pull public vendor reports and existing internal telemetry inventory.
 - **Processing:** Extract behaviors, not only IOCs.
 - **Analysis:** Identify which behaviors can be hunted with current logs.
-- **Dissemination:** Provide a detection backlog item and a telemetry gap note.
+- **Dissemination:** Provide a [detection backlog](../08-cti-to-detection/detection-backlog.md) item and a [telemetry gap](../08-cti-to-detection/telemetry-requirements.md) note.
 - **Feedback:** SOC confirms whether the hunt produced results or only baselining needs.
 
 ## Analyst Checklist

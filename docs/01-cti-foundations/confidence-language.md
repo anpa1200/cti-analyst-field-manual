@@ -26,7 +26,7 @@ Confidence language allows CTI teams to be useful without overclaiming. It gives
 1. State the judgment.
 2. Identify evidence supporting the judgment.
 3. Identify evidence weakening or contradicting it.
-4. Assess source reliability and information credibility.
+4. Assess [source reliability](source-reliability.md) and information credibility.
 5. Assign confidence.
 6. Write the confidence reason in plain language.
 7. Define what evidence would change the confidence level.
@@ -41,7 +41,7 @@ Better: "We assess with medium confidence that the activity aligns with Actor X 
 
 - Is confidence attached to a specific judgment?
 - Is the reason explicit?
-- Are gaps and contradictions included?
+- Are gaps and [contradictions](../02-analytic-discipline/contradiction-handling.md) included?
 - Could another analyst challenge the judgment from the evidence record?
 - Is confidence separated from probability?
 

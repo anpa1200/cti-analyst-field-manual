@@ -12,7 +12,7 @@ A useful mapping includes technique ID, technique name, tactic, procedure, [evid
 
 ## CTI Relevance
 
-ATT&CK turns CTI into operational language for hunts, detections, and coverage discussions. It also reveals where reporting is too vague to support engineering.
+ATT&CK turns CTI into operational language for hunts, detections, and [coverage discussions](../08-cti-to-detection/detection-readiness-levels.md). It also reveals where reporting is too vague to support engineering.
 
 ## Common Mistakes
 

@@ -97,7 +97,7 @@ No actionable intelligence judgment is possible on future targeting. The gap is 
 
 1. Define the judgment in one sentence.
 2. Choose the weakest accurate estimative term.
-3. Attach the evidence label (Observed, Reported, Assessed, Inferred).
+3. Attach the [evidence label](../01-cti-foundations/evidence-labels.md) (Observed, Reported, Assessed, Inferred).
 4. State whether the assessment is source-reported or analyst-assessed.
 5. Record what evidence would strengthen or weaken it.
 6. Record the gap if evidence is insufficient for any useful estimate.

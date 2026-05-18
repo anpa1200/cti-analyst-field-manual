@@ -12,7 +12,7 @@ An analyst can often know capability and infrastructure while adversary remains 
 
 ## CTI Relevance
 
-The model is especially useful for infrastructure pivoting, actor clustering, and alternative hypotheses.
+The model is especially useful for [infrastructure pivoting](../05-infrastructure-pivoting/single-ioc-to-network.md), [actor clustering](../06-actor-research/actor-profile-template.md), and [alternative hypotheses](../02-analytic-discipline/alternative-hypotheses.md).
 
 ## Common Mistakes
 
@@ -32,7 +32,7 @@ The model is especially useful for infrastructure pivoting, actor clustering, an
 
 ## Example / Mini Case
 
-A domain, certificate, lure theme, and payload family may define a campaign cluster. The adversary remains Unknown. The next collection tasks are passive DNS, malware config review, lure recipient analysis, and overlap checks with known clusters.
+A domain, certificate, lure theme, and payload family may define a campaign cluster. The adversary remains Unknown. The next collection tasks are [passive DNS](../05-infrastructure-pivoting/passive-dns.md), malware config review, lure recipient analysis, and overlap checks with known clusters.
 
 ## Analyst Checklist
 

@@ -10,7 +10,7 @@ A [detection backlog](detection-backlog.md) is not a wish list; compare maturity
 
 ## CTI Relevance
 
-Backlogs connect CTI priorities to engineering capacity and SOC readiness.
+Backlogs connect CTI priorities to engineering capacity and [SOC readiness](soc-handoff.md).
 
 ## Common Mistakes
 
@@ -31,7 +31,7 @@ Backlogs connect CTI priorities to engineering capacity and SOC readiness.
 
 ## Example / Mini Case
 
-A backup-deletion behavior may be high impact but blocked by missing process telemetry. The backlog item remains Hunt or Design until telemetry exists and tests are completed.
+A backup-deletion behavior may be high impact but blocked by missing [process telemetry](telemetry-requirements.md). The backlog item remains Hunt or Design until telemetry exists and tests are completed, reaching [DRL-5 or above](detection-readiness-levels.md).
 
 ## Analyst Checklist
 
@@ -62,6 +62,8 @@ Next Step:
 
 - [Detection Backlog Item](../10-templates/detection-backlog-item.md)
 - [Telemetry Requirements](telemetry-requirements.md)
+- [Detection Readiness Levels](detection-readiness-levels.md)
+- [Intelligence to Detection](intelligence-to-detection.md)
 - [SOC Handoff](soc-handoff.md)
 
 ## References

@@ -12,7 +12,7 @@ A mature CTI product does not hide gaps. It explains whether the gap blocks the 
 
 ## CTI Relevance
 
-Assumption and gap handling is essential for attribution, threat prioritization, infrastructure clustering, and detection engineering. It tells downstream teams what can be trusted and what still needs validation.
+Assumption and gap handling is essential for [attribution](../04-attribution/attribution-methodology.md), threat prioritization, [infrastructure clustering](../05-infrastructure-pivoting/single-ioc-to-network.md), and [detection engineering](../08-cti-to-detection/intelligence-to-detection.md). It tells downstream teams what can be trusted and what still needs validation.
 
 ## Common Mistakes
 

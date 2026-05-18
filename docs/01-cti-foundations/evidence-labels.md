@@ -25,10 +25,10 @@ Labels do not replace prose. The analyst still needs to explain source quality, 
 
 Evidence labels are useful across the whole CTI workflow:
 
-- Source registers use them to classify extracted claims.
-- Actor profiles use them to avoid overclaiming attribution.
-- ATT&CK mappings use them to show whether behavior is observed or only actor-level reporting.
-- Detection backlogs use them to decide whether a hypothesis is strong enough to test.
+- [Source registers](../10-templates/source-register-template.md) use them to classify extracted claims.
+- [Actor profiles](../06-actor-research/actor-profile-template.md) use them to avoid overclaiming [attribution](../04-attribution/attribution-methodology.md).
+- [ATT&CK mappings](../03-frameworks/attck-mapping-mistakes.md) use them to show whether behavior is observed or only actor-level reporting.
+- [Detection backlogs](../08-cti-to-detection/detection-backlog.md) use them to decide whether a hypothesis is strong enough to test.
 - Executive summaries use them to avoid false certainty.
 
 ## Common Mistakes

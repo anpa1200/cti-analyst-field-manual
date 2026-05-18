@@ -12,7 +12,7 @@ A good alternative hypothesis is not a random possibility. It must explain the s
 
 ## CTI Relevance
 
-Alternative hypotheses are essential for attribution, infrastructure clustering, persona claims, and interpreting campaign overlap.
+Alternative hypotheses are essential for [attribution](../04-attribution/attribution-methodology.md), [infrastructure clustering](../05-infrastructure-pivoting/single-ioc-to-network.md), [persona claims](../04-attribution/false-flag-analysis.md), and interpreting campaign overlap.
 
 ## Common Mistakes
 

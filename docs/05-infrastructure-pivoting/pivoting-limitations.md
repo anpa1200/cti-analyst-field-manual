@@ -12,7 +12,7 @@ Every pivot should answer: what does this relationship prove, what does it not p
 
 ## CTI Relevance
 
-Limitations protect downstream teams from treating weak pivots as blocklists, attribution, or production detections.
+Limitations protect downstream teams from treating weak pivots as blocklists, [attribution](../04-attribution/attribution-methodology.md), or [production detections](../08-cti-to-detection/detection-readiness-levels.md).
 
 ## Common Mistakes
 

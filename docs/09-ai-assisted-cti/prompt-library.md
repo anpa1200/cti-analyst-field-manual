@@ -38,7 +38,7 @@ Research prompt: Extract only source-supported claims. For each claim provide UR
 - Are claims evidence-labeled?
 - Is sensitive data excluded?
 - Has a human reviewed the output?
-- Are hallucination controls applied?
+- Are [hallucination controls](hallucination-control.md) applied?
 
 ## Output Artifact
 

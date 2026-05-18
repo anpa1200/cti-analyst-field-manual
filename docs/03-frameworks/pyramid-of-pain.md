@@ -12,7 +12,7 @@ This does not mean low-level indicators are useless. They can support triage, sc
 
 ## CTI Relevance
 
-This framework helps CTI teams avoid over-investing in stale IOC feeds and under-investing in behavior-based hunts.
+This framework helps CTI teams avoid over-investing in stale IOC feeds and under-investing in [behavior-based hunts](../08-cti-to-detection/hunting-hypothesis-template.md).
 
 ## Common Mistakes
 
@@ -27,7 +27,7 @@ This framework helps CTI teams avoid over-investing in stale IOC feeds and under
 2. Attach context, source, and expiration.
 3. Use hashes/IPs for triage and scoping.
 4. Derive behaviors and telemetry requirements.
-5. Convert durable behaviors into hunts or detections.
+5. Convert durable behaviors into [hunts](../08-cti-to-detection/hunting-hypothesis-template.md) or [detections](../08-cti-to-detection/detection-backlog.md).
 6. Validate false positives.
 
 ## Example / Mini Case

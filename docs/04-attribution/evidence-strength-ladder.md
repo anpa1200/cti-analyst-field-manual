@@ -8,7 +8,7 @@ Rank attribution evidence by strength and limitations.
 
 Not all attribution evidence has equal weight. A reused IP address is weak by itself. A unique malware build, exclusive infrastructure, operator mistake, and corroborated victimology together are stronger.
 
-The ladder helps analysts explain why a judgment is high, medium, or low confidence.
+The ladder helps analysts explain why a judgment is high, medium, or low [confidence](../01-cti-foundations/confidence-language.md).
 
 ## CTI Relevance
 
@@ -59,6 +59,8 @@ Source:
 - [Attribution Methodology](attribution-methodology.md)
 - [Confidence vs Probability](confidence-vs-probability.md)
 - [Infrastructure Pivoting Limitations](../05-infrastructure-pivoting/pivoting-limitations.md)
+- [Israel CTI — Scoring Models](https://anpa1200.github.io/israel-government-threat-actors-cti/methodology/scoring-models/)
+- [Israel CTI — Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/)
 
 ## References
 

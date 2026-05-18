@@ -8,9 +8,9 @@ Define cyber threat intelligence as an analytic discipline that supports decisio
 
 Cyber threat intelligence is evidence-based analysis of adversary intent, capability, opportunity, behavior, infrastructure, targeting, and likely operational relevance to a defended environment. CTI becomes useful when it answers a decision-maker's question and can be traced to evidence, limitations, confidence, and a recommended action.
 
-A CTI product can be strategic, operational, tactical, or technical. The category is less important than whether the product is fit for its consumer. A board-level risk note, a SOC hunt hypothesis, a detection backlog item, an actor profile, and an infrastructure pivot log are all CTI outputs if they connect evidence to decisions.
+A CTI product can be strategic, operational, tactical, or technical. The category is less important than whether the product is fit for its consumer. A board-level risk note, a SOC [hunt hypothesis](../08-cti-to-detection/hunting-hypothesis-template.md), a [detection backlog](../08-cti-to-detection/detection-backlog.md) item, an [actor profile](../06-actor-research/actor-profile-template.md), and an [infrastructure pivot](../05-infrastructure-pivoting/single-ioc-to-network.md) log are all CTI outputs if they connect evidence to decisions.
 
-CTI is not merely collecting indicators. Indicators can support CTI, but without context, confidence, expiration, source rating, and actionability, they are raw data. CTI requires interpretation and explicit uncertainty.
+CTI is not merely collecting indicators. Indicators can support CTI, but without context, confidence, expiration, [source rating](source-reliability.md), and actionability, they are raw data. CTI requires interpretation and [explicit uncertainty](../02-analytic-discipline/estimative-language.md).
 
 ## CTI Relevance
 
@@ -26,7 +26,7 @@ Good CTI helps teams prioritize limited defensive resources. It answers question
 
 - Treating IOC lists as finished intelligence.
 - Writing actor profiles that do not explain relevance to a specific environment.
-- Using ATT&CK coverage charts as proof of detection coverage.
+- Using [ATT&CK](../03-frameworks/mitre-attack-as-working-tool.md) coverage charts as proof of detection coverage.
 - Making attribution claims from shared tooling alone.
 - Reporting every source claim with equal weight.
 - Hiding uncertainty to make the report sound stronger.
