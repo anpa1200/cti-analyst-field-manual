@@ -31,6 +31,8 @@ Actor update discipline keeps CTI repositories accurate and prevents stale actor
 6. Check affected detections and hunts.
 7. Record changelog and review date.
 
+![Actor Update Workflow — Practical Workflow](/img/infographic-actor-update-workflow2.png)
+
 ![Threat Intelligence Profile Maintenance Workflow](/img/infographic-actor-update-workflow.png)
 
 ## Example / Mini Case

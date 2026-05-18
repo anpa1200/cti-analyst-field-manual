@@ -31,6 +31,8 @@ The following table adapts the Sherman Kent Words of Estimative Probability (WEP
 
 **Critical rule:** The term used must be tied to a reason. "Likely" with no reason is not calibrated language. "Likely because three independent government advisories describe the same behavior" is.
 
+![Sherman Kent — Calibrated Probability Wording Table](/img/infographic-sherman-kent-table.png)
+
 ## Confidence Is Not Probability
 
 Confidence (High/Medium/Low) and probability wording (likely/possibly/remote) serve different purposes:
@@ -114,6 +116,8 @@ What Would Change It: Exclusive infrastructure link, common malware config seed 
 6. Explain confidence with evidence quality, corroboration, and analytic consistency.
 7. State what evidence would change the judgment.
 8. Identify collection gaps and decision impact.
+
+![Sherman Kent for CTI — Practical Workflow](/img/infographic-sherman-kent-workflow.png)
 
 ## Analyst Checklist
 

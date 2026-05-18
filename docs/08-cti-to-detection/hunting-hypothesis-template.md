@@ -31,6 +31,8 @@ Hypotheses make CTI actionable without prematurely creating noisy alerts.
 6. Run and tune.
 7. Record findings and next action.
 
+![Hunt Hypothesis Template — Practical Workflow](/img/infographic-hunt-hypothesis-workflow.png)
+
 ![Practical Workflow: Hunt for RMM Abuse](/img/infographic-hunt-rmm-abuse-workflow.png)
 
 ## Example / Mini Case

@@ -30,6 +30,8 @@ Worked cases help analysts learn when to stop pivoting and how to explain cluste
 5. Write a cluster assessment.
 6. Convert to hunt enrichment with limitations.
 
+![Infrastructure Pivoting Worked Case — Practical Workflow](/img/infographic-pivot-worked-case-workflow.png)
+
 ![Threat Intelligence Pivot Workflow: Controlled, Documented, and Defensible](/img/infographic-pivot-workflow-defensible.png)
 
 ## Example / Mini Case

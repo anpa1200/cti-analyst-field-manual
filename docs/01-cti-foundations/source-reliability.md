@@ -29,6 +29,8 @@ The notation is not mathematical. It is a **review prompt** that forces the anal
 - Anonymous social media accounts, unverified personas, and first-use sources typically qualify for F until track record exists.
 - Source reliability changes over time. Reassess when new evidence about the source appears.
 
+![Source Reliability A–F — Admiralty Code Scale](/img/infographic-source-reliability-a-f.png)
+
 ## Information Credibility: 1 through 6
 
 | Code | Label | Meaning |
@@ -45,6 +47,8 @@ The notation is not mathematical. It is a **review prompt** that forces the anal
 - A claim rated 2 or 3 may still be operationally important. Low credibility rating does not mean ignore; it means collect more evidence before acting.
 - A claim rated 4 or 5 should not drive defensive action without explicit risk acceptance.
 
+![Information Credibility 1–6 — Admiralty Code Scale](/img/infographic-source-credibility-1-6.png)
+
 ## Combined Notation and Examples
 
 | Notation | Source | Claim | Meaning |
@@ -54,6 +58,8 @@ The notation is not mathematical. It is a **review prompt** that forces the anal
 | B3 | Established vendor CTI report | Specific tool variant observed in cluster | Usually reliable source, possibly true but single-vendor reporting |
 | C4 | Media summary of vendor blog | Attribution to a named nation-state | Fairly reliable intermediary; claim is doubtful because secondary summary with no forensics |
 | F6 | Anonymous Telegram persona | Claim of responsibility for an attack | New or unverified source; cannot judge claim truth |
+
+![Source Reliability — Combined Notation and Examples](/img/infographic-source-reliability-combined.png)
 
 ## Common Mistakes
 
@@ -75,6 +81,8 @@ An A-rated source can make a weak claim. A weak source can report something that
 4. Rate information credibility (1-6) for each **claim**, not only for the source overall.
 5. Record what corroborates, contradicts, or is missing.
 6. Revisit ratings when new evidence about the source or the claim appears.
+
+![Source Reliability — Practical Workflow](/img/infographic-source-reliability-workflow.png)
 
 ## Example / Mini Case
 

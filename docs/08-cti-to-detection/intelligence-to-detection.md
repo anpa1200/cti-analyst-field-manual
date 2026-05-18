@@ -34,6 +34,8 @@ This workflow is the bridge between CTI and operational defense. It makes intell
 9. Create SOC handoff.
 10. Assign detection readiness level.
 
+![Intelligence to Detection — Practical Workflow](/img/infographic-intel-to-detection-workflow2.png)
+
 ![Intelligence to Detection: Practical Workflow (10-step)](/img/infographic-intel-to-detection-workflow.png)
 
 ## Example / Mini Case

@@ -32,6 +32,8 @@ This page helps reviewers challenge weak mappings before they become dashboards,
 6. Assign mapping maturity.
 7. Reject mappings that cannot be supported.
 
+![ATT&CK Mapping Mistakes — Practical Workflow](/img/infographic-attck-mapping-workflow.png)
+
 ## Example / Mini Case
 
 A report says a tool can capture credentials. Do not map credential dumping unless the source reports observed credential dumping or analysis confirms capability and the page is explicit that the mapping is capability-based, not observed procedure.

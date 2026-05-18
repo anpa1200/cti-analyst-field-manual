@@ -31,6 +31,8 @@ Attribution affects response priority, legal/comms posture, executive reporting,
 6. Assign confidence with reason.
 7. State limitations and what would change the judgment.
 
+![Attribution Methodology — Practical Workflow](/img/infographic-attribution-methodology-workflow.png)
+
 ## Example / Mini Case
 
 A persona claims an attack on social media. Attribution to the persona is not the same as attribution to the operational cluster. The analyst records the public claim as Reported, seeks telemetry or third-party corroboration, and avoids sponsor attribution unless stronger evidence exists.

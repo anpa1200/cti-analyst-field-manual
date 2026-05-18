@@ -30,6 +30,8 @@ Hosting pivots support enrichment, blocking decisions, provider abuse reporting,
 5. Assess collateral risk.
 6. Document whether the pivot is tactical or analytic.
 
+![ASN and Hosting Pivots — Practical Workflow](/img/infographic-asn-workflow.png)
+
 ![ASN & Provider Pivot Workflow: Contextual Infrastructure Analysis](/img/infographic-asn-provider-pivot.png)
 
 ## Example / Mini Case

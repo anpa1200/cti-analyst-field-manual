@@ -29,6 +29,8 @@ Assumption and gap handling is essential for [attribution](../04-attribution/att
 4. Assign collection options.
 5. Update the judgment if a key assumption fails.
 
+![Assumptions and Gaps — Practical Workflow](/img/infographic-assumptions-gaps-workflow.png)
+
 ## Example / Mini Case
 
 A report describes an actor targeting telecom providers. The analyst assumes similar exposure may exist in a local telecom environment. That assumption is acceptable only if labeled. The gap is whether the local environment has the same exposed service, telemetry, or supplier relationship.

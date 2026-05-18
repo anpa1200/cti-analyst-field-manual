@@ -30,6 +30,8 @@ Alternative hypotheses are essential for [attribution](../04-attribution/attribu
 5. Assign confidence and collection tasks.
 6. Update when new evidence arrives.
 
+![Alternative Hypotheses — Practical Workflow](/img/infographic-alternative-hypotheses-workflow.png)
+
 ## Example / Mini Case
 
 Evidence shows a phishing lure, a cloud storage link, and PowerShell execution. Hypothesis 1: a tracked APT campaign. Hypothesis 2: commodity intrusion using similar tradecraft. Hypothesis 3: internal red-team or admin activity. Discriminating evidence includes infrastructure ownership, payload lineage, user targeting, and approved testing records.

@@ -10,6 +10,8 @@ The Cyber Kill Chain organizes activity from preparation through delivery, explo
 
 The model is not complete for every modern intrusion. Identity-plane abuse, cloud-native activity, SaaS compromise, and living-off-the-land behavior may not fit neatly. Use the model as a sequencing tool, not a forced structure.
 
+![Cyber Kill Chain — Intrusion Phases and Defensive Opportunities](/img/infographic-cyber-kill-chain.png)
+
 ## CTI Relevance
 
 Kill-chain analysis helps convert a long report into phases, observables, telemetry, and response opportunities.
@@ -28,6 +30,8 @@ Kill-chain analysis helps convert a long report into phases, observables, teleme
 3. Map each behavior to evidence and telemetry.
 4. Identify prevention, detection, and response opportunities.
 5. Record missing phases as gaps, not assumptions.
+
+![Cyber Kill Chain — Practical Workflow](/img/infographic-cyber-kill-chain-workflow.png)
 
 ## Example / Mini Case
 

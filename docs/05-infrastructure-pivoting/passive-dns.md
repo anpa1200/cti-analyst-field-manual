@@ -30,6 +30,8 @@ Passive DNS helps identify campaign infrastructure, historical exposure, and pos
 5. Corroborate with certificates, paths, configs, or telemetry.
 6. Expire stale indicators.
 
+![Passive DNS — Practical Workflow](/img/infographic-passive-dns-workflow2.png)
+
 ![Passive DNS & Infrastructure Association Workflow](/img/infographic-passive-dns-workflow.png)
 
 ## Example / Mini Case

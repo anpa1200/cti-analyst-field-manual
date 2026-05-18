@@ -32,6 +32,8 @@ Consistent actor profiles help CTI teams compare actors, prioritize research, an
 6. Add detections and hunts.
 7. Add gaps and review date.
 
+![Actor Profile Template — Practical Workflow](/img/infographic-actor-profile-workflow.png)
+
 ![Alias Table — Naming and Source Caveats](/img/infographic-alias-table.png)
 
 ## Example / Mini Case

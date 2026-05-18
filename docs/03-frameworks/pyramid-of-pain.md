@@ -10,6 +10,8 @@ The Pyramid of Pain ranks indicators by how disruptive they are for an adversary
 
 This does not mean low-level indicators are useless. They can support triage, scoping, and historical search. But durable detection engineering should move toward behavior and procedure whenever telemetry allows.
 
+![Pyramid of Pain — Indicator Tiers and Adversary Cost](/img/infographic-pyramid-of-pain.png)
+
 ## CTI Relevance
 
 This framework helps CTI teams avoid over-investing in stale IOC feeds and under-investing in [behavior-based hunts](../08-cti-to-detection/hunting-hypothesis-template.md).
@@ -29,6 +31,8 @@ This framework helps CTI teams avoid over-investing in stale IOC feeds and under
 4. Derive behaviors and telemetry requirements.
 5. Convert durable behaviors into [hunts](../08-cti-to-detection/hunting-hypothesis-template.md) or [detections](../08-cti-to-detection/detection-backlog.md).
 6. Validate false positives.
+
+![Pyramid of Pain — Practical Workflow](/img/infographic-pyramid-of-pain-workflow.png)
 
 ## Example / Mini Case
 

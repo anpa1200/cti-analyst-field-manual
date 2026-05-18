@@ -10,6 +10,8 @@ The Diamond Model helps structure CTI around four core features: adversary, capa
 
 An analyst can often know capability and infrastructure while adversary remains unknown. That is still useful CTI if the uncertainty is explicit.
 
+![Diamond Model — Adversary, Capability, Infrastructure, Victim](/img/infographic-diamond-model.png)
+
 ## CTI Relevance
 
 The model is especially useful for [infrastructure pivoting](../05-infrastructure-pivoting/single-ioc-to-network.md), [actor clustering](../06-actor-research/actor-profile-template.md), and [alternative hypotheses](../02-analytic-discipline/alternative-hypotheses.md).
@@ -29,6 +31,8 @@ The model is especially useful for [infrastructure pivoting](../05-infrastructur
 4. Record evidence for each relationship.
 5. Assess relationship strength.
 6. Use the model to generate collection tasks.
+
+![Diamond Model — Practical Workflow](/img/infographic-diamond-model-workflow.png)
 
 ## Example / Mini Case
 

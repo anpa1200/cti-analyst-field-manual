@@ -30,6 +30,8 @@ Contradiction handling prevents weak [actor merges](../06-actor-research/actor-p
 5. Update confidence or mark Gap.
 6. Preserve both claims until resolved.
 
+![Contradiction Handling — Practical Workflow](/img/infographic-contradiction-handling-workflow.png)
+
 ## Example / Mini Case
 
 Source A says a cluster is linked to one sponsor; Source B uses more cautious language. The correct output is not to average the claims. Record both, prefer the more precise primary evidence, and state whether the sponsor link is source-reported, assessed-by-source, or a local assessment.

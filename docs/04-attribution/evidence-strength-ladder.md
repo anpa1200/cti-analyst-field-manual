@@ -30,6 +30,8 @@ Evidence weighting prevents overclaiming and makes attribution review possible.
 5. Combine evidence only when relationships are valid.
 6. Document confidence impact.
 
+![Evidence Strength Ladder — Practical Workflow](/img/infographic-evidence-strength-workflow.png)
+
 ## Example / Mini Case
 
 Weak evidence: same cloud provider, common tool, generic phishing theme. Stronger evidence: unique C2 path pattern, malware configuration overlap, repeated operator schedule, and corroborated targeting pattern.

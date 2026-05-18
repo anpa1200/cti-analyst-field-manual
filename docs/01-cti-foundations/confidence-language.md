@@ -31,6 +31,8 @@ Confidence language allows CTI teams to be useful without overclaiming. It gives
 6. Write the confidence reason in plain language.
 7. Define what evidence would change the confidence level.
 
+![Confidence Language — Practical Workflow](/img/infographic-confidence-language-workflow.png)
+
 ## Example / Mini Case
 
 Weak: "We assess with high confidence that Actor X is responsible."

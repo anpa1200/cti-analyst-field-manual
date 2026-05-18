@@ -10,6 +10,8 @@ The intelligence cycle is a disciplined way to move from requirements to action.
 
 The cycle matters because threat reporting is noisy. Without a cycle, analysts collect interesting material and then search for a use case. With a cycle, analysts collect against a decision need and can explain why a source, claim, detection idea, or gap matters.
 
+![Intelligence Cycle — Direction, Collection, Processing, Analysis, Dissemination, Feedback](/img/infographic-intelligence-cycle.png)
+
 ## CTI Relevance
 
 A CTI team should be able to trace a finished product backward to the requirement that caused it and forward to the decision it supports. If it cannot, the product may still be useful research, but it is not finished intelligence.
@@ -31,6 +33,8 @@ A CTI team should be able to trace a finished product backward to the requiremen
 5. **Dissemination:** Deliver the right format to the right audience.
 6. **Feedback:** Ask whether the product changed a decision, hunt, [detection](../08-cti-to-detection/intelligence-to-detection.md), control, or risk posture.
 7. **Refinement:** Update requirements, gaps, and collection priorities.
+
+![Intelligence Cycle — Practical Workflow](/img/infographic-intelligence-cycle-workflow.png)
 
 ## Example / Mini Case
 

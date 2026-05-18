@@ -12,6 +12,8 @@ A CTI product can be strategic, operational, tactical, or technical. The categor
 
 CTI is not merely collecting indicators. Indicators can support CTI, but without context, confidence, expiration, [source rating](source-reliability.md), and actionability, they are raw data. CTI requires interpretation and [explicit uncertainty](../02-analytic-discipline/estimative-language.md).
 
+![What Is CTI? — Intelligence Discipline, Not Just IOCs](/img/infographic-what-is-cti.png)
+
 ## CTI Relevance
 
 Good CTI helps teams prioritize limited defensive resources. It answers questions such as:
@@ -41,6 +43,8 @@ Good CTI helps teams prioritize limited defensive resources. It answers question
 6. Evaluate relevance to the defended environment.
 7. Produce an output: report, actor profile, hunt, detection backlog item, SOC note, or executive summary.
 8. Review whether the output changes a decision or action.
+
+![What Is CTI? — Practical Workflow](/img/infographic-what-is-cti-workflow.png)
 
 ## Example / Mini Case
 

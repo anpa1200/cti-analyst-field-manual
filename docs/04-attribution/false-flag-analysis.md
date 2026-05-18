@@ -30,6 +30,8 @@ False-flag analysis is especially important for hack-and-leak personas, politica
 5. Look for independent corroboration.
 6. State whether the signal affects attribution confidence.
 
+![False Flag Analysis — Practical Workflow](/img/infographic-false-flag-workflow.png)
+
 ## Example / Mini Case
 
 A claimed persona posts data allegedly from a victim. The correct response is to preserve the claim, avoid reposting sensitive content, check internal telemetry or trusted reporting, and record the claim separately from verified compromise.

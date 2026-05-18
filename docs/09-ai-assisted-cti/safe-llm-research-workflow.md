@@ -10,6 +10,8 @@ Define a safe workflow for using LLMs in public, defensive CTI research.
 
 The model should be asked to produce structured claims, source links, confidence caveats, and gaps. The analyst verifies everything.
 
+![AI-Assisted CTI — Transition to Practical Workflow](/img/infographic-ai-workflow-transition.png)
+
 ![Practical Workflow: Pre-Prompt Setup (6-step)](/img/infographic-ai-pre-prompt-workflow.png)
 
 ## CTI Relevance

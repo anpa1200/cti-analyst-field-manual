@@ -1,5 +1,7 @@
 # CTI Analyst Field Manual
 
+![CTI Analyst Field Manual — Complete Reference](/img/infographic-field-manual-cover.png)
+
 ## Purpose
 
 This manual provides a structured operating model for cyber threat intelligence work: from [collection requirements](01-cti-foundations/pir-sir-eei.md) to [evidence handling](01-cti-foundations/evidence-labels.md), [analytic judgment](02-analytic-discipline/sherman-kent-for-cti.md), [infrastructure pivoting](05-infrastructure-pivoting/single-ioc-to-network.md), [actor profiling](06-actor-research/actor-profile-template.md), [hunting hypotheses](08-cti-to-detection/hunting-hypothesis-template.md), [detection engineering](08-cti-to-detection/intelligence-to-detection.md), [SOC handoff](08-cti-to-detection/soc-handoff.md), and executive communication.
@@ -20,6 +22,8 @@ This is a practitioner field manual. It is designed to help an analyst produce r
 
 The manual uses public, defensive, TLP:CLEAR material and transforms Medium article themes into a coherent tradecraft reference. It does not copy blog posts into documentation pages. It reorganizes the ideas into workflows, templates, checklists, and review gates.
 
+![What This Manual Is — Practitioner Field Manual Overview](/img/infographic-what-this-manual-is.png)
+
 ## What This Manual Is Not
 
 This is not a beginner glossary, an exploit guide, a malware analysis lab, an IOC dump, or a production detection pack. It does not provide malware source code, unauthorized access instructions, leaked data, credentials, or victim-sensitive information.
@@ -33,6 +37,8 @@ This is not a beginner glossary, an exploit guide, a malware analysis lab, an IO
 - Do not use [ATT&CK](03-frameworks/mitre-attack-as-working-tool.md) as [attribution](04-attribution/attribution-methodology.md) evidence.
 - Treat infrastructure pivots as hypotheses until bounded by corroboration.
 - Convert CTI into decisions, hunts, detections, SOC actions, or documented gaps.
+
+![Operating Principles — CTI Analyst Field Manual](/img/infographic-operating-principles.png)
 
 ## Evidence Labels
 

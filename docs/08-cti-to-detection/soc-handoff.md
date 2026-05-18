@@ -29,6 +29,8 @@ SOC handoff reduces alert fatigue, improves triage quality, and captures feedbac
 6. Add containment guidance within authority.
 7. Set feedback loop.
 
+![SOC Handoff — Practical Workflow](/img/infographic-soc-handoff-workflow.png)
+
 ![Practical Workflow: Triage & Response Playbook](/img/infographic-soc-triage-response-playbook.png)
 
 ## Example / Mini Case

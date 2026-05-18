@@ -29,6 +29,8 @@ Avoid dramatic or vague words. "The actor is dangerous" is not an estimate. "The
 
 See [Sherman Kent for CTI](sherman-kent-for-cti.md) for the full calibration table and worked examples.
 
+![Estimative Language — Calibrated Wording Reference](/img/infographic-estimative-language.png)
+
 ## Bad Examples and Corrections
 
 ### Bad Example 1 — "Likely" without explanation

@@ -12,6 +12,8 @@ A **PIR** is the high-level intelligence question tied to a decision. A **SIR** 
 
 The distinction matters because analysts often mistake a topic for a requirement. "[MuddyWater](../06-actor-research/muddywater-seedworm.md)" is a topic. "Which [MuddyWater behaviors reported since 2024](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/muddywater/) are observable with our endpoint and identity telemetry?" is closer to a PIR.
 
+![PIR, SIR, and EEI — Converting Decisions into Answerable Intelligence Requirements](/img/infographic-pir-sir-eei.png)
+
 ## CTI Relevance
 
 Well-written requirements prevent unfocused collection and make it easier to decide when an output is complete enough. They also help analysts avoid collecting every available article when the actual decision only requires a bounded answer.
@@ -34,6 +36,8 @@ Well-written requirements prevent unfocused collection and make it easier to dec
 6. Define required output format and due date.
 7. Define what would count as a gap.
 8. Review whether the PIR can lead to action.
+
+![PIR, SIR, and EEI — Practical Workflow](/img/infographic-pir-workflow.png)
 
 ## Example / Mini Case
 

@@ -196,6 +196,8 @@ Before any example can move from DRL-4 to DRL-5 or higher, the following must be
 
 No example on this page has passed DRL-5. None may be deployed as a production alert.
 
+![Sigma, KQL, and SPL — Detection Logic Workflow](/img/infographic-sigma-kql-spl-workflow.png)
+
 ## Common Mistakes
 
 - Jumping from actor report to production alert by skipping telemetry validation.

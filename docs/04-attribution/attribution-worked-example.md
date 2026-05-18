@@ -31,6 +31,8 @@ Worked examples help analysts practice defensible reasoning before working on re
 6. Write confidence-limited judgment.
 7. Define collection needed to improve confidence.
 
+![Attribution Worked Example — Practical Workflow](/img/infographic-attribution-worked-example-workflow.png)
+
 ## Example / Mini Case
 
 Scenario: A phishing email delivers a script that downloads a payload from cloud storage. Public reporting says several actors use similar delivery. The analyst avoids attribution and instead assesses the activity as consistent with known tradecraft while recommending behavior-based hunting. Attribution remains Gap until infrastructure, malware configuration, or victimology is corroborated.

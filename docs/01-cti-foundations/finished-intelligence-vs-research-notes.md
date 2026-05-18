@@ -35,6 +35,8 @@ This distinction is critical in CTI-to-detection work. A detection engineer does
 7. Preserve source links and limitations.
 8. Convert conclusions into actions or documented gaps.
 
+![Finished Intelligence vs Research Notes — Practical Workflow](/img/infographic-finished-intel-workflow.png)
+
 ## Example / Mini Case
 
 Research note:

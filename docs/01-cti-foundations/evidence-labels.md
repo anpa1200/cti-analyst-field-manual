@@ -21,6 +21,8 @@ This manual uses six labels:
 
 Labels do not replace prose. The analyst still needs to explain source quality, confidence, contradictions, and limitations.
 
+![Evidence Labels — Six-Label Model for CTI Claims](/img/infographic-evidence-labels.png)
+
 ## CTI Relevance
 
 Evidence labels are useful across the whole CTI workflow:
@@ -48,6 +50,8 @@ Evidence labels are useful across the whole CTI workflow:
 5. Record contradiction or gap.
 6. Link the claim to any ATT&CK mapping, hunt, detection, or report judgment.
 7. Revisit labels during review.
+
+![Evidence Labels — Practical Workflow](/img/infographic-evidence-labels-workflow.png)
 
 ## Example / Mini Case
 

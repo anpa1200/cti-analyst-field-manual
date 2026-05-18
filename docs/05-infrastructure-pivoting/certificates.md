@@ -30,6 +30,8 @@ Certificate pivots support infrastructure clustering, detection enrichment, and 
 5. Assess link strength.
 6. Document limitations.
 
+![Certificates — Practical Workflow](/img/infographic-certificate-workflow.png)
+
 ![Certificate Analysis Workflow](/img/infographic-certificate-analysis.png)
 
 ## Example / Mini Case
