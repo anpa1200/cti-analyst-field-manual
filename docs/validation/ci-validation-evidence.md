@@ -14,7 +14,29 @@ Document build and link-validation evidence so reviewers can distinguish **confi
 
 No check is treated as audit-grade evidence unless a run ID or commit hash is recorded.
 
-## Latest Validated State
+## Latest Validated State — v0.3.0
+
+| Field | Value |
+|---|---|
+| Release label | 0.3.0 |
+| Commit hash | 2fea09c |
+| Validation date | 2026-05-18 |
+| Validator | GitHub Actions (ubuntu-latest, Node 20) |
+| Build workflow run ID | [26051906283](https://github.com/anpa1200/cti-analyst-field-manual/actions/runs/26051906283) — **passed** |
+| Deploy workflow run ID | [26051911199](https://github.com/anpa1200/cti-analyst-field-manual/actions/runs/26051911199) — **passed** |
+| GitHub Pages artifact | `github-pages` artifact produced and deployed |
+| Annotation | Node.js 20 deprecation warnings in both runs — not a failure; actions still executed successfully. Upgrade to Node.js 24-compatible action versions before September 2026. |
+
+## CI Run Results — 2026-05-18 (commit 2fea09c)
+
+| Check | Workflow | Result | Run ID |
+|---|---|---|---|
+| YAML lint — governance register | `build.yml` + `deploy-pages.yml` | **CI passed** | 26051906283 / 26051911199 |
+| Internal Markdown link validation (`check:links`) | Both workflows | **CI passed** — 0 broken internal links | 26051906283 / 26051911199 |
+| Docusaurus build | Both workflows | **CI passed** — static files generated | 26051906283 / 26051911199 |
+| GitHub Pages deploy | `deploy-pages.yml` | **CI passed** — artifact uploaded and deployed | 26051911199 |
+
+## Previous Validated State — v0.2.0
 
 | Field | Value |
 |---|---|
@@ -22,16 +44,12 @@ No check is treated as audit-grade evidence unless a run ID or commit hash is re
 | Commit hash | 7dbf4ed |
 | Validation date | 2026-05-16 |
 | Validator | Local environment (Ubuntu 6.17.0, Node 20, Python 3) |
-| GitHub Actions run ID | Pending first push to remote main branch |
-| GitHub Pages deploy ID | Pending first push to remote main branch |
 
-## Checks Executed Locally — 2026-05-16
-
-| Check | Command | Result | Evidence |
-|---|---|---|---|
-| YAML lint — governance register | `python3 -c "import yaml; yaml.safe_load(open('data/correlation-register.yml'))"` | **Passed** — YAML valid. Keys confirmed: last_checked, last_commit, schema_version, projects, shared_concepts, review_workflow | Local stdout, 2026-05-16 |
-| Internal Markdown link validation | `npm run check:links` (runs `scripts/check_links.py`) | **Passed** — `Local Markdown link check passed: 0 broken links.` | Local stdout, 2026-05-16 |
-| Docusaurus build | `npm run build` | **Passed** — `Generated static files in "build".` | Local stdout, 2026-05-16, build/ directory confirmed present |
+| Check | Command | Result |
+|---|---|---|
+| YAML lint | `python3 -c "import yaml; yaml.safe_load(...)"` | **Passed locally** |
+| Internal Markdown links | `npm run check:links` | **Passed locally** — 0 broken links |
+| Docusaurus build | `npm run build` | **Passed locally** |
 
 ## CI Workflow Configuration
 
@@ -63,15 +81,15 @@ External link check has not been run as a CI step. It remains a manual release-r
 
 Before any release can claim CI-proven status, record:
 
-- [ ] GitHub Actions run ID for the build workflow
-- [ ] GitHub Actions run ID for the deploy-pages workflow
-- [ ] Commit hash at time of run
-- [ ] YAML lint result from CI (not only local)
-- [ ] Internal link check result from CI
-- [ ] Build result from CI
-- [ ] External link check summary (manual, with hard 404s listed separately from transient failures)
-- [ ] Any DRL promotion artifacts if a detection was promoted
-- [ ] Reviewer sign-off if claiming publication-grade status
+- [x] GitHub Actions run ID for the build workflow — recorded above for v0.3.0
+- [x] GitHub Actions run ID for the deploy-pages workflow — recorded above for v0.3.0
+- [x] Commit hash at time of run — 2fea09c
+- [x] YAML lint result from CI (not only local) — passed in both workflows
+- [x] Internal link check result from CI — passed in both workflows
+- [x] Build result from CI — passed in both workflows
+- [ ] External link check summary (manual, with hard 404s listed separately from transient failures) — pending v0.3.0 manual review
+- [ ] Any DRL promotion artifacts if a detection was promoted — no promotions in v0.3.0
+- [ ] Reviewer sign-off if claiming publication-grade status — not claimed for v0.3.0
 
 ## Cross-Links
 
