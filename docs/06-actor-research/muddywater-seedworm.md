@@ -67,10 +67,24 @@ Last Reviewed:
 - [Israel CTI RMM Tools](https://anpa1200.github.io/israel-government-threat-actors-cti/tools/remote-monitoring-and-management-tools/)
 - [Worked Example — MuddyWater Full Public-Source Case](../worked-examples/actor-research.md)
 - [Intelligence to Detection](../08-cti-to-detection/intelligence-to-detection.md)
+- [Operation Desert Hydra — Full CTI-to-Detection Pipeline for MuddyWater](https://github.com/anpa1200/operation-desert-hydra)
+
+## Live Example: Operation Desert Hydra
+
+[github.com/anpa1200/operation-desert-hydra](https://github.com/anpa1200/operation-desert-hydra) — a reproducible public-source CTI pipeline that takes MuddyWater reporting through source gathering, an OpenCTI knowledge graph, a 10-record procedure dataset, 11 detection records, and Ansible-validated Kibana proof screenshots. Everything this page describes in the abstract is executed concretely there.
+
+```bash
+git clone https://github.com/anpa1200/operation-desert-hydra.git
+cd operation-desert-hydra
+cp stack/.env.template stack/.env
+bash start.sh   # OpenCTI :8080 · Kibana :5601 · all 11 simulations
+bash stop.sh    # halt; --destroy-vm to remove disk
+```
 
 ## References
 
 - [MITRE ATT&CK G0069 — MuddyWater](https://attack.mitre.org/groups/G0069/)
 - [CISA/NSA/FBI/CNMF Advisory AA22-055A — Iranian Government-Sponsored Actors](https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-055a)
+- [Operation Desert Hydra — Medium Article](https://medium.com/@1200km)
 - [Authoritative Bibliography](../references/authoritative-bibliography.md)
 - [Medium Source Index](../references/medium-source-index.md)

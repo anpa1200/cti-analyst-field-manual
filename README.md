@@ -28,6 +28,39 @@ Many CTI outputs fail because they stop at research notes. This field manual foc
 - **Israel Government Threat Actors CTI:** sector- and actor-specific knowledge base for Israeli public-sector exposure.
 - **HexStrike AI Guide:** tooling-oriented guide.
 - **CTI Analyst Field Manual:** general CTI tradecraft and analyst operating manual.
+- **Operation Desert Hydra:** a complete, reproducible CTI-to-detection pipeline — public-source MuddyWater intelligence into 11 validated Kibana detections, deployed in a self-contained OpenCTI + Elastic + Vagrant lab.
+
+## Live Example: Operation Desert Hydra
+
+[**github.com/anpa1200/operation-desert-hydra**](https://github.com/anpa1200/operation-desert-hydra)
+
+A complete worked example of the tradecraft this field manual describes: public-source CTI on MuddyWater (Iranian MOIS) converted into an OpenCTI knowledge graph, 11 detection records, and lab-validated Kibana proof screenshots — all in one repository, deployed with a single script.
+
+**What it demonstrates in practice:**
+- Source register with confidence tiers (Admiralty A-F / 1-6)
+- Evidence-labeled procedure dataset (10 records)
+- OpenCTI 6.2 knowledge graph (intrusion set, campaigns, malware, ATT&CK links)
+- Detection atlas with telemetry requirements, FP analysis, and coverage scores
+- Ansible-provisioned Windows 10 lab (Sysmon + Script Block Logging + Winlogbeat → Elasticsearch)
+- 11 simulations, 12 Kibana proof screenshots, coverage matrix across 22 ATT&CK techniques
+
+**Deploy:**
+
+```bash
+git clone https://github.com/anpa1200/operation-desert-hydra.git
+cd operation-desert-hydra
+cp stack/.env.template stack/.env  # fill ELASTIC_PASSWORD, OPENCTI_ADMIN_PASSWORD
+bash start.sh
+# OpenCTI → http://localhost:8080
+# Kibana   → http://localhost:5601
+```
+
+```bash
+bash stop.sh               # halt VM, keep stack
+bash stop.sh --destroy-vm  # remove VM disk
+```
+
+Prerequisites: Docker, VirtualBox, Vagrant, Ansible, Python 3 + pywinrm.
 
 ## How To Use The Field Manual
 

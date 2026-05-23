@@ -74,6 +74,19 @@ Readiness Level:
 - [Detection Backlog](detection-backlog.md)
 - [SOC Handoff](soc-handoff.md)
 - [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/)
+- [Operation Desert Hydra — Full CTI-to-Detection Pipeline (MuddyWater)](https://github.com/anpa1200/operation-desert-hydra)
+
+## Live Example: Operation Desert Hydra
+
+[github.com/anpa1200/operation-desert-hydra](https://github.com/anpa1200/operation-desert-hydra) — a complete, deployable implementation of the workflow on this page: 8 public sources → evidence labels → 10 procedure records → OpenCTI graph → 11 detections → Ansible lab validation → 12 Kibana proof screenshots → coverage matrix. Sigma rules, KQL, Elastic JSON, and SPL are all version-controlled in `detections/`.
+
+```bash
+git clone https://github.com/anpa1200/operation-desert-hydra.git
+cd operation-desert-hydra
+cp stack/.env.template stack/.env
+bash start.sh   # OpenCTI :8080 · Kibana :5601 · all 11 simulations
+bash stop.sh    # halt; --destroy-vm to remove disk
+```
 
 ## References
 
