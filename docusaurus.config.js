@@ -42,7 +42,8 @@ const config = {
           {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'}
         ]},
         {href: 'https://medium.com/@1200km', label: 'Medium', position: 'right'},
-        {href: 'https://github.com/anpa1200/cti-analyst-field-manual', label: 'GitHub', position: 'right'}
+        {href: 'https://github.com/anpa1200/cti-analyst-field-manual', label: 'GitHub', position: 'right'},
+        {href: 'https://anpa1200.github.io/', label: 'All Projects', position: 'right', className: 'navbar-portfolio-btn'}
       ]
     },
     footer: {

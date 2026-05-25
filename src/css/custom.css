@@ -27,3 +27,16 @@
   background: var(--ifm-background-surface-color);
 }
 .manual-card h3 { margin-top: 0; }
+
+.navbar-portfolio-btn {
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 6px;
+  padding: 4px 12px !important;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700;
+}
+.navbar-portfolio-btn:hover {
+  background: var(--ifm-color-primary);
+  color: #fff !important;
+  text-decoration: none;
+}
