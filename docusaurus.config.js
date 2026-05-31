@@ -7,6 +7,26 @@ const config = {
   baseUrl: '/cti-analyst-field-manual/',
   organizationName: 'anpa1200',
   projectName: 'cti-analyst-field-manual',
+
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {
+        async: 'true',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-TMTG21RVHM',
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {},
+      innerHTML: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TMTG21RVHM');
+      `,
+    },
+  ],
   trailingSlash: true,
   onBrokenLinks: 'throw',
   markdown: {hooks: {onBrokenMarkdownLinks: 'warn'}},
@@ -46,7 +66,7 @@ const config = {
         ]},
         {href: 'https://medium.com/@1200km', label: 'Medium', position: 'right'},
         {href: 'https://github.com/anpa1200/cti-analyst-field-manual', label: 'GitHub', position: 'right'},
-        {href: 'https://anpa1200.github.io/', label: 'All Projects', position: 'right', className: 'navbar-portfolio-btn'}
+        {href: 'https://anpa1200.github.io/', label: 'Main Page', position: 'right', className: 'navbar-portfolio-btn'}
       ]
     },
     footer: {
