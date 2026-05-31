@@ -1,3 +1,9 @@
+---
+id: ecosystem
+title: Ecosystem
+sidebar_label: Ecosystem
+---
+
 # CTI Project Ecosystem
 
 ## Purpose
@@ -13,6 +19,7 @@ This page connects the three CTI documentation projects into one practitioner ec
 | [Operation Desert Hydra](https://anpa1200.github.io/operation-desert-hydra/) | Complete CTI-to-detection pipeline on MuddyWater | Worked example of the full pipeline: source gathering → OpenCTI knowledge graph → 11 detection records → 14 PASS / 1 PARTIAL / 1 FAIL lab validation |
 | [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) | Delivery methodology and customer engagement operating model | Project phases, quality gates, customer outcomes, AI-assisted workflow controls, acceptance criteria, replay and delivery packages |
 | [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) | Sector and actor knowledge base | Israeli public-sector threat model, actors, tools, TTPs, detections, hunts, evidence registers, source tracking |
+| [AI vs Defense](https://anpa1200.github.io/ai-vs-defense/) | Practitioner guide: AI-era threat model and SOC adaptation | How skill-floor collapse changes the Pyramid of Pain, legacy defense failures, behavioral detection, and CTI evolution requirements |
 | [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) | AI-powered offensive security automation platform | MCP agent-based tool orchestration, 150+ security tools, AI-driven penetration testing, adversarial validation of detection coverage |
 
 ## Recommended Navigation
