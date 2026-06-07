@@ -68,6 +68,7 @@ Reviewer:
 - [Prompt Library](prompt-library.md)
 - [Hallucination Control](hallucination-control.md)
 - [AI Governance in Customer CTI](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/)
+- [ThreatMapper](https://anpa1200.github.io/threatmapper-docs/): self-hosted implementation of this workflow — upload a PDF report, select Claude / GPT-4o / Gemini, and get structured ATT&CK extraction with evidence and confidence in real time, all on your own infrastructure with no data leaving the machine.
 
 ## References
 

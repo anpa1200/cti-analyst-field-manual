@@ -20,6 +20,7 @@ This page connects the three CTI documentation projects into one practitioner ec
 | [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) | Delivery methodology and customer engagement operating model | Project phases, quality gates, customer outcomes, AI-assisted workflow controls, acceptance criteria, replay and delivery packages |
 | [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) | Sector and actor knowledge base | Israeli public-sector threat model, actors, tools, TTPs, detections, hunts, evidence registers, source tracking |
 | [AI vs Defense](https://anpa1200.github.io/ai-vs-defense/) | Practitioner guide: AI-era threat model and SOC adaptation | How skill-floor collapse changes the Pyramid of Pain, legacy defense failures, behavioral detection, and CTI evolution requirements |
+| [ThreatMapper](https://anpa1200.github.io/threatmapper-docs/) | Self-hosted AI threat intelligence platform | Automated ATT&CK technique extraction from reports, APT attribution via Jaccard similarity, interactive Navigator heatmap, campaign overlay, and PDF report generation — all locally, no cloud API required |
 | [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) | AI-powered offensive security automation platform | MCP agent-based tool orchestration, 150+ security tools, AI-driven penetration testing, adversarial validation of detection coverage |
 
 ## Recommended Navigation
@@ -49,6 +50,7 @@ Use [Evidence Labels](/cti-analyst-field-manual/docs/cti-foundations/evidence-la
 - [Operation Desert Hydra repository](https://github.com/anpa1200/operation-desert-hydra)
 - [Customer-Driven AI CTI Project repository](https://github.com/anpa1200/customer-driven-ai-cti-project)
 - [Israel Government Threat Actors CTI repository](https://github.com/anpa1200/israel-government-threat-actors-cti)
+- [ThreatMapper repository](https://github.com/anpa1200/threatmapper)
 - [HexStrike AI repository](https://github.com/0x4m4/hexstrike-ai)
 
 ## Boundary

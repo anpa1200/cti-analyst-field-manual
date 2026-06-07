@@ -62,7 +62,8 @@ const config = {
           {label: 'Customer-Driven AI CTI', href: 'https://anpa1200.github.io/customer-driven-ai-cti-project/'},
           {label: 'Israel Threat Actors CTI', href: 'https://anpa1200.github.io/israel-government-threat-actors-cti/'},
           {label: 'AI vs Defense', href: 'https://anpa1200.github.io/ai-vs-defense/'},
-          {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'}
+          {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
+          {label: 'ThreatMapper Docs', href: 'https://anpa1200.github.io/threatmapper-docs/'}
         ]},
         {href: 'https://medium.com/@1200km', label: 'Medium', position: 'right'},
         {href: 'https://github.com/anpa1200/cti-analyst-field-manual', label: 'GitHub', position: 'right'},
@@ -83,7 +84,8 @@ const config = {
           {label: 'Customer-Driven AI CTI', href: 'https://anpa1200.github.io/customer-driven-ai-cti-project/'},
           {label: 'Israel Threat Actors CTI', href: 'https://anpa1200.github.io/israel-government-threat-actors-cti/'},
           {label: 'AI vs Defense', href: 'https://anpa1200.github.io/ai-vs-defense/'},
-          {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'}
+          {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
+          {label: 'ThreatMapper Docs', href: 'https://anpa1200.github.io/threatmapper-docs/'}
         ]},
         {title: 'Author', items: [
           {label: 'Medium', href: 'https://medium.com/@1200km'},
