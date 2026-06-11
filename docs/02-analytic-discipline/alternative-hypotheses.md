@@ -63,7 +63,7 @@ Collection Task:
 - [Contradiction Handling](contradiction-handling.md)
 - [Sherman Kent for CTI](sherman-kent-for-cti.md)
 - [Evidence Strength Ladder](../04-attribution/evidence-strength-ladder.md)
-- [Israel CTI — Operating Standard](https://anpa1200.github.io/israel-government-threat-actors-cti/methodology/operating-standard/)
+- [Israel CTI — Operating Standard](https://1200km.com/israel-government-threat-actors-cti/methodology/operating-standard/)
 
 ## References
 

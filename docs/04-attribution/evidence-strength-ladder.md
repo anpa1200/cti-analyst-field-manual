@@ -61,8 +61,8 @@ Source:
 - [Attribution Methodology](attribution-methodology.md)
 - [Confidence vs Probability](confidence-vs-probability.md)
 - [Infrastructure Pivoting Limitations](../05-infrastructure-pivoting/pivoting-limitations.md)
-- [Israel CTI — Scoring Models](https://anpa1200.github.io/israel-government-threat-actors-cti/methodology/scoring-models/)
-- [Israel CTI — Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/)
+- [Israel CTI — Scoring Models](https://1200km.com/israel-government-threat-actors-cti/methodology/scoring-models/)
+- [Israel CTI — Actor Workbench](https://1200km.com/israel-government-threat-actors-cti/navigation/actor-workbench/)
 
 ## References
 

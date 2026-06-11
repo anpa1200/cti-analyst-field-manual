@@ -15,16 +15,16 @@ Record link-check policy and latest validation result.
 
 | Domain | URL | HTTP Status | Notes |
 |---|---|---|---|
-| attack.mitre.org | https://attack.mitre.org/ | 200 ✓ | |
-| www.first.org | https://www.first.org/tlp/ | 200 ✓ | |
-| oasis-open.github.io | https://oasis-open.github.io/cti-documentation/ | 200 ✓ | |
-| www.misp-project.org | https://www.misp-project.org/documentation/ | 200 ✓ | |
-| sigmahq.io | https://sigmahq.io/docs/ | 200 ✓ | |
-| www.cia.gov | https://www.cia.gov/resources/csi/static/Words-of-Estimative-Probability.pdf | 200 ✓ | |
-| www.lockheedmartin.com | LM Kill Chain white paper PDF | 200 ✓ | |
-| anpa1200.github.io | Israel CTI project | 200 ✓ | |
-| anpa1200.github.io | Customer CTI project | 200 ✓ | |
-| act.globalcyberalliance.org | Diamond Model wiki page | **403** ⚠ | Bot protection / rate limit — page accessible in browser. Monitor; add archive fallback if persistent. |
+| attack.mitre.org | https://attack.mitre.org/ | 200 | |
+| www.first.org | https://www.first.org/tlp/ | 200 | |
+| oasis-open.github.io | https://oasis-open.github.io/cti-documentation/ | 200 | |
+| www.misp-project.org | https://www.misp-project.org/documentation/ | 200 | |
+| sigmahq.io | https://sigmahq.io/docs/ | 200 | |
+| www.cia.gov | https://www.cia.gov/resources/csi/static/Words-of-Estimative-Probability.pdf | 200 | |
+| www.lockheedmartin.com | LM Kill Chain white paper PDF | 200 | |
+| 1200km.com | Israel CTI project | 200 | |
+| 1200km.com | Customer CTI project | 200 | |
+| act.globalcyberalliance.org | Diamond Model wiki page | **403** WARNING | Bot protection / rate limit — page accessible in browser. Monitor; add archive fallback if persistent. |
 
 **Hard 404s:** 0
 

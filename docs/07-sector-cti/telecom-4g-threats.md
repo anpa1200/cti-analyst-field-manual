@@ -59,7 +59,7 @@ Gaps:
 
 - [Cellular Provider Case Study](cellular-provider-case-study.md)
 - [Telemetry Requirements](../08-cti-to-detection/telemetry-requirements.md)
-- [Israel CTI Threat Model](https://anpa1200.github.io/israel-government-threat-actors-cti/israel-government-threat-model/)
+- [Israel CTI Threat Model](https://1200km.com/israel-government-threat-actors-cti/israel-government-threat-model/)
 
 ## References
 

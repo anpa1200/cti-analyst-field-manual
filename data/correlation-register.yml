@@ -13,17 +13,17 @@ projects:
   field_manual:
     name: "CTI Analyst Field Manual"
     role: "Canonical CTI tradecraft and methodology."
-    url: "https://anpa1200.github.io/cti-analyst-field-manual/"
+    url: "https://1200km.com/cti-analyst-field-manual/"
     last_reviewed: "2026-05-16"
   customer_driven_ai_cti:
     name: "Customer-Driven AI CTI Project"
     role: "Customer delivery methodology and gated execution."
-    url: "https://anpa1200.github.io/customer-driven-ai-cti-project/"
+    url: "https://1200km.com/customer-driven-ai-cti-project/"
     last_reviewed: "2026-05-16"
   israel_government_threat_actors_cti:
     name: "Israel Government Threat Actors CTI"
     role: "Actor, tool, TTP, source, hunt, and detection knowledge base."
-    url: "https://anpa1200.github.io/israel-government-threat-actors-cti/"
+    url: "https://1200km.com/israel-government-threat-actors-cti/"
     last_reviewed: "2026-05-16"
 
 shared_concepts:
@@ -182,7 +182,7 @@ shared_concepts:
     consistency_rule: >
       Customer work must move through scoped, gated artifacts.
       Gates must not be bypassed even if work appears complete.
-    authoritative_reference: "https://anpa1200.github.io/customer-driven-ai-cti-project/"
+    authoritative_reference: "https://1200km.com/customer-driven-ai-cti-project/"
 
   actor_tool_ttp_detection_knowledge:
     canonical_owner: israel_government_threat_actors_cti
@@ -200,7 +200,7 @@ shared_concepts:
     consistency_rule: >
       Actor-specific claims require source, evidence label, freshness date, and caveat.
       Unsourced actor claims are not allowed in finished intelligence.
-    authoritative_reference: "https://anpa1200.github.io/israel-government-threat-actors-cti/"
+    authoritative_reference: "https://1200km.com/israel-government-threat-actors-cti/"
 
   production_readiness_boundary:
     canonical_owner: field_manual

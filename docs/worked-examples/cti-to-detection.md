@@ -36,4 +36,4 @@ Only DRL-9 after historical replay, measured false-positive rate, owner, rollbac
 - [Intelligence to Detection](../08-cti-to-detection/intelligence-to-detection.md)
 - [Detection Readiness Levels](../08-cti-to-detection/detection-readiness-levels.md)
 - [SOC Handoff](../08-cti-to-detection/soc-handoff.md)
-- [Israel Detection Status Dashboard](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-status-dashboard/)
+- [Israel Detection Status Dashboard](https://1200km.com/israel-government-threat-actors-cti/detection-status-dashboard/)

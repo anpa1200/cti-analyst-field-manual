@@ -18,7 +18,7 @@ That is why I built the **CTI Analyst Field Manual**.
 
 ## What the Manual Is
 
-The [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/) is a structured, public, TLP:CLEAR operating model for cyber threat intelligence work. It is not a glossary, a threat landscape report, an IOC dump, or a beginner tutorial.
+The [CTI Analyst Field Manual](https://1200km.com/cti-analyst-field-manual/) is a structured, public, TLP:CLEAR operating model for cyber threat intelligence work. It is not a glossary, a threat landscape report, an IOC dump, or a beginner tutorial.
 
 It is a practitioner reference — the kind of document you keep open in a second tab while you are actually doing the work.
 
@@ -100,11 +100,11 @@ This model exists because the industry has a habit of conflating "we have a rule
 
 The CTI Analyst Field Manual does not stand alone. It is the first book in a three-project ecosystem:
 
-**Book 1: [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/)** — General tradecraft. The canonical home for evidence labels, source reliability, confidence language, ATT&CK mapping rules, the DRL model, AI governance controls, and template infrastructure.
+**Book 1: [CTI Analyst Field Manual](https://1200km.com/cti-analyst-field-manual/)** — General tradecraft. The canonical home for evidence labels, source reliability, confidence language, ATT&CK mapping rules, the DRL model, AI governance controls, and template infrastructure.
 
-**Book 2: [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/)** — Delivery methodology. Turns tradecraft into gated delivery: Phase 0 charter, PIR quality gates, crown jewel mapping, telemetry feasibility, detection engineering workflow, and executive handoff — all with AI-assisted workflows and strict human-review controls.
+**Book 2: [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/)** — Delivery methodology. Turns tradecraft into gated delivery: Phase 0 charter, PIR quality gates, crown jewel mapping, telemetry feasibility, detection engineering workflow, and executive handoff — all with AI-assisted workflows and strict human-review controls.
 
-**Book 3: [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/)** — Actor knowledge base. A sector-specific reference covering threat actors relevant to Israeli government, municipal, critical infrastructure, and defense-adjacent environments. Includes actor profiles, tool pages, TTP matrices, detection candidates, hunt hypotheses, and a detection status dashboard.
+**Book 3: [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/)** — Actor knowledge base. A sector-specific reference covering threat actors relevant to Israeli government, municipal, critical infrastructure, and defense-adjacent environments. Includes actor profiles, tool pages, TTP matrices, detection candidates, hunt hypotheses, and a detection status dashboard.
 
 The three books share a common governance register. Evidence labels, source reliability definitions, ATT&CK mapping rules, and the DRL model are defined once in Book 1 and consumed by Books 2 and 3. When the definition changes, it changes in one place.
 
@@ -160,11 +160,11 @@ A CTI product that does not acknowledge its limitations is a CTI product that ov
 
 ## Where to Start
 
-If you are a CTI analyst: [What Is CTI](https://anpa1200.github.io/cti-analyst-field-manual/docs/01-cti-foundations/what-is-cti) → [PIR, SIR, and EEI](https://anpa1200.github.io/cti-analyst-field-manual/docs/01-cti-foundations/pir-sir-eei) → [Evidence Labels](https://anpa1200.github.io/cti-analyst-field-manual/docs/01-cti-foundations/evidence-labels).
+If you are a CTI analyst: [What Is CTI](https://1200km.com/cti-analyst-field-manual/docs/01-cti-foundations/what-is-cti) → [PIR, SIR, and EEI](https://1200km.com/cti-analyst-field-manual/docs/01-cti-foundations/pir-sir-eei) → [Evidence Labels](https://1200km.com/cti-analyst-field-manual/docs/01-cti-foundations/evidence-labels).
 
-If you are a detection engineer: [ATT&CK as a Working Tool](https://anpa1200.github.io/cti-analyst-field-manual/docs/frameworks/mitre-attack-as-working-tool) → [Telemetry Requirements](https://anpa1200.github.io/cti-analyst-field-manual/docs/08-cti-to-detection/telemetry-requirements) → [Detection Readiness Levels](https://anpa1200.github.io/cti-analyst-field-manual/docs/08-cti-to-detection/detection-readiness-levels).
+If you are a detection engineer: [ATT&CK as a Working Tool](https://1200km.com/cti-analyst-field-manual/docs/frameworks/mitre-attack-as-working-tool) → [Telemetry Requirements](https://1200km.com/cti-analyst-field-manual/docs/08-cti-to-detection/telemetry-requirements) → [Detection Readiness Levels](https://1200km.com/cti-analyst-field-manual/docs/08-cti-to-detection/detection-readiness-levels).
 
-If you want to see the full ecosystem: [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/) → [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) → [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/).
+If you want to see the full ecosystem: [CTI Analyst Field Manual](https://1200km.com/cti-analyst-field-manual/) → [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/) → [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/).
 
 ---
 
@@ -174,5 +174,5 @@ The last ten meters matter. That is what this is for.
 
 ---
 
-*CTI Analyst Field Manual: [anpa1200.github.io/cti-analyst-field-manual](https://anpa1200.github.io/cti-analyst-field-manual/)*
+*CTI Analyst Field Manual: [1200km.com/cti-analyst-field-manual](https://1200km.com/cti-analyst-field-manual/)*
 *Medium: [medium.com/@1200km](https://medium.com/@1200km)*

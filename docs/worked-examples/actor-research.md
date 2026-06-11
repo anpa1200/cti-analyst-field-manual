@@ -202,7 +202,7 @@ Owner: Detection Engineering Lead and SOC Lead.
 - [Attribution Methodology](../04-attribution/attribution-methodology.md)
 - [Detection Readiness Levels](../08-cti-to-detection/detection-readiness-levels.md)
 - [Telemetry Requirements](../08-cti-to-detection/telemetry-requirements.md)
-- [Israel Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/)
+- [Israel Actor Workbench](https://1200km.com/israel-government-threat-actors-cti/navigation/actor-workbench/)
 
 ## References
 

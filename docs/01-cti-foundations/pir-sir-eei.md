@@ -10,7 +10,7 @@ PIRs, SIRs, and EEIs convert broad curiosity into answerable intelligence work.
 
 A **PIR** is the high-level intelligence question tied to a decision. A **SIR** breaks that question into specific sub-questions. An **EEI** defines the concrete information needed to answer a SIR.
 
-The distinction matters because analysts often mistake a topic for a requirement. "[MuddyWater](../06-actor-research/muddywater-seedworm.md)" is a topic. "Which [MuddyWater behaviors reported since 2024](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/muddywater/) are observable with our endpoint and identity telemetry?" is closer to a PIR.
+The distinction matters because analysts often mistake a topic for a requirement. "[MuddyWater](../06-actor-research/muddywater-seedworm.md)" is a topic. "Which [MuddyWater behaviors reported since 2024](https://1200km.com/israel-government-threat-actors-cti/actors/muddywater/) are observable with our endpoint and identity telemetry?" is closer to a PIR.
 
 ![PIR, SIR, and EEI — Converting Decisions into Answerable Intelligence Requirements](/img/infographic-pir-sir-eei.png)
 
@@ -101,9 +101,9 @@ Gap Criteria:
 - [Source Register Template](../10-templates/source-register-template.md)
 - [Collection Gap Register](../10-templates/collection-gap-register.md)
 - [Hunting Hypothesis Template](../08-cti-to-detection/hunting-hypothesis-template.md)
-- [Customer project PIR gate artifacts](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/standard/artifact-contracts/)
-- [Customer delivery phases and quality gates](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/)
-- [Israel CTI Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/)
+- [Customer project PIR gate artifacts](https://1200km.com/customer-driven-ai-cti-project/docs/standard/artifact-contracts/)
+- [Customer delivery phases and quality gates](https://1200km.com/customer-driven-ai-cti-project/docs/methodology/foundations/)
+- [Israel CTI Actor Workbench](https://1200km.com/israel-government-threat-actors-cti/navigation/actor-workbench/)
 
 ## References
 

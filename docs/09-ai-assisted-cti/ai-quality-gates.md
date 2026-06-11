@@ -59,7 +59,7 @@ Approved Use:
 
 - [Hallucination Control](hallucination-control.md)
 - [Source Reliability](../01-cti-foundations/source-reliability.md)
-- [Customer Quality Gates](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/reference-toolkit/)
+- [Customer Quality Gates](https://1200km.com/customer-driven-ai-cti-project/docs/methodology/reference-toolkit/)
 
 ## References
 

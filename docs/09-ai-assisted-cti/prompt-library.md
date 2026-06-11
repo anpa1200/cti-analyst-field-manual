@@ -57,7 +57,7 @@ Last Reviewed:
 
 - [Safe LLM Research Workflow](safe-llm-research-workflow.md)
 - [Hallucination Control](hallucination-control.md)
-- [Actor Deep Research Prompts in Israel CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/reports/actor-deep-research-prompts/)
+- [Actor Deep Research Prompts in Israel CTI](https://1200km.com/israel-government-threat-actors-cti/reports/actor-deep-research-prompts/)
 
 ## References
 

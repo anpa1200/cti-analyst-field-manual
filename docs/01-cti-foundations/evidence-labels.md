@@ -103,9 +103,9 @@ Downstream Use:
 - [Evidence Register Template](../10-templates/evidence-register-template.md)
 - [ATT&CK Mapping Mistakes](../03-frameworks/attck-mapping-mistakes.md)
 - [Attribution Methodology](../04-attribution/attribution-methodology.md)
-- [Israel CTI — Operating Standard (Claim Rules)](https://anpa1200.github.io/israel-government-threat-actors-cti/methodology/operating-standard/)
-- [Israel CTI — Fact Correlation (Shared Evidence Labels)](https://anpa1200.github.io/israel-government-threat-actors-cti/fact-correlation/)
-- [Customer project — Artifact Contracts](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/standard/artifact-contracts/)
+- [Israel CTI — Operating Standard (Claim Rules)](https://1200km.com/israel-government-threat-actors-cti/methodology/operating-standard/)
+- [Israel CTI — Fact Correlation (Shared Evidence Labels)](https://1200km.com/israel-government-threat-actors-cti/fact-correlation/)
+- [Customer project — Artifact Contracts](https://1200km.com/customer-driven-ai-cti-project/docs/standard/artifact-contracts/)
 
 ## References
 

@@ -43,4 +43,4 @@ Show where AI can help CTI work and where it must be blocked or constrained.
 - [AI CTI Control Matrix](../09-ai-assisted-cti/ai-cti-control-matrix.md)
 - [Safe LLM Research Workflow](../09-ai-assisted-cti/safe-llm-research-workflow.md)
 - [Hallucination Control](../09-ai-assisted-cti/hallucination-control.md)
-- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/)
+- [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/)

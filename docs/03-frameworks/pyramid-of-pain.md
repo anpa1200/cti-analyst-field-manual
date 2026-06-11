@@ -66,8 +66,8 @@ Hunt / Detection Candidate:
 - [Detection Backlog](../08-cti-to-detection/detection-backlog.md)
 - [Telemetry Requirements](../08-cti-to-detection/telemetry-requirements.md)
 - [Source Reliability](../01-cti-foundations/source-reliability.md)
-- [Israel CTI — Detection Lifecycle](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-engineering/detection-lifecycle/)
-- [Israel CTI — TTP-Detection Matrix](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/ttp-detection-matrix/)
+- [Israel CTI — Detection Lifecycle](https://1200km.com/israel-government-threat-actors-cti/detection-engineering/detection-lifecycle/)
+- [Israel CTI — TTP-Detection Matrix](https://1200km.com/israel-government-threat-actors-cti/navigation/ttp-detection-matrix/)
 
 ## References
 

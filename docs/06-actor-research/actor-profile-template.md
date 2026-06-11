@@ -73,7 +73,7 @@ Last Reviewed:
 
 - [Actor Profile Template in Templates](../10-templates/actor-profile-template.md)
 - [Attribution Methodology](../04-attribution/attribution-methodology.md)
-- [Israel CTI Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/)
+- [Israel CTI Actor Workbench](https://1200km.com/israel-government-threat-actors-cti/navigation/actor-workbench/)
 
 ## References
 

@@ -50,4 +50,4 @@ Sector relevance does not prove compromise and does not prove actor attribution.
 - [Telecom 4G Threats](../07-sector-cti/telecom-4g-threats.md)
 - [Telecom 5G Threats](../07-sector-cti/telecom-5g-threats.md)
 - [Telemetry Requirements](../08-cti-to-detection/telemetry-requirements.md)
-- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/)
+- [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/)

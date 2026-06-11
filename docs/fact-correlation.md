@@ -10,21 +10,21 @@ Last checked: **2026-05-16**. Machine-readable owner mapping is maintained in [C
 
 | Project | Canonical Role | Do Not Treat As |
 | --- | --- | --- |
-| [CTI Analyst Field Manual](https://anpa1200.github.io/cti-analyst-field-manual/) | General CTI tradecraft and analyst operating manual. | Sector-specific threat database or customer delivery package. |
-| [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) | Gated delivery methodology for CTI-to-detection work. | Actor knowledge base or universal attribution authority. |
-| [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) | Israel-focused actor, tool, TTP, hunt, detection, and source knowledge base. | General CTI methodology replacement or production SOC detection pack. |
+| [CTI Analyst Field Manual](https://1200km.com/cti-analyst-field-manual/) | General CTI tradecraft and analyst operating manual. | Sector-specific threat database or customer delivery package. |
+| [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/) | Gated delivery methodology for CTI-to-detection work. | Actor knowledge base or universal attribution authority. |
+| [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/) | Israel-focused actor, tool, TTP, hunt, detection, and source knowledge base. | General CTI methodology replacement or production SOC detection pack. |
 
 ## Shared Rules
 
 | Topic | Correlated Rule | Canonical Detail |
 | --- | --- | --- |
-| Evidence labels | Claims must separate observed, reported, assessed, inferred, unknown, and gap states. | [Evidence Labels](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/evidence-labels/) |
-| Source reliability | Source reliability and information credibility are related but separate. | [Source Reliability](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/source-reliability/) |
-| PIR/SIR/EEI | Intelligence work starts from decision-linked requirements. | [PIR, SIR, and EEI](https://anpa1200.github.io/cti-analyst-field-manual/docs/cti-foundations/pir-sir-eei/) |
-| ATT&CK | Map behavior only when evidence supports the technique; ATT&CK is not attribution evidence. | [ATT&CK as a Working Tool](https://anpa1200.github.io/cti-analyst-field-manual/docs/frameworks/mitre-attack-as-working-tool/) |
-| Detection readiness | No project claims production detection coverage unless local validation, pilot/replay, owner, rollback, and SOC workflow exist. | [Customer methodology](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/) and [Israel dashboard](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-engineering/detection-status-dashboard/) |
-| Actor facts | Actor-specific facts, tools, TTPs, and source references live in the Israel CTI project. | [Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/) |
-| Customer delivery | Acceptance gates, project control, and delivery packaging live in the Customer project. | [Workflow Quick Reference](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/workflow/full-workflow-quick-reference/) |
+| Evidence labels | Claims must separate observed, reported, assessed, inferred, unknown, and gap states. | [Evidence Labels](https://1200km.com/cti-analyst-field-manual/docs/cti-foundations/evidence-labels/) |
+| Source reliability | Source reliability and information credibility are related but separate. | [Source Reliability](https://1200km.com/cti-analyst-field-manual/docs/cti-foundations/source-reliability/) |
+| PIR/SIR/EEI | Intelligence work starts from decision-linked requirements. | [PIR, SIR, and EEI](https://1200km.com/cti-analyst-field-manual/docs/cti-foundations/pir-sir-eei/) |
+| ATT&CK | Map behavior only when evidence supports the technique; ATT&CK is not attribution evidence. | [ATT&CK as a Working Tool](https://1200km.com/cti-analyst-field-manual/docs/frameworks/mitre-attack-as-working-tool/) |
+| Detection readiness | No project claims production detection coverage unless local validation, pilot/replay, owner, rollback, and SOC workflow exist. | [Customer methodology](https://1200km.com/customer-driven-ai-cti-project/docs/methodology/foundations/) and [Israel dashboard](https://1200km.com/israel-government-threat-actors-cti/detection-engineering/detection-status-dashboard/) |
+| Actor facts | Actor-specific facts, tools, TTPs, and source references live in the Israel CTI project. | [Actor Workbench](https://1200km.com/israel-government-threat-actors-cti/navigation/actor-workbench/) |
+| Customer delivery | Acceptance gates, project control, and delivery packaging live in the Customer project. | [Workflow Quick Reference](https://1200km.com/customer-driven-ai-cti-project/docs/workflow/full-workflow-quick-reference/) |
 
 ## Correlation Fixes Applied
 

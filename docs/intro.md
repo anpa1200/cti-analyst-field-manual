@@ -13,8 +13,8 @@ If you are reviewing the manual professionally, start with [Role-Based Reading P
 
 This manual is one part of a three-book CTI ecosystem. Use [CTI Project Ecosystem](ecosystem.md) and [Cross-Project Fact Correlation](fact-correlation.md) to move between general analyst tradecraft, customer delivery methodology, and the Israel-focused actor knowledge base.
 
-- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) turns tradecraft into gated delivery.
-- [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) provides sector-specific actor, tool, TTP, hunt, and detection examples.
+- [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/) turns tradecraft into gated delivery.
+- [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/) provides sector-specific actor, tool, TTP, hunt, and detection examples.
 
 ## What This Manual Is
 

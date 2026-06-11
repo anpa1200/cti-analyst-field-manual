@@ -12,7 +12,7 @@ The analyst should ask what the signal is, who benefits if it is believed, and w
 
 ## CTI Relevance
 
-False-flag analysis is especially important for hack-and-leak personas, politically motivated claims, and public attribution debates. See [Handala](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/handala/) in the Israel CTI project for a worked example of persona-based hacktivist analysis.
+False-flag analysis is especially important for hack-and-leak personas, politically motivated claims, and public attribution debates. See [Handala](https://1200km.com/israel-government-threat-actors-cti/actors/handala/) in the Israel CTI project for a worked example of persona-based hacktivist analysis.
 
 ## Common Mistakes
 
@@ -60,9 +60,9 @@ Recommended Handling:
 - [Attribution Methodology](attribution-methodology.md)
 - [Alternative Hypotheses](../02-analytic-discipline/alternative-hypotheses.md)
 - [Evidence Strength Ladder](evidence-strength-ladder.md)
-- [Persona-aware Israel CTI — Handala](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/handala/)
-- [Israel CTI Operating Standard — Claim Rules](https://anpa1200.github.io/israel-government-threat-actors-cti/methodology/operating-standard/)
-- [Customer project — Evidence Label Contracts](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/standard/artifact-contracts/)
+- [Persona-aware Israel CTI — Handala](https://1200km.com/israel-government-threat-actors-cti/actors/handala/)
+- [Israel CTI Operating Standard — Claim Rules](https://1200km.com/israel-government-threat-actors-cti/methodology/operating-standard/)
+- [Customer project — Evidence Label Contracts](https://1200km.com/customer-driven-ai-cti-project/docs/standard/artifact-contracts/)
 
 ## References
 

@@ -6,7 +6,7 @@ Show how to structure an actor research page for a mature Iran-nexus intrusion c
 
 ## Practitioner-Level Explanation
 
-A [MuddyWater / Seedworm](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/muddywater/) profile should be built around behavior, source chronology, targeting, tooling, and operational relevance. The analyst should separate long-term public reporting from current campaign evidence and avoid treating every PowerShell or remote-management-tool event as MuddyWater.
+A [MuddyWater / Seedworm](https://1200km.com/israel-government-threat-actors-cti/actors/muddywater/) profile should be built around behavior, source chronology, targeting, tooling, and operational relevance. The analyst should separate long-term public reporting from current campaign evidence and avoid treating every PowerShell or remote-management-tool event as MuddyWater.
 
 The practical value of the profile is not the name. It is a set of behaviors that can become collection requirements, hunts, detection candidates, and customer-facing risk judgments.
 
@@ -34,7 +34,7 @@ MuddyWater is a useful training case because public reporting frequently connect
 
 ## Example / Mini Case
 
-A source reports phishing that leads to remote management tool installation. The actor page should not say "detect MuddyWater." It should say: hunt for newly installed [RMM tooling](https://anpa1200.github.io/israel-government-threat-actors-cti/tools/remote-monitoring-and-management-tools/) on non-IT endpoints after suspicious email activity, with local baselining and false-positive review.
+A source reports phishing that leads to remote management tool installation. The actor page should not say "detect MuddyWater." It should say: hunt for newly installed [RMM tooling](https://1200km.com/israel-government-threat-actors-cti/tools/remote-monitoring-and-management-tools/) on non-IT endpoints after suspicious email activity, with local baselining and false-positive review.
 
 ## Analyst Checklist
 
@@ -63,8 +63,8 @@ Last Reviewed:
 ## Cross-Links
 
 - [Actor Profile Template](actor-profile-template.md)
-- [Israel CTI MuddyWater Profile](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/muddywater/)
-- [Israel CTI RMM Tools](https://anpa1200.github.io/israel-government-threat-actors-cti/tools/remote-monitoring-and-management-tools/)
+- [Israel CTI MuddyWater Profile](https://1200km.com/israel-government-threat-actors-cti/actors/muddywater/)
+- [Israel CTI RMM Tools](https://1200km.com/israel-government-threat-actors-cti/tools/remote-monitoring-and-management-tools/)
 - [Worked Example — MuddyWater Full Public-Source Case](../worked-examples/actor-research.md)
 - [Intelligence to Detection](../08-cti-to-detection/intelligence-to-detection.md)
 - [Operation Desert Hydra — Full CTI-to-Detection Pipeline for MuddyWater](https://github.com/anpa1200/operation-desert-hydra)

@@ -57,7 +57,7 @@ Owner:
 
 ## Cross-Links
 
-- [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/)
+- [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/)
 - [CTI Project Ecosystem](../ecosystem.md)
 - [False Flag Analysis](../04-attribution/false-flag-analysis.md)
 

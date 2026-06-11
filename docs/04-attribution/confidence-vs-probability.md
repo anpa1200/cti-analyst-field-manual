@@ -58,7 +58,7 @@ Decision Impact:
 - [Sherman Kent for CTI](../02-analytic-discipline/sherman-kent-for-cti.md)
 - [Attribution Methodology](attribution-methodology.md)
 - [Evidence Strength Ladder](evidence-strength-ladder.md)
-- [Israel CTI — Scoring Models](https://anpa1200.github.io/israel-government-threat-actors-cti/methodology/scoring-models/)
+- [Israel CTI — Scoring Models](https://1200km.com/israel-government-threat-actors-cti/methodology/scoring-models/)
 
 ## References
 

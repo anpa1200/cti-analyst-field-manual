@@ -6,9 +6,9 @@ Convert CTI claims into telemetry requirements, hunts, detections, SOC actions, 
 
 ## Practitioner-Level Explanation
 
-[CTI-to-detection](intelligence-to-detection.md) is a chain, not a single translation step; the Customer project turns that chain into [delivery gates](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/). A source reports behavior. The analyst labels evidence, assesses relevance, identifies telemetry, writes a hunt hypothesis, validates false positives, and only then promotes detection logic.
+[CTI-to-detection](intelligence-to-detection.md) is a chain, not a single translation step; the Customer project turns that chain into [delivery gates](https://1200km.com/customer-driven-ai-cti-project/docs/methodology/foundations/). A source reports behavior. The analyst labels evidence, assesses relevance, identifies telemetry, writes a hunt hypothesis, validates false positives, and only then promotes detection logic.
 
-The actor name is usually less important than the behavior and observable; use the Israel CTI [Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/) only after evidence is labeled.
+The actor name is usually less important than the behavior and observable; use the Israel CTI [Actor Workbench](https://1200km.com/israel-government-threat-actors-cti/navigation/actor-workbench/) only after evidence is labeled.
 
 ## CTI Relevance
 
@@ -73,7 +73,7 @@ Readiness Level:
 - [Telemetry Requirements](telemetry-requirements.md)
 - [Detection Backlog](detection-backlog.md)
 - [SOC Handoff](soc-handoff.md)
-- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/)
+- [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/docs/methodology/foundations/)
 - [Operation Desert Hydra — Full CTI-to-Detection Pipeline (MuddyWater)](https://github.com/anpa1200/operation-desert-hydra)
 
 ## Live Example: Operation Desert Hydra

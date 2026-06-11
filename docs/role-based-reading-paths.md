@@ -24,7 +24,7 @@ Give different reviewers a direct path through the manual without forcing them t
 5. [Detection Backlog](08-cti-to-detection/detection-backlog.md)
 6. [Detection Readiness Levels](08-cti-to-detection/detection-readiness-levels.md)
 7. [SOC Handoff](08-cti-to-detection/soc-handoff.md)
-8. [Israel Threat Actors CTI Detection Dashboard](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-status-dashboard/)
+8. [Israel Threat Actors CTI Detection Dashboard](https://1200km.com/israel-government-threat-actors-cti/detection-status-dashboard/)
 
 ## SOC Lead Path
 
@@ -32,7 +32,7 @@ Give different reviewers a direct path through the manual without forcing them t
 2. [Hunting Hypothesis Template](08-cti-to-detection/hunting-hypothesis-template.md)
 3. [SOC Handoff](08-cti-to-detection/soc-handoff.md)
 4. [Detection Readiness Levels](08-cti-to-detection/detection-readiness-levels.md)
-5. [Customer-Driven AI CTI Workflow](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/workflow/full-workflow-quick-reference/)
+5. [Customer-Driven AI CTI Workflow](https://1200km.com/customer-driven-ai-cti-project/docs/workflow/full-workflow-quick-reference/)
 6. [Limitations](limitations.md)
 
 ## Manager / Executive Path
@@ -71,5 +71,5 @@ flowchart LR
 
 - [CTI Project Ecosystem](ecosystem.md)
 - [Fact Correlation](fact-correlation.md)
-- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/)
-- [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/)
+- [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/)
+- [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/)

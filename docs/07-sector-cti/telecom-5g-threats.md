@@ -58,7 +58,7 @@ Owner:
 
 - [Telecom 4G Threats](telecom-4g-threats.md)
 - [Telemetry Requirements](../08-cti-to-detection/telemetry-requirements.md)
-- [Customer Delivery Methodology](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/phase-by-phase-execution-guide/)
+- [Customer Delivery Methodology](https://1200km.com/customer-driven-ai-cti-project/docs/methodology/phase-by-phase-execution-guide/)
 
 ## References
 

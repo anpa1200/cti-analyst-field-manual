@@ -120,9 +120,9 @@ Downstream Use:
 - [Evidence Labels](evidence-labels.md)
 - [Confidence Language](confidence-language.md)
 - [Source Register Template](../10-templates/source-register-template.md)
-- [Israel CTI — Source Rating (quick reference)](https://anpa1200.github.io/israel-government-threat-actors-cti/source-rating/)
-- [Israel CTI — Scoring Models (full A-F and 1-6 tables)](https://anpa1200.github.io/israel-government-threat-actors-cti/methodology/scoring-models/)
-- [Customer project — Normative Language (MUST/SHOULD for ratings)](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/standard/normative-language/)
+- [Israel CTI — Source Rating (quick reference)](https://1200km.com/israel-government-threat-actors-cti/source-rating/)
+- [Israel CTI — Scoring Models (full A-F and 1-6 tables)](https://1200km.com/israel-government-threat-actors-cti/methodology/scoring-models/)
+- [Customer project — Normative Language (MUST/SHOULD for ratings)](https://1200km.com/customer-driven-ai-cti-project/docs/standard/normative-language/)
 
 ## References
 

@@ -6,7 +6,7 @@ Package CTI-derived detections and hunts so SOC analysts can triage them consist
 
 ## Practitioner-Level Explanation
 
-[SOC handoff](soc-handoff.md) is where CTI and detection engineering become operational; align it with the Customer project [SOC workflow phase](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/workflow/full-workflow-quick-reference/#phase-10-soc-triage-and-incident-workflow). A handoff note should explain why the alert matters, what to check first, what false positives are expected, when to escalate, and what response actions are authorized. Without SOC handoff, even good detection logic may fail in practice.
+[SOC handoff](soc-handoff.md) is where CTI and detection engineering become operational; align it with the Customer project [SOC workflow phase](https://1200km.com/customer-driven-ai-cti-project/docs/workflow/full-workflow-quick-reference/#phase-10-soc-triage-and-incident-workflow). A handoff note should explain why the alert matters, what to check first, what false positives are expected, when to escalate, and what response actions are authorized. Without SOC handoff, even good detection logic may fail in practice.
 
 ## CTI Relevance
 
@@ -62,7 +62,7 @@ Owner:
 ## Cross-Links
 
 - [SOC Handoff Note](../10-templates/soc-handoff-note.md)
-- [Customer Delivery SOC Workflow](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/practitioner-package/package-index/)
+- [Customer Delivery SOC Workflow](https://1200km.com/customer-driven-ai-cti-project/docs/practitioner-package/package-index/)
 - [Detection Backlog](detection-backlog.md)
 
 ## References

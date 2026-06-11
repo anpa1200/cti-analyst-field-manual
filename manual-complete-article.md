@@ -36,8 +36,8 @@ If you are reviewing the manual professionally, start with Role-Based Reading Pa
 
 This manual is one part of a three-book CTI ecosystem. Use CTI Project Ecosystem and Cross-Project Fact Correlation to move between general analyst tradecraft, customer delivery methodology, and the Israel-focused actor knowledge base.
 
-- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/) turns tradecraft into gated delivery.
-- [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/) provides sector-specific actor, tool, TTP, hunt, and detection examples.
+- [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/) turns tradecraft into gated delivery.
+- [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/) provides sector-specific actor, tool, TTP, hunt, and detection examples.
 
 ### What This Manual Is
 
@@ -233,7 +233,7 @@ PIRs, SIRs, and EEIs convert broad curiosity into answerable intelligence work.
 
 A **PIR** is the high-level intelligence question tied to a decision. A **SIR** breaks that question into specific sub-questions. An **EEI** defines the concrete information needed to answer a SIR.
 
-The distinction matters because analysts often mistake a topic for a requirement. "MuddyWater" is a topic. "Which [MuddyWater behaviors reported since 2024](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/muddywater/) are observable with our endpoint and identity telemetry?" is closer to a PIR.
+The distinction matters because analysts often mistake a topic for a requirement. "MuddyWater" is a topic. "Which [MuddyWater behaviors reported since 2024](https://1200km.com/israel-government-threat-actors-cti/actors/muddywater/) are observable with our endpoint and identity telemetry?" is closer to a PIR.
 
 ### CTI Relevance
 
@@ -1010,7 +1010,7 @@ Use ATT&CK to organize observed behavior and detection ideas without turning it 
 
 [ATT&CK](https://attack.mitre.org/) is a behavior taxonomy. It helps analysts describe what happened, compare procedures, identify telemetry requirements, and communicate with detection engineers. It does not prove who performed the activity.
 
-A useful mapping includes technique ID, technique name, tactic, procedure, evidence, source, confidence, mapping quality, detection idea, and limitations. Use the Israel CTI [TTP To Detection Matrix](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/ttp-detection-matrix/) for concrete examples. Actor-level mappings are weaker than procedure-level mappings tied to telemetry.
+A useful mapping includes technique ID, technique name, tactic, procedure, evidence, source, confidence, mapping quality, detection idea, and limitations. Use the Israel CTI [TTP To Detection Matrix](https://1200km.com/israel-government-threat-actors-cti/navigation/ttp-detection-matrix/) for concrete examples. Actor-level mappings are weaker than procedure-level mappings tied to telemetry.
 
 ### CTI Relevance
 
@@ -1236,7 +1236,7 @@ Provide a strict, evidence-weighted approach to CTI attribution.
 
 Attribution is a probabilistic analytic judgment. It is not a label copied from a report and not a result of one IOC match. A defensible attribution weighs timing, targeting, language, infrastructure, tooling, TTPs, operational tempo, malware lineage, and alternative hypotheses.
 
-[Shared tooling](https://anpa1200.github.io/israel-government-threat-actors-cti/tools/) does not prove actor identity. Victimology is supporting evidence, not proof. Infrastructure overlap can be weak or strong depending on exclusivity, timing, and reuse.
+[Shared tooling](https://1200km.com/israel-government-threat-actors-cti/tools/) does not prove actor identity. Victimology is supporting evidence, not proof. Infrastructure overlap can be weak or strong depending on exclusivity, timing, and reuse.
 
 ### CTI Relevance
 
@@ -1808,7 +1808,7 @@ Show how to structure an actor research page for a mature Iran-nexus intrusion c
 
 ### Practitioner-Level Explanation
 
-A [MuddyWater / Seedworm](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/muddywater/) profile should be built around behavior, source chronology, targeting, tooling, and operational relevance. The analyst should separate long-term public reporting from current campaign evidence and avoid treating every PowerShell or remote-management-tool event as MuddyWater.
+A [MuddyWater / Seedworm](https://1200km.com/israel-government-threat-actors-cti/actors/muddywater/) profile should be built around behavior, source chronology, targeting, tooling, and operational relevance. The analyst should separate long-term public reporting from current campaign evidence and avoid treating every PowerShell or remote-management-tool event as MuddyWater.
 
 The practical value of the profile is not the name. It is a set of behaviors that can become collection requirements, hunts, detection candidates, and customer-facing risk judgments.
 
@@ -1836,7 +1836,7 @@ MuddyWater is a useful training case because public reporting frequently connect
 
 ### Example / Mini Case
 
-A source reports phishing that leads to remote management tool installation. The actor page should not say "detect MuddyWater." It should say: hunt for newly installed [RMM tooling](https://anpa1200.github.io/israel-government-threat-actors-cti/tools/remote-monitoring-and-management-tools/) on non-IT endpoints after suspicious email activity, with local baselining and false-positive review.
+A source reports phishing that leads to remote management tool installation. The actor page should not say "detect MuddyWater." It should say: hunt for newly installed [RMM tooling](https://1200km.com/israel-government-threat-actors-cti/tools/remote-monitoring-and-management-tools/) on non-IT endpoints after suspicious email activity, with local baselining and false-positive review.
 
 ### Analyst Checklist
 
@@ -1900,7 +1900,7 @@ Use Handala as a model for separating public persona claims from operational clu
 
 ### Practitioner-Level Explanation
 
-[Handala / Void Manticore](https://anpa1200.github.io/israel-government-threat-actors-cti/actors/handala/) reporting requires strict persona discipline. A public claim, a Telegram post, a defacement message, a leaked-data claim, and a verified intrusion are different evidence classes.
+[Handala / Void Manticore](https://1200km.com/israel-government-threat-actors-cti/actors/handala/) reporting requires strict persona discipline. A public claim, a Telegram post, a defacement message, a leaked-data claim, and a verified intrusion are different evidence classes.
 
 The analyst should treat Handala as a claim-heavy persona unless stronger sources connect a specific operation to a tracked cluster such as Void Manticore. Do not repost leaked material; use false-flag and persona-claim handling instead. Do not treat persona messaging as telemetry.
 
@@ -2130,9 +2130,9 @@ Convert CTI claims into telemetry requirements, hunts, detections, SOC actions, 
 
 ### Practitioner-Level Explanation
 
-CTI-to-detection is a chain, not a single translation step; the Customer project turns that chain into [delivery gates](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/). A source reports behavior. The analyst labels evidence, assesses relevance, identifies telemetry, writes a hunt hypothesis, validates false positives, and only then promotes detection logic.
+CTI-to-detection is a chain, not a single translation step; the Customer project turns that chain into [delivery gates](https://1200km.com/customer-driven-ai-cti-project/docs/methodology/foundations/). A source reports behavior. The analyst labels evidence, assesses relevance, identifies telemetry, writes a hunt hypothesis, validates false positives, and only then promotes detection logic.
 
-The actor name is usually less important than the behavior and observable; use the Israel CTI [Actor Workbench](https://anpa1200.github.io/israel-government-threat-actors-cti/navigation/actor-workbench/) only after evidence is labeled.
+The actor name is usually less important than the behavior and observable; use the Israel CTI [Actor Workbench](https://1200km.com/israel-government-threat-actors-cti/navigation/actor-workbench/) only after evidence is labeled.
 
 ### CTI Relevance
 
@@ -2477,7 +2477,7 @@ Organize CTI-derived detection candidates by value, evidence, telemetry, readine
 
 ### Practitioner-Level Explanation
 
-A detection backlog is not a wish list; compare maturity against the Israel CTI [Detection Status Dashboard](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-engineering/detection-status-dashboard/). Each item should record source behavior, evidence, expected value, telemetry dependency, false-positive risk, owner, readiness level, and promotion criteria. Backlog discipline prevents teams from losing good hypotheses or promoting immature logic too early.
+A detection backlog is not a wish list; compare maturity against the Israel CTI [Detection Status Dashboard](https://1200km.com/israel-government-threat-actors-cti/detection-engineering/detection-status-dashboard/). Each item should record source behavior, evidence, expected value, telemetry dependency, false-positive risk, owner, readiness level, and promotion criteria. Backlog discipline prevents teams from losing good hypotheses or promoting immature logic too early.
 
 ### CTI Relevance
 
@@ -2734,7 +2734,7 @@ Package CTI-derived detections and hunts so SOC analysts can triage them consist
 
 ### Practitioner-Level Explanation
 
-SOC handoff is where CTI and detection engineering become operational; align it with the Customer project [SOC workflow phase](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/workflow/full-workflow-quick-reference/#phase-10-soc-triage-and-incident-workflow). A handoff note should explain why the alert matters, what to check first, what false positives are expected, when to escalate, and what response actions are authorized. Without SOC handoff, even good detection logic may fail in practice.
+SOC handoff is where CTI and detection engineering become operational; align it with the Customer project [SOC workflow phase](https://1200km.com/customer-driven-ai-cti-project/docs/workflow/full-workflow-quick-reference/#phase-10-soc-triage-and-incident-workflow). A handoff note should explain why the alert matters, what to check first, what false positives are expected, when to escalate, and what response actions are authorized. Without SOC handoff, even good detection logic may fail in practice.
 
 ### CTI Relevance
 
@@ -3046,7 +3046,7 @@ Define a safe workflow for using LLMs in public, defensive CTI research.
 
 ### Practitioner-Level Explanation
 
-Safe LLM use starts with scope and data handling; use Customer project [AI governance](https://anpa1200.github.io/customer-driven-ai-cti-project/docs/methodology/foundations/) for delivery work. Public TLP:CLEAR material may be appropriate for external tools. Internal telemetry, credentials, victim data, proprietary reporting, or sensitive incident data should not be pasted into public models.
+Safe LLM use starts with scope and data handling; use Customer project [AI governance](https://1200km.com/customer-driven-ai-cti-project/docs/methodology/foundations/) for delivery work. Public TLP:CLEAR material may be appropriate for external tools. Internal telemetry, credentials, victim data, proprietary reporting, or sensitive incident data should not be pasted into public models.
 
 The model should be asked to produce structured claims, source links, confidence caveats, and gaps. The analyst verifies everything.
 

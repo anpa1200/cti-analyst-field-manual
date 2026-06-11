@@ -237,7 +237,7 @@ Owner:
 - [Telemetry Requirements](telemetry-requirements.md)
 - [Detection Backlog](detection-backlog.md)
 - [Detection Readiness Levels](detection-readiness-levels.md)
-- [Israel CTI Platform Query Variants](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-engineering/platform-query-variants/)
+- [Israel CTI Platform Query Variants](https://1200km.com/israel-government-threat-actors-cti/detection-engineering/platform-query-variants/)
 
 ## References
 

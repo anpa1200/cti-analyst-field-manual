@@ -149,7 +149,7 @@ Analyst: [name]. AI Review Log: AIR-004.
 - [Safe LLM Research Workflow](safe-llm-research-workflow.md)
 - [Hallucination Control](hallucination-control.md)
 - [AI Quality Gates](ai-quality-gates.md)
-- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/)
+- [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/)
 - [Detection Readiness Levels](../08-cti-to-detection/detection-readiness-levels.md)
 
 ## References

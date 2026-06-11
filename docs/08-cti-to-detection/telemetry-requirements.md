@@ -200,7 +200,7 @@ Decision: Hunt / Detect / Defer
 - [Intelligence to Detection](intelligence-to-detection.md)
 - [Detection Backlog](detection-backlog.md)
 - [Collection Gap Register](../10-templates/collection-gap-register.md)
-- [Platform examples in Israel CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/detection-engineering/platform-field-mapping/)
+- [Platform examples in Israel CTI](https://1200km.com/israel-government-threat-actors-cti/detection-engineering/platform-field-mapping/)
 
 ## References
 

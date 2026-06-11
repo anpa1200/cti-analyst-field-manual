@@ -45,5 +45,5 @@ data/correlation-register.yml
 - [Fact Correlation](../fact-correlation.md)
 - [Detection Readiness Levels](../08-cti-to-detection/detection-readiness-levels.md)
 - [AI CTI Control Matrix](../09-ai-assisted-cti/ai-cti-control-matrix.md)
-- [Customer-Driven AI CTI Project](https://anpa1200.github.io/customer-driven-ai-cti-project/)
-- [Israel Government Threat Actors CTI](https://anpa1200.github.io/israel-government-threat-actors-cti/)
+- [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/)
+- [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/)
