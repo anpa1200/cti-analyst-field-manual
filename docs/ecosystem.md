@@ -20,7 +20,7 @@ This page connects the three CTI documentation projects into one practitioner ec
 | [Customer-Driven AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/) | Delivery methodology and customer engagement operating model | Project phases, quality gates, customer outcomes, AI-assisted workflow controls, acceptance criteria, replay and delivery packages |
 | [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/) | Sector and actor knowledge base | Israeli public-sector threat model, actors, tools, TTPs, detections, hunts, evidence registers, source tracking |
 | [AI vs Defense](https://1200km.com/ai-vs-defense/) | Practitioner guide: AI-era threat model and SOC adaptation | How skill-floor collapse changes the Pyramid of Pain, legacy defense failures, behavioral detection, and CTI evolution requirements |
-| [ThreatMapper](https://1200km.com/threatmapper-docs/) | Self-hosted AI threat intelligence platform | Automated ATT&CK technique extraction from reports, APT attribution via Jaccard similarity, interactive Navigator heatmap, campaign overlay, and PDF report generation — all locally, no cloud API required |
+| [ThreatMapper AI CTI workbench](https://1200km.com/threatmapper/) | Public Web workspace plus self-hosted Docker platform | Analyst-assisted ATT&CK mapping, group and campaign TTP-overlap leads, coverage-gap analysis, and detection-backlog support |
 | [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) | AI-powered offensive security automation platform | MCP agent-based tool orchestration, 150+ security tools, AI-driven penetration testing, adversarial validation of detection coverage |
 
 ## Recommended Navigation

@@ -68,7 +68,7 @@ Reviewer:
 - [Prompt Library](prompt-library.md)
 - [Hallucination Control](hallucination-control.md)
 - [AI Governance in Customer CTI](https://1200km.com/customer-driven-ai-cti-project/docs/methodology/foundations/)
-- [ThreatMapper](https://1200km.com/threatmapper-docs/): self-hosted implementation of this workflow — upload a PDF report, select Claude / GPT-4o / Gemini, and get structured ATT&CK extraction with evidence and confidence in real time, all on your own infrastructure with no data leaving the machine.
+- [ThreatMapper CTI-to-detection workflow](https://1200km.com/threatmapper/): self-hosted implementation of this workflow with operator-configured LLM providers, structured ATT&CK mapping candidates, evidence, and extraction confidence. Use a local/private gateway when report content must not reach an external provider.
 
 ## References
 

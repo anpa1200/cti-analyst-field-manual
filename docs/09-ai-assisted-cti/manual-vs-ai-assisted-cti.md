@@ -61,7 +61,7 @@ Final Artifact:
 - [Safe LLM Research Workflow](safe-llm-research-workflow.md)
 - [AI Quality Gates](ai-quality-gates.md)
 - [Customer AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/)
-- [ThreatMapper — self-hosted AI ATT&CK extraction and APT attribution platform](https://1200km.com/threatmapper-docs/): practical example of LLM-driven technique extraction with evidence, confidence scoring, Jaccard APT matching, and Navigator heatmap — all running locally on your own stack.
+- [ThreatMapper AI CTI workbench](https://1200km.com/threatmapper/): self-hosted example of LLM-assisted technique extraction with evidence, extraction-confidence scoring, Jaccard TTP-overlap leads, and an ATT&CK mapping workspace. Report content is sent to the provider configured by the operator.
 
 ## References
 
