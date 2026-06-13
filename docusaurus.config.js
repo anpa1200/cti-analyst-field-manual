@@ -5,6 +5,7 @@ const config = {
   favicon: 'img/logo.png',
   url: 'https://1200km.com',
   baseUrl: '/cti-analyst-field-manual/',
+  scripts: [{src: 'https://1200km.com/assets/docusaurus-ecosystem.js?v=20260613-1', defer: true}],
   organizationName: 'anpa1200',
   projectName: 'cti-analyst-field-manual',
 
