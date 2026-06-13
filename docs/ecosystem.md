@@ -21,6 +21,7 @@ This page connects the three CTI documentation projects into one practitioner ec
 | [Israel Government Threat Actors CTI](https://1200km.com/israel-government-threat-actors-cti/) | Sector and actor knowledge base | Israeli public-sector threat model, actors, tools, TTPs, detections, hunts, evidence registers, source tracking |
 | [AI vs Defense](https://1200km.com/ai-vs-defense/) | Practitioner guide: AI-era threat model and SOC adaptation | How skill-floor collapse changes the Pyramid of Pain, legacy defense failures, behavioral detection, and CTI evolution requirements |
 | [ThreatMapper AI CTI workbench](https://1200km.com/threatmapper/) | Public Web workspace plus self-hosted Docker platform | Analyst-assisted ATT&CK mapping, group and campaign TTP-overlap leads, coverage-gap analysis, and detection-backlog support |
+| [The Intelligent Shield — OpenCTI](https://1200km.com/opencti-intelligent-shield/) | AI-powered CTI platform deployment guide | OpenCTI setup with STIX 2.1, free/commercial/ISAC feeds, Claude AI enrichment connector, inference rules, security hardening, and real investigation workflows |
 | [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) | AI-powered offensive security automation platform | MCP agent-based tool orchestration, 150+ security tools, AI-driven penetration testing, adversarial validation of detection coverage |
 
 ## Recommended Navigation
@@ -51,6 +52,7 @@ Use [Evidence Labels](/cti-analyst-field-manual/docs/cti-foundations/evidence-la
 - [Customer-Driven AI CTI Project repository](https://github.com/anpa1200/customer-driven-ai-cti-project)
 - [Israel Government Threat Actors CTI repository](https://github.com/anpa1200/israel-government-threat-actors-cti)
 - [ThreatMapper repository](https://github.com/anpa1200/threatmapper)
+- [The Intelligent Shield repository](https://github.com/anpa1200/opencti-intelligent-shield)
 - [HexStrike AI repository](https://github.com/0x4m4/hexstrike-ai)
 
 ## Boundary
