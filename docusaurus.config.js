@@ -30,7 +30,7 @@ const config = {
     image: 'img/logo.png',
     colorMode: {
       defaultMode: 'dark',
-      disableSwitch: true,
+      disableSwitch: false,
       respectPrefersColorScheme: false,
     },
     metadata: [
