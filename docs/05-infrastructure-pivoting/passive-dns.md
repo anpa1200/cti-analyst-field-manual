@@ -1,3 +1,7 @@
+---
+description: "Using passive DNS data for infrastructure pivoting in CTI investigations: querying historical resolution records, identifying actor infrastructure clusters, and pivot techniques."
+---
+
 # Passive DNS
 
 ## Purpose

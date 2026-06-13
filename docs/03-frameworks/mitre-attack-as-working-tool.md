@@ -1,3 +1,7 @@
+---
+description: "How to use MITRE ATT&CK as a working CTI tool — technique mapping, gap analysis, detection prioritization, and common analyst mistakes to avoid."
+---
+
 # MITRE ATT&CK as a Working Tool
 
 ## Purpose

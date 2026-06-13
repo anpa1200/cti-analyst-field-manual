@@ -1,3 +1,7 @@
+---
+description: "Honest assessment of what the CTI Analyst Field Manual covers, what it doesn't, and how to apply its tradecraft with appropriate calibration."
+---
+
 # Known Limitations
 
 ## Purpose

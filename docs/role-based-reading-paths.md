@@ -1,3 +1,7 @@
+---
+description: "Reading guide for the CTI Analyst Field Manual by role: CTI analyst, SOC analyst, detection engineer, and threat hunter — with recommended page sequences."
+---
+
 # Role-Based Reading Paths
 
 ## Purpose

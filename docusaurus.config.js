@@ -45,6 +45,13 @@ const config = {
     ]
   ],
   themeConfig: {
+    image: 'img/logo.png',
+    metadata: [
+      {
+        name: 'keywords',
+        content: 'CTI analyst, cyber threat intelligence, ATT&CK mapping, detection engineering, threat hunting, adversary profiling, source reliability, Admiralty scale, hunting hypotheses, detection backlog, CTI methodology, CTI tradecraft',
+      },
+    ],
     navbar: {
       title: 'CTI Analyst Field Manual',
       logo: {

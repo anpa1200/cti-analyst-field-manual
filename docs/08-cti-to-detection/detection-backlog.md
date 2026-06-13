@@ -1,3 +1,7 @@
+---
+description: "How to build and manage a structured CTI detection backlog — prioritizing TTP-based detections, assigning detection readiness levels, and tracking coverage gaps."
+---
+
 # Detection Backlog
 
 ## Purpose

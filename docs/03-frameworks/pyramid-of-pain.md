@@ -1,3 +1,7 @@
+---
+description: "David Bianco's Pyramid of Pain applied to CTI practice: how indicator type affects adversary disruption cost and how to prioritize TTP-based detection over IOCs."
+---
+
 # Pyramid of Pain
 
 ## Purpose

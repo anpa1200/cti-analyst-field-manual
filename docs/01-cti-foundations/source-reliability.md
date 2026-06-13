@@ -1,3 +1,7 @@
+---
+description: "Practical model for rating source reliability and information credibility using Admiralty scale and evidence labels — without pretending ratings are absolute."
+---
+
 # Source Reliability
 
 ## Purpose

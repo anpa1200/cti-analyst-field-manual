@@ -1,3 +1,7 @@
+---
+description: "The most common ATT&CK mapping mistakes CTI analysts make — over-tagging, under-tagging, confusing sub-techniques, and how to calibrate mappings correctly."
+---
+
 # ATT&CK Mapping Mistakes
 
 ## Purpose

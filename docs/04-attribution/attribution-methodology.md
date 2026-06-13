@@ -1,3 +1,7 @@
+---
+description: "CTI attribution methodology: how to build structured group and campaign similarity hypotheses from TTPs, infrastructure, targeting, and victimology without overreaching."
+---
+
 # Attribution Methodology
 
 ## Purpose

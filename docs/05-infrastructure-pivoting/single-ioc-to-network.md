@@ -1,3 +1,7 @@
+---
+description: "Step-by-step workflow for expanding a single IOC into a full infrastructure cluster using WHOIS, passive DNS, certificate transparency, and ASN pivoting."
+---
+
 # Single IOC to Network
 
 ## Purpose

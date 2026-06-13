@@ -1,3 +1,7 @@
+---
+description: "CTI evidence labeling system: how to tag claims with source quality, confidence tier, and evidence type to maintain analytic rigor across investigations."
+---
+
 # Evidence Labels
 
 ## Purpose

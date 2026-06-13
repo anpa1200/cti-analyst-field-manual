@@ -1,3 +1,7 @@
+---
+description: "How to hand off CTI findings to SOC teams: structured handoff note format, telemetry requirements, detection readiness levels, and triage guidance."
+---
+
 # SOC Handoff
 
 ## Purpose

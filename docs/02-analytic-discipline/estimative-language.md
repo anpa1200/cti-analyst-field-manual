@@ -1,3 +1,7 @@
+---
+description: "Using estimative language in CTI analysis: probability words, confidence levels, Sherman Kent scale, and how to avoid ambiguous assertions in finished intelligence."
+---
+
 # Estimative Language
 
 ## Purpose

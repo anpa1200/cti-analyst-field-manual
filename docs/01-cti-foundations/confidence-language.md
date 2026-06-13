@@ -1,3 +1,7 @@
+---
+description: "Standardized confidence language for CTI reporting — probabilistic and estimative language, confidence tiers, and how to communicate uncertainty to consumers."
+---
+
 # Confidence Language
 
 ## Purpose

@@ -1,3 +1,7 @@
+---
+description: "The intelligence cycle for CTI: direction, collection, processing, analysis, dissemination, and feedback — applied to practitioner workflows."
+---
+
 # Intelligence Cycle
 
 ## Purpose

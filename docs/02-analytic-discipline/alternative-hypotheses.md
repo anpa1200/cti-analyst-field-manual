@@ -1,3 +1,7 @@
+---
+description: "Structured analytic techniques for CTI: how to generate, test, and eliminate alternative hypotheses to avoid confirmation bias in threat assessments."
+---
+
 # Alternative Hypotheses
 
 ## Purpose

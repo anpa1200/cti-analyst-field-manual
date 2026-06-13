@@ -1,3 +1,7 @@
+---
+description: "How to identify and analyze false flag operations in CTI — when to consider deception, how to weight conflicting indicators, and how to hedge assessments."
+---
+
 # False Flag Analysis
 
 ## Purpose

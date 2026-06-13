@@ -1,3 +1,7 @@
+---
+description: "Practical hallucination control for CTI analysts using AI tools — validation checkpoints, authoritative source grounding, and techniques for catching AI fabrications."
+---
+
 # Hallucination Control
 
 ## Purpose

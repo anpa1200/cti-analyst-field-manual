@@ -1,3 +1,7 @@
+---
+description: "Template and methodology for writing threat hunting hypotheses from CTI — actor-anchored, behavior-anchored, and anomaly-anchored hypothesis formats."
+---
+
 # Hunting Hypothesis Template
 
 ## Purpose

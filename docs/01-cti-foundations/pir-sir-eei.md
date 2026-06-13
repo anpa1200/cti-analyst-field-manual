@@ -1,3 +1,7 @@
+---
+description: "How to define Priority Intelligence Requirements (PIR), Specific Intelligence Requirements (SIR), and Essential Elements of Information (EEI) for CTI programs."
+---
+
 # PIR, SIR, and EEI
 
 ## Purpose

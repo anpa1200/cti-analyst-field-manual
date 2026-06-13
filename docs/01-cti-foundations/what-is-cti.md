@@ -1,3 +1,7 @@
+---
+description: "Defines cyber threat intelligence as an analytic discipline — covering the difference between IOCs, threat feeds, finished intelligence, and decision-supporting CTI."
+---
+
 # What Is CTI?
 
 ## Purpose

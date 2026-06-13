@@ -1,3 +1,7 @@
+---
+description: "Converting CTI claims into telemetry requirements, detection hypotheses, KQL/Sigma rules, and SOC handoff packages — the complete CTI-to-detection workflow."
+---
+
 # Intelligence to Detection
 
 ## Purpose

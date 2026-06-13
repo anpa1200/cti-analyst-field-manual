@@ -1,3 +1,7 @@
+---
+description: "A practical CTI tradecraft handbook for analysts — covering source reliability, analytic discipline, ATT&CK mapping, TTP-to-detection workflow, and AI-assisted CTI methodology."
+---
+
 # CTI Analyst Field Manual
 
 ![CTI Analyst Field Manual — Complete Reference](/img/infographic-field-manual-cover.png)

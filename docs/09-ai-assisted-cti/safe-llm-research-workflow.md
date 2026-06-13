@@ -1,3 +1,7 @@
+---
+description: "Safe LLM research workflow for CTI analysts — how to use AI tools like Claude without hallucination risk, with validation gates and source attribution requirements."
+---
+
 # Safe LLM Research Workflow
 
 ## Purpose

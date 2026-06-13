@@ -1,3 +1,7 @@
+---
+description: "Control matrix for AI-assisted CTI: which analytical tasks are suitable for LLM acceleration, which require human validation, and how to manage AI-introduced bias."
+---
+
 # AI CTI Control Matrix
 
 ## Purpose
