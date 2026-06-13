@@ -51,6 +51,7 @@ const config = {
           {label: 'Customer-Driven AI CTI', href: 'https://1200km.com/customer-driven-ai-cti-project/'},
           {label: 'Israel Threat Actors CTI', href: 'https://1200km.com/israel-government-threat-actors-cti/'},
           {label: 'AI vs Defense', href: 'https://1200km.com/ai-vs-defense/'},
+          {label: 'Intelligent Shield', href: 'https://1200km.com/opencti-intelligent-shield/'},
           {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
           {label: 'ThreatMapper Docs', href: 'https://1200km.com/threatmapper-docs/'}
         ]},
@@ -73,6 +74,7 @@ const config = {
           {label: 'Customer-Driven AI CTI', href: 'https://1200km.com/customer-driven-ai-cti-project/'},
           {label: 'Israel Threat Actors CTI', href: 'https://1200km.com/israel-government-threat-actors-cti/'},
           {label: 'AI vs Defense', href: 'https://1200km.com/ai-vs-defense/'},
+          {label: 'Intelligent Shield', href: 'https://1200km.com/opencti-intelligent-shield/'},
           {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
           {label: 'ThreatMapper Docs', href: 'https://1200km.com/threatmapper-docs/'}
         ]},
