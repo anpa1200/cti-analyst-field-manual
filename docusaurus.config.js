@@ -59,7 +59,7 @@ const config = {
           {label: 'AI vs Defense', href: 'https://1200km.com/ai-vs-defense/'},
           {label: 'Intelligent Shield', href: 'https://1200km.com/opencti-intelligent-shield/'},
           {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
-          {label: 'ThreatMapper Docs', href: 'https://1200km.com/threatmapper-docs/'}
+          {label: 'AdversaryGraph Docs', href: 'https://1200km.com/adversarygraph-docs/'}
         ]},
         {href: 'https://medium.com/@1200km', label: 'Medium', position: 'right'},
         {href: 'https://github.com/anpa1200/cti-analyst-field-manual', label: 'GitHub', position: 'right'},
@@ -82,7 +82,7 @@ const config = {
           {label: 'AI vs Defense', href: 'https://1200km.com/ai-vs-defense/'},
           {label: 'Intelligent Shield', href: 'https://1200km.com/opencti-intelligent-shield/'},
           {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
-          {label: 'ThreatMapper Docs', href: 'https://1200km.com/threatmapper-docs/'}
+          {label: 'AdversaryGraph Docs', href: 'https://1200km.com/adversarygraph-docs/'}
         ]},
         {title: 'Author', items: [
           {label: 'Medium', href: 'https://medium.com/@1200km'},

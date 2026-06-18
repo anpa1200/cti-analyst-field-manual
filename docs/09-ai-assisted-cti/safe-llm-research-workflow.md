@@ -72,7 +72,7 @@ Reviewer:
 - [Prompt Library](prompt-library.md)
 - [Hallucination Control](hallucination-control.md)
 - [AI Governance in Customer CTI](https://1200km.com/customer-driven-ai-cti-project/docs/methodology/foundations/)
-- [ThreatMapper CTI-to-detection workflow](https://1200km.com/threatmapper/): self-hosted implementation of this workflow with operator-configured LLM providers, structured ATT&CK mapping candidates, evidence, and extraction confidence. Use a local/private gateway when report content must not reach an external provider.
+- [AdversaryGraph CTI-to-detection workflow](https://1200km.com/adversarygraph/): self-hosted implementation of this workflow with operator-configured LLM providers, structured ATT&CK mapping candidates, evidence, and extraction confidence. Use a local/private gateway when report content must not reach an external provider.
 
 ## References
 

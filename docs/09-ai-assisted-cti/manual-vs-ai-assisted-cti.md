@@ -61,7 +61,7 @@ Final Artifact:
 - [Safe LLM Research Workflow](safe-llm-research-workflow.md)
 - [AI Quality Gates](ai-quality-gates.md)
 - [Customer AI CTI Project](https://1200km.com/customer-driven-ai-cti-project/)
-- [ThreatMapper AI CTI workbench](https://1200km.com/threatmapper/): self-hosted example of LLM-assisted technique extraction with evidence, extraction-confidence scoring, Jaccard TTP-overlap leads, and an ATT&CK mapping workspace. Report content is sent to the provider configured by the operator.
+- [AdversaryGraph AI CTI workbench](https://1200km.com/adversarygraph/): self-hosted example of LLM-assisted technique extraction with evidence, extraction-confidence scoring, Jaccard TTP-overlap leads, and an ATT&CK mapping workspace. Report content is sent to the provider configured by the operator.
 
 ## References
 
