@@ -1,6 +1,26 @@
 import React from 'react';
+import Head from '@docusaurus/Head';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+
+const breadcrumbStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: '1200km',
+      item: 'https://1200km.com/',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'CTI Analyst Field Manual',
+      item: 'https://1200km.com/cti-analyst-field-manual/',
+    },
+  ],
+};
 
 const modules = [
   {
@@ -137,11 +157,21 @@ const ecosystem = [
 ];
 
 export default function Home() {
+  const pageTitle = 'CTI Analyst Field Manual | 1200km';
+  const pageDescription = 'Learn practical CTI tradecraft for evidence handling, source assessment, attribution, infrastructure pivoting, threat hunting, and detection-ready outputs.';
   return (
     <Layout
       title="CTI Analyst Field Manual"
-      description="Professional CTI tradecraft manual: from collection requirements to evidence discipline, attribution, infrastructure pivoting, and detection-ready outputs. 80+ pages across 10 modules."
+      description={pageDescription}
     >
+      <Head>
+        <meta property="og:site_name" content="1200km — Andrey Pautov Security Research" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbStructuredData)}
+        </script>
+      </Head>
       {/* ── Hero ── */}
       <header className="fm-hero">
         <div className="container">

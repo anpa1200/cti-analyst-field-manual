@@ -5,11 +5,13 @@
   "description": "Professional CTI tradecraft field manual: from research to defensible analytic judgment, hunting hypotheses, and detection-ready outputs.",
   "scripts": {
     "start": "docusaurus start",
+    "prebuild": "node scripts/generate-seo-descriptions.mjs",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "check:links": "python3 scripts/check_links.py",
-    "validate": "npm run check:links && npm run build"
+    "check:seo": "node scripts/check-seo.mjs https://1200km.com/cti-analyst-field-manual/",
+    "validate": "npm run check:links && npm run build && npm run check:seo"
   },
   "dependencies": {
     "@docusaurus/core": "latest",

@@ -1,6 +1,35 @@
 // @ts-check
+const {execFileSync} = require('node:child_process');
+
+const landingPageSources = new Map([
+  ['https://1200km.com/cti-analyst-field-manual/', 'src/pages/index.js'],
+]);
+
+function readGitDate(sourcePath) {
+  try {
+    const date = execFileSync(
+      'git',
+      ['log', '-1', '--format=%cs', '--', sourcePath],
+      {cwd: __dirname, encoding: 'utf8'},
+    ).trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+async function addLandingPageLastmod({defaultCreateSitemapItems, ...params}) {
+  const items = await defaultCreateSitemapItems(params);
+  return items.map((item) => {
+    const sourcePath = landingPageSources.get(item.url);
+    if (!sourcePath || item.lastmod) return item;
+    const lastmod = readGitDate(sourcePath);
+    return lastmod ? {...item, lastmod} : item;
+  });
+}
+
 const config = {
-  title: 'CTI Analyst Field Manual',
+  title: '1200km',
   tagline: 'From threat intelligence research to defensible analytic judgment, hunting hypotheses, and detection-ready outputs.',
   favicon: 'img/logo.png',
   url: 'https://1200km.com',
@@ -19,22 +48,31 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/anpa1200/cti-analyst-field-manual/tree/main/'
+          editUrl: 'https://github.com/anpa1200/cti-analyst-field-manual/tree/main/',
+          showLastUpdateTime: true,
         },
         blog: false,
+        sitemap: {
+          lastmod: 'date',
+          createSitemapItems: addLandingPageLastmod,
+        },
         gtag: {trackingID: 'G-TMTG21RVHM', anonymizeIP: true},
         theme: {customCss: './src/css/custom.css'}
       }
     ]
   ],
   themeConfig: {
-    image: 'img/logo.png',
+    image: 'img/infographic-field-manual-cover.png',
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
       respectPrefersColorScheme: false,
     },
     metadata: [
+      {
+        property: 'og:site_name',
+        content: '1200km — Andrey Pautov Security Research',
+      },
       {
         name: 'keywords',
         content: 'CTI analyst, cyber threat intelligence, ATT&CK mapping, detection engineering, threat hunting, adversary profiling, source reliability, Admiralty scale, hunting hypotheses, detection backlog, CTI methodology, CTI tradecraft',
@@ -58,7 +96,7 @@ const config = {
           {label: 'Israel Threat Actors CTI', href: 'https://1200km.com/israel-government-threat-actors-cti/'},
           {label: 'AI vs Defense', href: 'https://1200km.com/ai-vs-defense/'},
           {label: 'Intelligent Shield', href: 'https://1200km.com/opencti-intelligent-shield/'},
-          {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
+          {label: 'HexStrike AI (upstream project)', href: 'https://github.com/0x4m4/hexstrike-ai'},
           {label: 'AdversaryGraph Docs', href: 'https://1200km.com/adversarygraph-docs/'}
         ]},
         {href: 'https://medium.com/@1200km', label: 'Medium', position: 'right'},
@@ -81,7 +119,7 @@ const config = {
           {label: 'Israel Threat Actors CTI', href: 'https://1200km.com/israel-government-threat-actors-cti/'},
           {label: 'AI vs Defense', href: 'https://1200km.com/ai-vs-defense/'},
           {label: 'Intelligent Shield', href: 'https://1200km.com/opencti-intelligent-shield/'},
-          {label: 'HexStrike AI', href: 'https://github.com/0x4m4/hexstrike-ai'},
+          {label: 'HexStrike AI (upstream project)', href: 'https://github.com/0x4m4/hexstrike-ai'},
           {label: 'AdversaryGraph Docs', href: 'https://1200km.com/adversarygraph-docs/'}
         ]},
         {title: 'Author', items: [
