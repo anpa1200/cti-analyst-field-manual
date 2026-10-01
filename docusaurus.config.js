@@ -1,3 +1,4 @@
+const applyTechnicalSitemap = require('./technical-seo-sitemap.cjs');
 // @ts-check
 const {execFileSync} = require('node:child_process');
 
@@ -29,6 +30,7 @@ async function addLandingPageLastmod({defaultCreateSitemapItems, ...params}) {
 }
 
 const config = {
+  plugins: ['./technical-seo-plugin.cjs'],
   title: '1200km',
   tagline: 'From threat intelligence research to defensible analytic judgment, hunting hypotheses, and detection-ready outputs.',
   favicon: 'img/logo.png',
@@ -133,4 +135,5 @@ const config = {
     prism: {theme: require('prism-react-renderer').themes.github, darkTheme: require('prism-react-renderer').themes.dracula}
   }
 };
+applyTechnicalSitemap(config);
 module.exports = config;

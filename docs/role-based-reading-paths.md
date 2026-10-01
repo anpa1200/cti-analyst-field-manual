@@ -28,7 +28,7 @@ Give different reviewers a direct path through the manual without forcing them t
 5. [Detection Backlog](08-cti-to-detection/detection-backlog.md)
 6. [Detection Readiness Levels](08-cti-to-detection/detection-readiness-levels.md)
 7. [SOC Handoff](08-cti-to-detection/soc-handoff.md)
-8. [Israel Threat Actors CTI Detection Dashboard](https://1200km.com/israel-government-threat-actors-cti/detection-status-dashboard/)
+8. [Israel Threat Actors CTI Detection Dashboard](https://1200km.com/israel-government-threat-actors-cti/detection-engineering/detection-status-dashboard/)
 
 ## SOC Lead Path
 

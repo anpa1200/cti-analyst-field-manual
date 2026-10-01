@@ -66,7 +66,7 @@ Owner:
 ## Cross-Links
 
 - [SOC Handoff Note](../10-templates/soc-handoff-note.md)
-- [Customer Delivery SOC Workflow](https://1200km.com/customer-driven-ai-cti-project/docs/practitioner-package/package-index/)
+- [Customer Delivery SOC Workflow](https://1200km.com/customer-driven-ai-cti-project/docs/practitioner-package/)
 - [Detection Backlog](detection-backlog.md)
 
 ## References

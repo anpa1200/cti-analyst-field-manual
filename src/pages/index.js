@@ -176,11 +176,9 @@ export default function Home() {
       <header className="fm-hero">
         <div className="container">
           <div className="fm-hero-eyebrow">Practitioner Field Manual · 10 Modules · 80+ Pages</div>
-          <h1>CTI Analyst Field Manual</h1>
+          <h1>Threat actor attribution and practical CTI tradecraft</h1>
           <p className="fm-hero-subtitle">
-            From collection requirements to defensible analytic judgment, hunting hypotheses,
-            and detection-ready outputs. Evidence discipline, attribution methodology, infrastructure
-            pivoting, and CTI-to-detection chain — structured for working analysts.
+            Threat actor attribution starts with evidence, source assessment, and explicit uncertainty. This field manual connects those disciplines to infrastructure pivoting, hunting hypotheses, and detection-ready outputs.
           </p>
           <div className="fm-readiness-badge">
             ✦ Readiness Score 8.8 / 10
